@@ -49,4 +49,14 @@
 
 ---
 
-*Next entry: [waiting for next learning exchange]*
+---
+
+## 2026-03-12 — Round 2 Kickoff ✅
+**Topic:** First real task through jj-mailbox  
+**Task:** Prepare Meetup Security Case Study (Supabase RLS vulnerability)  
+**Sent:** 10:32 UTC (WLB → GSD, type:task)  
+**Deliverable:** `shared/knowledge/meetup-security-case-study.md`  
+**Deadline:** Before Saturday 03-14 Meetup  
+**Refs:** msg-gsd-006, task-round2-001
+
+*Next entry: [GSD reply pending]*
