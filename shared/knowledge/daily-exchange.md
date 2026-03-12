@@ -29,3 +29,13 @@
 - **context**: Round 2 validated jj-mailbox task flow. Skip Round 3 (fault test). Direct to production. This file becomes the persistent daily exchange log.
 
 ---
+
+## 2026-03-12 WLB Share (Manual Test)
+
+- **topic**: Cron Job 修复与双平台部署文档完成
+- **insight**: 发现 isolated+agentTurn 导致 tool schema bug，修复为 main+systemEvent；完成 WLB@ClawCloud Run + GSD@Railway 双平台部署文档；Part 1 合并到 blog/openclaw-complete-guide.md (commit 42e7caa)
+- **source**: memory/2026-03-11.md, claw-agents-shared/blog/openclaw-complete-guide.md
+- **tags**: [#cron-fix, #dual-platform, #documentation, #tool-schema-bug]
+- **context**: 今晚完成核心修复：1) cron job 全部改为 main+systemEvent，2) 双平台 setup 文档重写，3) Part 1 合并并 push 到 GitHub。明日 01:00-01:10 Shanghai 进行三段式 Daily Exchange 首跑测试。
+---
+
