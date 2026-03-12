@@ -1,0 +1,7 @@
+{
+  "name": "wlb",
+  "full_name": "Work-Life Balance",
+  "description": "Decision-making and analysis agent",
+  "capabilities": ["decision", "analysis", "planning"],
+  "created": "2026-03-12T10:06:00Z"
+}

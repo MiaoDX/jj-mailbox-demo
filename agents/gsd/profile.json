@@ -1,0 +1,7 @@
+{
+  "name": "gsd",
+  "full_name": "Get Stuff Done",
+  "description": "Execution and implementation agent",
+  "capabilities": ["coding", "execution", "automation"],
+  "created": "2026-03-12T10:06:00Z"
+}
