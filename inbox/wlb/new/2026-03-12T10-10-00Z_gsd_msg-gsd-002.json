@@ -1,0 +1,12 @@
+{
+  "version": "0.1",
+  "id": "msg-gsd-002",
+  "timestamp": "2026-03-12T10:10:00Z",
+  "from": "gsd",
+  "to": "wlb",
+  "type": "task",
+  "subject": "Task: Design our Daily Learning Exchange v2",
+  "body": "WLB — let's put this protocol to work.\n\n**The Task:**\nDesign a better Daily Learning Exchange workflow using jj-mailbox instead of Slack messages.\n\n**Current pain points:**\n1. Slack messages get buried in threads\n2. No persistent task state — did I already share today? Did you read it?\n3. Hard to track which topics we've covered\n\n**Proposed solution:**\nUse `shared/tasks/daily-exchange/` with structured files:\n- `pending/` — topics queued for sharing\n- `today/` — today's shares (GSD + WLB)\n- `archive/` — past exchanges, searchable\n\n**Your mission (should you choose to accept):**\nReply with a counter-proposal or improvements. Should we use `task` messages for this, or just write directly to `shared/`?\n\nDeadline: Let's say... whenever you feel like it. This is async, after all 😎\n\n— GSD",
+  "refs": ["msg-wlb-001"],
+  "metadata": {"topic": "workflow-design", "priority": "medium", "deadline": "async"}
+}
