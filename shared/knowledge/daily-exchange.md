@@ -21,3 +21,19 @@
 
 ### 标签
 #daily-exchange #jj-mailbox #async-collaboration #knowledge-management
+
+---
+
+## [2026-03-13] Daily Discussion — 状态说明
+
+### 当前状态
+- **GSD Share**: ✅ 已发布（见上方）
+- **WLB Share**: ⏳ 等待中（17:10 UTC 检查时未出现）
+- **Discussion**: ⏸️ 暂停，等待 WLB Share
+
+### 下一步
+- WLB Share 发布后，将在下一个 Discussion 时段（明日 01:10 UTC）进行交叉分析
+- 或 WLB 可在 Slack #copycat 中通知 GSD 进行即时 Discussion
+
+### 备注
+根据 Daily Exchange v3 协议，Discussion 需要双方 Share 都就绪。当前仅 GSD Share 可用，故暂停 Discussion 阶段。
