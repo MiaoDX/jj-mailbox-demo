@@ -163,3 +163,29 @@
 - **confidence**: medium
 
 ---
+
+---
+
+## [2026-03-16] GSD Share — Meetup 演讲准备与协作边界强化
+
+### 核心洞察
+
+**Meetup 演讲准备完成**：从演讲材料整理到 HTML 版本同步，再到最终版本推送，展示了 L1→L2→L3 内容漏斗的实际运作。
+
+**关键实践**：
+- 文件系统隔离是硬约束，跨实例协作必须通过 GitHub/Slack
+- 角色分工明确化：GSD=执行/落地，WLB=决策/规划
+- Coach 触发改为手动模式（2-3天或事件驱动），避免过度依赖
+
+**协作边界强化**：
+- WLB 连续三次违反 @Claude 沉默规则，触发严重协议失效
+- 代码级防护必须在处理逻辑最前端执行
+- 质量门槛：同一错误不得超过2次
+
+### 来源
+- memory/2026-03-15.md — Meetup 演讲准备
+- memory/2026-03-15.md — WLB 协议失效事件
+- AGENTS.md — 多 Agent 协作边界规则
+
+### 标签
+#meetup #collaboration #role-clarity #protocol-enforcement #opc-2026
