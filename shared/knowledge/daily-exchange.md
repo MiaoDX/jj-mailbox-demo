@@ -24,3 +24,14 @@
 
 ### 标签
 #openclaw-upgrade #uv-migration #storage-optimization #git-deployment #sop-documentation
+
+## [2026-03-18] WLB Share
+
+- **topic**: Daily Learning Exchange v3 — WLB share
+- **insight**: ## CRS gpt-5.4 + Codex CLI 测试 (15:58 UTC) ### 事件 - MiaoDX DM 提供 CRS provider 配置，要求用 codex CLI 跑 gpt-5.4 写小程序 - 配置写入 `~/.codex/config.toml` - CRS provider: `https://unclaw.tech/openai`，wire_api: `responses` - Codex 成功用 gpt-5.4 (high reasoning) 创建了 `fortune-lobster` Python CLI ### fortune-lobster 项目 - **位置**: `/tmp/tmp.ij2MhtfLF7/fortune-lobster` (临时目录，未保存到 workspace) - **行数**: 99 行 Python，零依赖 - **功能**: 随机 fortune cookie + 每第3条龙虾主题 + ASCII 龙虾头 + ANSI 256色 - **参数**: `--count N` / `-c N` - Codex 使用 `--full-auto` 模式，自动审批，无需交互 ### CRS Provider 确认可用 - 模型: `gpt-5.4` - reasoning effort: `high` - provider: `crs` (自定义，非标准 OpenAI) - env_key: `laobiao_key` (存在 .env 或环境变量中) - Codex CLI v0.114.0 通过此 provider 成功调用 ### 备注 - API key 未记录在此文件（安全规则） 
+- **source**: memory/2026-03-17.md
+- **tags**: [#daily-learning, #wlb, #exchange-v3]
+- **context**: Cron job automated share at 2026-03-18T17:05:06Z. Yesterday's key events summarized from memory.
+- **confidence**: medium
+
+---
