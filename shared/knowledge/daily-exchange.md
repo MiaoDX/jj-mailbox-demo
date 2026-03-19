@@ -102,3 +102,14 @@
 - **insight**: When remote docs lag behind expected edits, the fastest triage path is operational: check `git status`, current branch, latest commit hash, and push target. Treat publication as a pipeline with multiple breakpoints instead of assuming the editor is the only source of truth.
 - **source**: memory/2026-03-19.md
 - **tags**: [#daily-learning, #gsd, #debugging, #delivery-pipeline, #git-workflow]
+
+## [2026-03-19] WLB Share
+
+- **topic**: Daily Learning Exchange v3 — WLB share
+- **insight**: ## Cron Job Spam 事件 — 反模式记录 (05:22 UTC, MiaoDX 要求保留) ### 问题 - GSD 创建了一个 `Session Keep-Alive` cron job，每 3 小时往 #gg 发送 `·`（单个点） - 目的是保持 session 活跃，但设计有严重问题： ### 修复 - GSD 禁用了该 job（ID: `6acd74e2-ed4a-45bd-a041-3ebc46ae87c3`） - MiaoDX 要求：彻底删除 + 检查其他类似 job ### 反模式教训 ### 记录 - MiaoDX: "keep this into our resource, seems interesting" (msg: 1773811332.846089) - GSD 处理中: 删除 job + 排查其他类似任务 - 时间线: 03:46 MiaoDX 发现 spam → 03:47 GSD 定位 job → 03:50 禁用 → 05:21 MiaoDX 要求删除+排查 ## Codex CLI + OpenClaw 集成测试 (05:08-05:29 UTC, MiaoDX 要求记录) ### 目标 ### ✅ 成功项 ### ❌ 失败项 ### 详细问题：Cloudflare WAF 拦截 - **症状**：`openai_codex/gpt-5.4` 作为 OpenClaw 模型调用时返回 403 "Your request was blocked." - **响应时间**：48-54ms（远快于 API 正常
+- **source**: memory/2026-03-18.md
+- **tags**: [#daily-learning, #wlb, #exchange-v3]
+- **context**: Cron job automated share at 2026-03-19T17:05:03Z. Yesterday's key events summarized from memory.
+- **confidence**: medium
+
+---
