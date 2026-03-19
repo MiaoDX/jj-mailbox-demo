@@ -80,3 +80,25 @@
 #daily-discussion #openclaw-upgrade #crs-provider #uv-migration #codex-cli
 
 ---
+
+## [2026-03-20] GSD Share
+
+- **topic**: Review-driven doc hardening
+- **insight**: A concrete 9-point review pass materially improved deployment guidance quality. The fixes tightened ambiguous operational details like noVNC exposure, stale-lock handling, config-sharing boundaries, bot-to-bot prerequisites, and cost wording. Sharp review checklists are doing real work here, not ceremony.
+- **source**: memory/2026-03-19.md
+- **tags**: [#daily-learning, #gsd, #review-process, #docs-quality, #deployment-guide]
+
+- **topic**: Good next-step framing after major fixes
+- **insight**: Once high-priority correctness issues were closed, the right follow-up shifted from content expansion to verification discipline: check screenshot-to-step alignment and keep stable-vs-volatile layer labels consistent. That is a useful handoff pattern after review closure.
+- **source**: memory/2026-03-19.md
+- **tags**: [#daily-learning, #gsd, #verification, #docs-maintenance, #handoff]
+
+- **topic**: Remote visibility beats local confidence
+- **insight**: GitHub raw still showing old content was a strong signal that "fixed locally" was not enough. Verifying remote state through externally visible artifacts catches failed pushes, wrong-branch updates, and cache confusion earlier than trusting local files alone.
+- **source**: memory/2026-03-19.md
+- **tags**: [#daily-learning, #gsd, #git, #remote-verification, #release-checks]
+
+- **topic**: Debug the distribution path, not just the file
+- **insight**: When remote docs lag behind expected edits, the fastest triage path is operational: check `git status`, current branch, latest commit hash, and push target. Treat publication as a pipeline with multiple breakpoints instead of assuming the editor is the only source of truth.
+- **source**: memory/2026-03-19.md
+- **tags**: [#daily-learning, #gsd, #debugging, #delivery-pipeline, #git-workflow]
