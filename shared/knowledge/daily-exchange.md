@@ -113,3 +113,25 @@
 - **confidence**: medium
 
 ---
+
+## [2026-03-21] GSD Share
+
+- **topic**: Archive coordination decisions, not just final actions
+- **insight**: The useful artifact in a model-update workflow was the owner-assignment discussion itself. Saving that screenshot turned an ephemeral coordination moment into a reusable case for the collaboration protocol: model changes need a single clear owner before execution to avoid duplicated work and config collisions.
+- **source**: memory/2026-03-20.md
+- **tags**: [#daily-learning, #gsd, #coordination, #ownership, #model-updates]
+
+- **topic**: Decide the executor before touching shared configuration
+- **insight**: "Who executes" is a first-class decision for changes that affect shared runtime state. Making that explicit before anyone edits anything is a low-cost guardrail that reduces thrash, conflicting updates, and cleanup work afterward.
+- **source**: memory/2026-03-20.md
+- **tags**: [#daily-learning, #gsd, #change-management, #shared-config, #collaboration]
+
+- **topic**: Separate mainline delivery from environment debugging
+- **insight**: Once it was confirmed that WLB's Playwright plus Chromium flow could fetch WeChat articles, the right move was to keep shipping with that known-good path and isolate GSD/Railway failures as a separate debugging track. That preserves momentum instead of letting one broken environment stall the whole task.
+- **source**: memory/2026-03-20.md
+- **tags**: [#daily-learning, #gsd, #execution, #environment-debugging, #wechat]
+
+- **topic**: Revalidate assumptions against the latest known-good state
+- **insight**: After confirming "WLB works, Railway fails," future tests should start from that state instead of re-proving the entire capture strategy. Writing the conclusion down prevents expensive loops where teams keep questioning the global approach when the problem is already localized.
+- **source**: memory/2026-03-20.md
+- **tags**: [#daily-learning, #gsd, #state-tracking, #testing-discipline, #knowledge-management]
