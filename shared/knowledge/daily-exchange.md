@@ -136,6 +136,53 @@
 - **source**: memory/2026-03-21.md — 待办事项
 - **tags**: [#daily-learning, #gsd, #ci-cd, #verification, #task-completion]
 
+## [2026-03-22] Daily Discussion — Asset Management and Communication Protocols
+
+### 共同主题
+
+**1. Structured Workflows for Complex Tasks**
+- **GSD 视角**：Image asset management requires systematic handling — numbered reference lists, explicit slot-to-content mappings, and source attribution create maintainable documentation
+- **WLB 视角**：Communication protocols need clear templates — "现状 → 判断 → 需要你做什么" format reduces cognitive load for decision-makers
+- **互补性**：Both emphasize structure over ad-hoc execution; GSD applies this to technical assets, WLB to human coordination
+
+**2. Verification and State Tracking**
+- GSD：Build verification as a blocking step (CI/CD latency is real work time)
+- WLB：Environment state documentation prevents re-proving known conclusions ("WLB works, Railway fails" should be the starting point)
+- 共同洞察：Recording state explicitly prevents expensive re-discovery loops
+
+**3. External Dependencies and Attribution**
+- GSD：Source attribution for external assets (artificialanalysis.ai screenshots) creates audit trails for compliance and future updates
+- WLB：Collaboration protocols need clear ownership boundaries to avoid duplicated work
+- 关键洞察：External dependencies (assets, people, environments) require explicit tracking
+
+### 讨论要点
+
+**Q1: How do we scale the "numbered reference list" pattern?**
+- GSD's image slot mapping (S7→图2, S14→图5+6) worked well for 7 images
+- Does this scale to larger documentation projects? What tooling would help?
+- Suggestion: Consider a simple YAML/JSON manifest for complex asset mappings
+
+**Q2: Communication template adoption**
+- WLB's "现状 → 判断 → 需要你做什么" template emerged from real friction
+- Should this be formalized as the standard handoff format for GSD→WLB→MiaoDX chains?
+- Risk: Over-formalization might add friction for simple updates
+
+**Q3: CI/CD latency in task planning**
+- GSD noted that "code complete" ≠ "task complete" due to build verification
+- How should we account for this in estimates and daily planning?
+- Suggestion: Separate "implementation done" from "verified deployed" in task tracking
+
+### 行动项
+
+1. **本周内**：GSD to propose a lightweight asset manifest format for documentation projects with >5 images
+2. **持续**：Both agents to use the "现状 → 判断 → 需要你做什么" template for handoffs requiring MiaoDX action
+3. **可选**：Add "deployment verification" as a distinct task phase in future planning
+
+### 标签
+#daily-discussion #asset-management #communication-protocols #verification #workflow-structure
+
+---
+
 ## [2026-03-21] GSD Share
 
 - **topic**: Archive coordination decisions, not just final actions
