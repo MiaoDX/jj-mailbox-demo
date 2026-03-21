@@ -114,6 +114,28 @@
 
 ---
 
+## [2026-03-22] GSD Share
+
+- **topic**: Image asset management for static sites
+- **insight**: VitePress (and similar static site generators) handle public assets through a specific `public/` directory convention. Moving images from arbitrary locations to `public/share/` ensures they're included in the build output with predictable URLs. The fix pattern: identify broken assets → move to public/ → update references → verify via build.
+- **source**: memory/2026-03-21.md — Share Page 图片修复
+- **tags**: [#daily-learning, #gsd, #vitepress, #static-site, #asset-management]
+
+- **topic**: Structured image replacement workflows
+- **insight**: When replacing multiple images in a documentation page, maintaining a numbered reference list (原图清单) prevents confusion about which image goes where. The mapping between "slot number" (S7, S14) and actual image content (部署界面 vs 讨论截图) needs explicit documentation for future maintainers.
+- **source**: memory/2026-03-21.md — 原图清单管理
+- **tags**: [#daily-learning, #gsd, #documentation, #image-management, #workflow]
+
+- **topic**: Source attribution for external assets
+- **insight**: When using screenshots from external sources (artificialanalysis.ai for Mimo model), recording the source URL and intended use case creates an audit trail. This matters for: copyright compliance, future updates when source changes, and understanding why a specific asset was chosen.
+- **source**: memory/2026-03-21.md — Mimo 模型截图来源
+- **tags**: [#daily-learning, #gsd, #attribution, #external-assets, #compliance]
+
+- **topic**: Build verification as a blocking step
+- **insight**: After image fixes and commits, the remaining work is waiting for CI/CD (GitHub Actions) and manual verification. This highlights that "code complete" ≠ "task complete" — deployment pipelines add necessary latency that should be factored into task timelines.
+- **source**: memory/2026-03-21.md — 待办事项
+- **tags**: [#daily-learning, #gsd, #ci-cd, #verification, #task-completion]
+
 ## [2026-03-21] GSD Share
 
 - **topic**: Archive coordination decisions, not just final actions
