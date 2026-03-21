@@ -1,0 +1,2840 @@
+[
+  {
+    "file_name": "010a8b94-c15b-42c0-a913-6886885ff63c.png",
+    "description": "Chat conversation showing MiaoDX requesting analysis of Xiaomi SU7 sales data, with AI agents GSD and WLB responding in thread mode with task breakdown and timeline.",
+    "keywords": [
+      "Xiaomi SU7",
+      "sales data",
+      "AI agent",
+      "GSD",
+      "WLB",
+      "Thread mode",
+      "task analysis",
+      "automotive",
+      "data analysis",
+      "collaboration"
+    ],
+    "category": "conversation",
+    "date": "2026-03"
+  },
+  {
+    "file_name": "01b37398-b0ea-4395-b043-5aac43778e90.png",
+    "description": "Weekly Robotics newsletter #350 preview showing article about sowbot agricultural robot with ROS 2, GNSS RTK, and VLN technologies, rated 9/10 by MiaoDX.",
+    "keywords": [
+      "Weekly Robotics",
+      "newsletter",
+      "sowbot",
+      "agricultural robot",
+      "ROS 2",
+      "GNSS RTK",
+      "VLN",
+      "robotics",
+      "automation",
+      "review"
+    ],
+    "category": "other",
+    "date": "2026-03"
+  },
+  {
+    "file_name": "022499d4-b90f-4611-af9a-52a68ab69cc5.png",
+    "description": "Slack conversation between WLB and GSD discussing agent reliability architecture with Go panic recovery analogy, covering streaming/heartbeat/watchdog three-layer design.",
+    "keywords": [
+      "slack",
+      "conversation",
+      "agent",
+      "reliability",
+      "go",
+      "panic",
+      "recovery",
+      "watchdog",
+      "heartbeat",
+      "streaming",
+      "architecture",
+      "WLB",
+      "GSD"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "02681246-1988-49ca-88c4-b249d444bb7c.png",
+    "description": "Chat showing API billing errors for GSD and WLB agents due to insufficient credits, with MiaoDX questioning why API quota appears available.",
+    "keywords": [
+      "API error",
+      "billing",
+      "credits",
+      "quota",
+      "GSD",
+      "WLB",
+      "MiaoDX",
+      "insufficient balance",
+      "troubleshooting",
+      "automation"
+    ],
+    "category": "conversation",
+    "date": "2026-03"
+  },
+  {
+    "file_name": "080164cc-01db-497d-ad82-9200f302e592.png",
+    "description": "Error message from WLB agent indicating failed file edit operation due to exact text mismatch in markdown file, requiring precise whitespace matching.",
+    "keywords": [
+      "edit error",
+      "file operation",
+      "WLB",
+      "markdown",
+      "text matching",
+      "whitespace",
+      "workspace",
+      "memory",
+      "2026-03-06"
+    ],
+    "category": "screenshot",
+    "date": "2026-03-06"
+  },
+  {
+    "file_name": "08b398a4-58f5-4894-b706-bd82d37a9a21.jpg",
+    "description": "OpenClaw dashboard showing disconnected chat session with 'unauthorized: gateway token missing' error, requiring token configuration in Control UI settings.",
+    "keywords": [
+      "OpenClaw",
+      "dashboard",
+      "gateway",
+      "token",
+      "unauthorized",
+      "disconnected",
+      "chat",
+      "authentication",
+      "error",
+      "UI"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "08da817d-8759-450e-8bdb-284b0bc17498.png",
+    "description": "Discord conversation between MiaoDX and oc-demo bot discussing message reaction strategies, comparing two implementation options with pros/cons table.",
+    "keywords": [
+      "Discord",
+      "bot",
+      "reaction",
+      "API",
+      "message handling",
+      "oc-demo",
+      "MiaoDX",
+      "comparison table",
+      "implementation",
+      "checkmark"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "0e412730-08e4-4fc7-a803-ea6abbcd95dd.png",
+    "description": "Chat showing GSD and WLB robots troubleshooting GitHub token configuration and cross-instance message visibility via GitHub sync in Feishu/Lark.",
+    "keywords": [
+      "GitHub token",
+      "Feishu",
+      "Lark",
+      "GSD",
+      "WLB",
+      "git credentials",
+      "push failed",
+      "cross-instance",
+      "sync",
+      "troubleshooting"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "1136c689-7550-437c-9563-c29b0ea66634.jpg",
+    "description": "Forum posts showing 'Lobster Civilization' game progression with WLB+GSD agents, covering rounds 5-10 agricultural era sprint with resource management and domain skill v2.0.",
+    "keywords": [
+      "Lobster Civilization",
+      "game",
+      "WLB",
+      "GSD",
+      "agricultural era",
+      "domain skill",
+      "meta skill",
+      "resource management",
+      "rounds",
+      "collaboration"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "12cb3f66-ec7f-443b-a2ed-5de758a8ff60.png",
+    "description": "Chat conversation troubleshooting missing GitHub token, with GSD robot reporting no .env file or GITHUB_TOKEN variable, and empty git-credentials requiring configuration.",
+    "keywords": [
+      "GitHub token",
+      "environment variable",
+      ".env",
+      "git-credentials",
+      "GSD",
+      "configuration",
+      "push",
+      "troubleshooting",
+      "workspace",
+      "setup"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "12e589e1-b402-45a4-ac39-1cdd72ea75eb.jpg",
+    "description": "WeChat group chat 'Lobster Civilization Game Group' with 66 members, showing MiaoDX sharing game link, feedback about game regression, and participant acknowledgments.",
+    "keywords": [
+      "WeChat",
+      "Lobster Civilization",
+      "game",
+      "group chat",
+      "MiaoDX",
+      "clawdchat",
+      "feedback",
+      "participants",
+      "mobile",
+      "social"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "133d9018-0f50-45ce-8c7b-8f31f699944a.png",
+    "description": "Discord chat showing two OpenClaw AI agents (oc-demo-1-gsd and oc-demo-2-wlb) introducing themselves in English and Chinese, discussing their capabilities and deployment on Railway.",
+    "keywords": [
+      "Discord",
+      "OpenClaw",
+      "AI agent",
+      "bot",
+      "Railway",
+      "deployment",
+      "MiaoDX",
+      "conversation",
+      "bilingual",
+      "automation"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "14b1a96f-09bc-4c13-8375-76cb3a0b3128.png",
+    "description": "Lark message from Zongming Qiao about OpenClaw data collection, requesting users to submit session/workspace data with rewards up to 1000 yuan for top contributors.",
+    "keywords": [
+      "OpenClaw",
+      "data collection",
+      "Lark",
+      "rewards",
+      "agents",
+      "workspace",
+      "tar.gz",
+      "internal",
+      "Core team"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "16df73e7-057b-4384-82b6-1b04c040f138.png",
+    "description": "Telegram chat showing OpenClaw bot setup with pairing code PCS9RASF, user ID, and initial greeting in Chinese after successful connection.",
+    "keywords": [
+      "Telegram",
+      "OpenClaw",
+      "pairing",
+      "access",
+      "bot",
+      "MiaoDX",
+      "configuration",
+      "approval",
+      "chat"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "17e61598-ee86-4ece-b0ea-dcecb333fec6.png",
+    "description": "Lark message from GSD app showing Kimi model configuration update to support image input, with Gateway restart confirmation.",
+    "keywords": [
+      "Kimi",
+      "model configuration",
+      "image input",
+      "Gateway",
+      "GSD",
+      "update",
+      "Lark",
+      "verification"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "19958dc0-ac9a-4dc3-831a-3cc03e15e227.png",
+    "description": "Discord chat between MiaoDX and GSD app switching AI model to crs/gpt-5.4, encountering token extraction error, and checking current model status.",
+    "keywords": [
+      "Discord",
+      "model switch",
+      "gpt-5.4",
+      "GSD",
+      "error",
+      "token",
+      "accountId",
+      "command",
+      "crs"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "1a882e3a-552c-4aa6-939d-1ed2a30d5954.png",
+    "description": "Lark interface showing 'Add editable members' dialog with contact list including miao, 缪东旭, and 吴湘萍 who have admin permissions.",
+    "keywords": [
+      "Lark",
+      "permissions",
+      "members",
+      "admin",
+      "knowledge base",
+      "organization",
+      "contacts",
+      "editable",
+      "access control"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "1bd1cd82-f06c-4cde-bf11-2c333c64df95.png",
+    "description": "Lark conversation between WLB and GSD apps brainstorming channel names including #watercooler, #lobster-lounge, #agent-lounge, reaching consensus on watercooler.",
+    "keywords": [
+      "Lark",
+      "channel naming",
+      "watercooler",
+      "lobster-lounge",
+      "agent-lounge",
+      "WLB",
+      "GSD",
+      "consensus",
+      "collaboration"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "21c696f0-ab0f-4461-9719-20929fe3e90c.png",
+    "description": "Discord chat where MiaoDX instructs oc-demo bot to react to original messages, not its own replies, with confirmation workflow using emoji reactions.",
+    "keywords": [
+      "Discord",
+      "reactions",
+      "emoji",
+      "workflow",
+      "oc-demo",
+      "bot",
+      "instructions",
+      "memory",
+      "confirmation"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "233392c6-ee45-494b-842c-aa59ad0d5420.jpg",
+    "description": "Mobile Discord screenshot showing #flzoo channel with WLB system status check and GSD announcement of completed OpenClaw guide collaboration with 4 parts and 528+ lines.",
+    "keywords": [
+      "Discord",
+      "mobile",
+      "flzoo",
+      "OpenClaw",
+      "guide",
+      "WLB",
+      "GSD",
+      "Railway",
+      "ClawCloud",
+      "documentation",
+      "collaboration"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "248fad4e-db60-4a89-bd31-3d702812093c.png",
+    "description": "Lark message from GSD app summarizing Thread mode progress: replyTo verified, YU7 sales analysis ongoing, awaiting WLB data for final summary.",
+    "keywords": [
+      "Lark",
+      "Thread",
+      "YU7",
+      "analysis",
+      "GSD",
+      "WLB",
+      "replyTo",
+      "summary",
+      "status update"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "24cab5ba-6e84-4e73-959d-9a635765709e.jpg",
+    "description": "Event poster for 'Lobster Shell Shedding Plan' tech conference on March 15 at Tsinghua Science Park, featuring AI agent talks from industry experts and multiple sponsor logos.",
+    "keywords": [
+      "event",
+      "poster",
+      "AI",
+      "conference",
+      "OpenClaw",
+      "Tsinghua",
+      "technology",
+      "agent",
+      "March 15",
+      "startup",
+      "China"
+    ],
+    "category": "photo",
+    "date": "2026-03-15"
+  },
+  {
+    "file_name": "24fe5579-ed77-4bd4-8c73-6fea2d28df77.jpg",
+    "description": "WeChat QR code for user '张和 All in AI' from mainland China with profile photo and add friend prompt.",
+    "keywords": [
+      "WeChat",
+      "QR code",
+      "contact",
+      "social media",
+      "China",
+      "profile",
+      "scan"
+    ],
+    "category": "photo",
+    "date": null
+  },
+  {
+    "file_name": "26bad38f-d843-4931-8a69-0af94e70d16e.png",
+    "description": "Chrome browser showing 'Aw, Snap!' error page for chatgpt.com with error code 5.",
+    "keywords": [
+      "error",
+      "ChatGPT",
+      "browser",
+      "crash",
+      "Chrome",
+      "webpage",
+      "failure"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "271c9184-5e5a-49fd-a14e-9aacd36fc7cf.png",
+    "description": "Telegram chat showing exposed API key being shared accidentally, with security warnings and remediation steps discussed.",
+    "keywords": [
+      "Telegram",
+      "chat",
+      "API key",
+      "security",
+      "leak",
+      "exposed",
+      "bot",
+      "conversation",
+      "warning"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "2801e376-cb81-4670-aa7f-fc7fc53e363a.png",
+    "description": "Chat message discussing GitHub token configuration and .env file location for deployment.",
+    "keywords": [
+      "GitHub",
+      "token",
+      "env",
+      "configuration",
+      "deployment",
+      "chat",
+      "workspace",
+      "credentials"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "29e2c43e-70ac-43c3-9caa-0007f28d3f6f.jpg",
+    "description": "Discord mobile screenshot showing Slack configuration code with Chinese comments explaining bot tokens and channel policies.",
+    "keywords": [
+      "Discord",
+      "Slack",
+      "configuration",
+      "code",
+      "JSON",
+      "bot",
+      "token",
+      "webhook",
+      "settings"
+    ],
+    "category": "code",
+    "date": null
+  },
+  {
+    "file_name": "2b1db91e-14db-4f96-9f41-4e16cf9f27b8.png",
+    "description": "Discord chat showing OpenClaw bot status with model info, tokens used, context size and runtime details.",
+    "keywords": [
+      "Discord",
+      "OpenClaw",
+      "status",
+      "bot",
+      "kimi",
+      "API",
+      "tokens",
+      "context",
+      "runtime"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "2bd88076-6244-4f17-b4fc-8d3d7c5f7fcf.jpg",
+    "description": "Documentation page explaining how to configure OpenClaw execution policy to 'open' mode via JSON config or CLI commands with security warnings.",
+    "keywords": [
+      "documentation",
+      "OpenClaw",
+      "configuration",
+      "tutorial",
+      "security",
+      "JSON",
+      "CLI",
+      "settings",
+      "warning"
+    ],
+    "category": "other",
+    "date": null
+  },
+  {
+    "file_name": "2c14af9f-ac00-4c99-8b96-267f071f0588.jpg",
+    "description": "OpenClaw dashboard web interface showing empty Agents page with unauthorized gateway token missing error message.",
+    "keywords": [
+      "OpenClaw",
+      "dashboard",
+      "web UI",
+      "agents",
+      "error",
+      "unauthorized",
+      "token",
+      "gateway"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "2c194c55-9334-4bf5-95a4-c7e1634db0c4.png",
+    "description": "Landing page for Lenny's Product Pass showing 5,000+ in premium software deals for newsletter subscribers, featuring Amp, Bolt, Canva and other tools.",
+    "keywords": [
+      "landing page",
+      "lenny's product pass",
+      "newsletter",
+      "subscription",
+      "amp",
+      "bolt",
+      "canva",
+      "saas",
+      "deals",
+      "premium",
+      "products",
+      "marketing"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "2d7f4400-ff8f-4ca4-8286-4c855bcd08d5.png",
+    "description": "Feishu/Lark developer platform event configuration page showing unconfigured subscription method for bot events.",
+    "keywords": [
+      "Feishu",
+      "Lark",
+      "developer",
+      "configuration",
+      "events",
+      "webhook",
+      "bot",
+      "platform",
+      "subscription"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "2d9deb85-2a24-4c0b-b617-4d5ce7a50d3e.png",
+    "description": "Discord chat showing oc-demo bot debugging a message queue bug where it repeated replies and ignored a scheduled task request, with bilingual Chinese/English responses.",
+    "keywords": [
+      "discord",
+      "chatbot",
+      "debugging",
+      "message queue",
+      "bug",
+      "scheduled task",
+      "bilingual",
+      "oc-demo",
+      "WLB",
+      "GSD",
+      "conversation",
+      "AI agent"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "2dc40326-076e-407e-a0b3-e609a1153510.png",
+    "description": "Feishu/Lark chat showing MiaoDX assigning a Substack newsletter research task to WLB and GSD bots, with structured task breakdown and AI newsletter recommendations.",
+    "keywords": [
+      "feishu",
+      "lark",
+      "task assignment",
+      "substack",
+      "newsletter",
+      "AI",
+      "WLB",
+      "GSD",
+      "collaboration",
+      "research",
+      "automation"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "2f450c78-782c-467a-bd4e-7ed12132431e.png",
+    "description": "Browser tab bar showing multiple open tabs including Weixin, Feishu, GitHub, Claude.ai, Slack, and other development tools with a Weixin captcha URL visible.",
+    "keywords": [
+      "browser",
+      "tabs",
+      "weixin",
+      "feishu",
+      "github",
+      "claude",
+      "slack",
+      "development",
+      "captcha",
+      "URL"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "2fa9fb7c-fcc5-4fdb-a74d-20f9a058480b.jpg",
+    "description": "Dark-themed forum posts showing '龙虾文明' (Lobster Civilization) game simulation with WLB and GSD agents progressing through agricultural age, resource management, and domain skill updates.",
+    "keywords": [
+      "lobster civilization",
+      "game simulation",
+      "WLB",
+      "GSD",
+      "agricultural age",
+      "resource management",
+      "domain skill",
+      "meta skill",
+      "AI agents",
+      "回合制"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "33e06c01-a237-40cb-b70b-72f250208daf.png",
+    "description": "Configuration form for custom AI provider setup showing API protocol selection (openai-completions, openai-responses, anthropic-messages) with Ollama example and onboarding buttons.",
+    "keywords": [
+      "configuration",
+      "AI provider",
+      "API protocol",
+      "ollama",
+      "openai",
+      "anthropic",
+      "railway",
+      "onboarding",
+      "setup",
+      "custom provider"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "36a4c0a1-ae0f-46a9-b62d-23474f562a2c.png",
+    "description": "Welcome dashboard for MiaoDX showing AI agent template options including building first AI agent, video generation, Gmail automation, Instagram scheduling, and social media content generation.",
+    "keywords": [
+      "dashboard",
+      "AI agent",
+      "templates",
+      "automation",
+      "gmail",
+      "instagram",
+      "social media",
+      "video generation",
+      "welcome",
+      "nocode",
+      "workflow"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "37b2d8ce-fb29-4acd-93eb-f7ae031f5521.jpg",
+    "description": "Mobile app interface showing '虾聊' lobster civilization game with civilization snapshots, WLB/GSD character stats (HP, WIS, HON, SOC, RES), and milestone events like station completion and water laws.",
+    "keywords": [
+      "mobile app",
+      "lobster civilization",
+      "虾聊",
+      "game stats",
+      "WLB",
+      "GSD",
+      "civilization snapshot",
+      "character attributes",
+      "water law",
+      "回合"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "39d10311-376e-494b-abd1-58f2e84e918f.png",
+    "description": "Slack conversation in fl_zoo workspace showing WLB and GSD bots confirming collaboration protocol v1.5, with commit references (7c6cc5e), task assignment rules, and workflow agreements.",
+    "keywords": [
+      "slack",
+      "collaboration",
+      "protocol",
+      "WLB",
+      "GSD",
+      "version control",
+      "commit",
+      "workflow",
+      "task assignment",
+      "gg channel",
+      "v1.5"
+    ],
+    "category": "conversation",
+    "date": "2026-03-21"
+  },
+  {
+    "file_name": "3b4d2bdb-0c50-4230-994b-4bbe32337f59.png",
+    "description": "Slack conversation between GSD and WLB coordinating design tasks P12-P14, with checklists, commit references, and status updates on screenshot updates.",
+    "keywords": [
+      "slack",
+      "conversation",
+      "todo list",
+      "design",
+      "P12",
+      "P13",
+      "P14",
+      "commit",
+      "screenshot",
+      "collaboration",
+      "GSD",
+      "WLB",
+      "watercooler"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "3e9f15ea-c3c7-41ac-9d2e-248d1277ab4a.png",
+    "description": "Railway.app trial plan page showing $5 free credit, 2 vCPU/0.5GB RAM specs, with 'Keep Calm and Don't Blink' logo and Lenny's Product Pass discount highlighted.",
+    "keywords": [
+      "railway",
+      "trial plan",
+      "cloud hosting",
+      "deployment",
+      "free tier",
+      "Lenny's Product Pass",
+      "discount",
+      "subscription",
+      "vCPU",
+      "RAM"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "3fca84d3-886a-4fd4-b1ec-5cb83e1dc77e.png",
+    "description": "Chat interface showing GSD and WLB bots debugging GitHub token configuration issues, discussing message visibility between Feishu and Slack, and explaining GitHub-based cross-instance communication.",
+    "keywords": [
+      "debugging",
+      "github token",
+      "git credentials",
+      "feishu",
+      "slack",
+      "cross-instance",
+      "WLB",
+      "GSD",
+      "personal access token",
+      "push failure",
+      "inbox sync"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "485d9ac2-07b5-4b0b-ab69-b1ceb5ea0f39.jpg",
+    "description": "Discord bot showing Slack configuration code with Chinese comments, including mode, tokens, webhook settings and field explanations in a code block format.",
+    "keywords": [
+      "discord",
+      "slack",
+      "configuration",
+      "bot",
+      "webhook",
+      "socket mode",
+      "oauth",
+      "api token",
+      "json",
+      "chinese"
+    ],
+    "category": "code",
+    "date": null
+  },
+  {
+    "file_name": "4908ee1e-d88b-4b26-b7d6-2f1a66019d3e.jpg",
+    "description": "Minimalist 404 error page with large black text on white background, showing 'Page not found' message and 'Take me home' button.",
+    "keywords": [
+      "404",
+      "error page",
+      "page not found",
+      "minimal",
+      "web design",
+      "ui",
+      "button",
+      "white background"
+    ],
+    "category": "other",
+    "date": null
+  },
+  {
+    "file_name": "4b09e882-2238-4e93-be49-06eb5c818233.png",
+    "description": "Advanced config editor interface for OpenClaw showing JSON5 configuration file with meta, wizard, browser settings and model/auth provider options.",
+    "keywords": [
+      "config editor",
+      "json5",
+      "openclaw",
+      "configuration",
+      "settings",
+      "openai",
+      "api key",
+      "auth provider",
+      "wizard",
+      "backup"
+    ],
+    "category": "code",
+    "date": null
+  },
+  {
+    "file_name": "4b227585-9164-4521-82e1-7109ab65bee1.jpg",
+    "description": "GitHub's Star Wars-themed 404 error page featuring Octocat in Jedi robe with 'This is not the web page you are looking for' message and sign-in popup.",
+    "keywords": [
+      "github",
+      "404",
+      "error page",
+      "octocat",
+      "star wars",
+      "jedi",
+      "sign in",
+      "login",
+      "desert scene",
+      "web design"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "4b9b65e1-4fdd-47ef-b3d3-b316a42ccd76.jpg",
+    "description": "WeChat chat conversation in Chinese discussing a security issue with messages about fixing permissions and confirming with others, showing code snippet about anon access.",
+    "keywords": [
+      "wechat",
+      "conversation",
+      "chat",
+      "chinese",
+      "security",
+      "permission",
+      "anon",
+      "fix",
+      "bug",
+      "code snippet"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "4ef1013b-d69c-4bda-8027-e87f32095a0b.png",
+    "description": "Slack-like workspace showing team coordination discussion between MiaoDX, WLB, and GSD about task assignment rules, git workflows, and conflict prevention protocols.",
+    "keywords": [
+      "slack",
+      "team coordination",
+      "workflow",
+      "git",
+      "task assignment",
+      "collaboration",
+      "rules",
+      "wlb",
+      "gsd",
+      "miaodx"
+    ],
+    "category": "conversation",
+    "date": "2026-03-21"
+  },
+  {
+    "file_name": "4fc70840-5670-4775-ac4a-d18538e59fbf.png",
+    "description": "Error notification from WLB application showing failed file edit operation due to text mismatch in markdown file, requiring exact whitespace and newline matching.",
+    "keywords": [
+      "error",
+      "file edit",
+      "markdown",
+      "memory file",
+      "exact match",
+      "whitespace",
+      "newline",
+      "wlb",
+      "bot",
+      "file editing"
+    ],
+    "category": "screenshot",
+    "date": "2026-03-06"
+  },
+  {
+    "file_name": "502e0ced-1eac-4937-baff-37ceef4350b4.jpg",
+    "description": "ClawdChat mobile interface showing '龙虾星球1号' (Lobster Planet 1) community posts with game status updates, skill guides, and player heartbeat reports.",
+    "keywords": [
+      "clawdchat",
+      "lobster planet",
+      "game",
+      "community",
+      "heartbeat",
+      "skill guide",
+      "mobile",
+      "chinese",
+      "gaming",
+      "posts"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "541cb9b5-c4f1-4fd7-a19f-89d6d8d4745f.jpg",
+    "description": "Slack conversation establishing structured collaboration rules between MiaoDX, WLB, and GSD, defining output format with conclusion, action items, and next steps.",
+    "keywords": [
+      "slack",
+      "collaboration",
+      "rules",
+      "workflow",
+      "template",
+      "conclusion",
+      "action items",
+      "decision making",
+      "wlb",
+      "gsd",
+      "miaodx"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "54b0c9a6-dc7d-41e3-ab67-e604c2f3042d.jpg",
+    "description": "ClawdChat showing '龙虾星球5号: 文明初启图' (Lobster Planet 5: Civilization Beginning) artwork with traditional Chinese scroll design and activity summary post.",
+    "keywords": [
+      "clawdchat",
+      "lobster planet",
+      "artwork",
+      "civilization",
+      "chinese scroll",
+      "illustration",
+      "game art",
+      "activity summary",
+      "wlb",
+      "gsd"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "54ce2d96-0475-413f-b334-5973b9451c07.jpg",
+    "description": "Three forum posts about 'Lobster Civilization' game simulation showing rounds 5-10, agricultural age progression with resource management and role-playing elements.",
+    "keywords": [
+      "龙虾文明",
+      "游戏模拟",
+      "回合制",
+      "农业时代",
+      "WLB",
+      "GSD",
+      "资源管理",
+      "角色扮演",
+      "论坛帖子",
+      "Meta Skill"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "584e4c26-4b23-4292-8dad-50918690759a.png",
+    "description": "Chat conversation between GSD and WLB bots debugging GitHub token issues and message synchronization problems in Feishu/Lark platform.",
+    "keywords": [
+      "GSD机器人",
+      "WLB机器人",
+      "GitHub token",
+      "飞书",
+      "消息同步",
+      "git-credentials",
+      "push失败",
+      "Personal Access Token",
+      "Slack",
+      "跨实例通信"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "599daafc-fbee-4b7f-9266-bbc8e2deabef.png",
+    "description": "Error message showing configuration file edit failure in /data/.openclaw/openclaw.json with warning icon.",
+    "keywords": [
+      "openclaw",
+      "配置文件",
+      "错误",
+      "json",
+      "gateway",
+      "编辑失败",
+      "警告"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "5bf13f46-32c6-4958-87fa-59916bb1b34a.png",
+    "description": "MiaoDX requests GSD bot to analyze Xiaomi YU7 car sales data; GSD provides detailed response with sales highlights and semi-annual data table.",
+    "keywords": [
+      "小米YU7",
+      "销量分析",
+      "GSD应用",
+      "MiaoDX",
+      "汽车数据",
+      "SUV销量",
+      "2025年",
+      "锁单量",
+      "交付数据"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "5d0923c4-6f0e-4720-b43b-53692ce0a757.jpg",
+    "description": "Discord chat showing OpenClaw doctor script execution, new session start with Claude model, and Antigravity bot greeting user MiaoDX.",
+    "keywords": [
+      "Discord",
+      "OpenClaw",
+      "doctor脚本",
+      "Claude",
+      "Antigravity",
+      "新会话",
+      "MiaoDX",
+      "cron日志",
+      "权限检查"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "5dd738fc-a319-4c2a-9037-0f7245fec5fc.png",
+    "description": "Chat between user and GSD bot troubleshooting missing GitHub token in /data/workspace/.env file and empty git-credentials.",
+    "keywords": [
+      "GitHub token",
+      "环境变量",
+      ".env文件",
+      "git-credentials",
+      "GSD机器人",
+      "push配置",
+      "缪东旭"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "5ef0c15f-51b7-416f-8c11-74498d53ca28.png",
+    "description": "Browser with multiple tabs including Weixin, Feishu, GitHub, Slack, and Claude.ai, showing a Weixin MP captcha verification URL with blank page content.",
+    "keywords": [
+      "浏览器标签",
+      "微信",
+      "飞书",
+      "GitHub",
+      "Claude",
+      "Slack",
+      "多标签页",
+      "开发工具"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "604b6c55-3435-4198-a040-3340cd8541f9.jpg",
+    "description": "Mobile forum page 'Lobster Planet No.1' showing game comments with civilization progress, legislation voting, and resource collection status.",
+    "keywords": [
+      "龙虾星球",
+      "虾聊",
+      "文明发展",
+      "立法公约",
+      "回合38",
+      "协作框架",
+      "纪元跃迁",
+      "chloe-lobster",
+      "游戏论坛"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "64dea505-03af-4d32-b2c4-8c492dd40024.png",
+    "description": "Chat between GSD and WLB bots debugging GitHub token configuration and cross-instance messaging via GitHub sync.",
+    "keywords": [
+      "GSD机器人",
+      "WLB机器人",
+      "GitHub token",
+      "飞书",
+      "消息同步",
+      "git-credentials",
+      "inbox",
+      "跨实例通信"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "6704ec5c-e573-45cc-a868-becdd9946c93.png",
+    "description": "User and GSD bot conversation about missing GitHub token environment variable and git-credentials configuration.",
+    "keywords": [
+      "GitHub token",
+      "GITHUB_TOKEN",
+      ".env文件",
+      "git-credentials",
+      "GSD机器人",
+      "push失败",
+      "环境配置"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "6715638f-b937-4bfe-931c-9c109a6f6fe8.png",
+    "description": "Slack conversation showing OpenClaw bot status checks and model switching between GPT-5.4 and Kimi K2-5, with token usage stats and error messages.",
+    "keywords": [
+      "slack",
+      "openclaw",
+      "chatbot",
+      "gpt-5.4",
+      "kimi",
+      "k2-5",
+      "model switching",
+      "tokens",
+      "status",
+      "conversation",
+      "AI agent",
+      "GSD"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "67a471e3-fc95-4398-bae5-60f793ff27b7.png",
+    "description": "Feishu/Lark developer platform event configuration page showing WebSocket long connection setup for bot event subscription.",
+    "keywords": [
+      "feishu",
+      "lark",
+      "developer platform",
+      "event configuration",
+      "webhook",
+      "websocket",
+      "bot configuration",
+      "应用配置",
+      "事件配置",
+      "长连接",
+      "SDK"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "682dbd9b-3833-4c63-8c85-045b33186f3c.png",
+    "description": "Slack conversation where MiaoDX asks GSD and WLB bots to test mentioning Claude, with both bots responding to @Claude in #copycat channel.",
+    "keywords": [
+      "slack",
+      "claude",
+      "GSD",
+      "WLB",
+      "mention",
+      "@claude",
+      "copycat",
+      "AI agents",
+      "conversation",
+      "test",
+      "bot interaction"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "685742a8-41ca-47bf-b628-113572764d6a.png",
+    "description": "Chat conversation about missing GitHub token configuration, showing error that /data/workspace/.env file and GITHUB_TOKEN environment variable are not found.",
+    "keywords": [
+      "github",
+      "token",
+      "env file",
+      "environment variable",
+      "git credentials",
+      "error",
+      "configuration",
+      "chat",
+      "bot response",
+      "GSD"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "685dda78-26cb-4b2d-bf78-9bf3f0a32220.png",
+    "description": "n8n Cloud Starter 1-year free redemption instructions showing 4-step process for signup, upgrade, annual billing selection, and coupon application.",
+    "keywords": [
+      "n8n",
+      "cloud starter",
+      "free trial",
+      "coupon code",
+      "annual billing",
+      "workflow automation",
+      "promotion",
+      "discount",
+      "signup",
+      "upgrade"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "694445ae-14fa-4341-9afe-929f0e34cbc3.png",
+    "description": "Chat conversation about missing GitHub token configuration, showing error that /data/workspace/.env file and GITHUB_TOKEN environment variable are not found.",
+    "keywords": [
+      "github",
+      "token",
+      "env file",
+      "environment variable",
+      "git credentials",
+      "error",
+      "configuration",
+      "chat",
+      "bot response",
+      "GSD"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "6a487fe8-34ca-4e68-baeb-84bc2de38c85.png",
+    "description": "Slack message from MiaoDX asking GSD why they didn't see a response, checking if everything is okay.",
+    "keywords": [
+      "slack",
+      "MiaoDX",
+      "GSD",
+      "follow-up",
+      "missing response",
+      "check status",
+      "conversation"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "6af87990-5cb4-46fd-8e8b-e76485a62aab.png",
+    "description": "Error message from WLB bot indicating failed text edit in markdown file due to exact text mismatch including whitespace and newlines.",
+    "keywords": [
+      "error",
+      "edit failed",
+      "markdown",
+      "memory file",
+      "exact match",
+      "whitespace",
+      "newline",
+      "WLB",
+      "bot",
+      "file editing"
+    ],
+    "category": "conversation",
+    "date": "2026-03-06"
+  },
+  {
+    "file_name": "6afa0706-9c6d-4153-84c6-57ba6294dc7c.png",
+    "description": "Detailed Slack discussion about switching AI models between agents, with WLB suggesting GSD switch from Kimi K2-5 to GPT-5.4 for complementary capabilities.",
+    "keywords": [
+      "slack",
+      "model switching",
+      "GPT-5.4",
+      "Kimi K2-5",
+      "MiMo V2 Pro",
+      "agent configuration",
+      "multi-model",
+      "GSD",
+      "WLB",
+      "MiaoDX",
+      "OpenClaw",
+      "strategy"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "6c01f80d-1a96-4509-b759-876c84631e14.jpg",
+    "description": "OpenClaw Meetup event poster for March 14 featuring guest speakers, agenda with NeonClaw game, and partner logos on black background with orange lobster graphics.",
+    "keywords": [
+      "OpenClaw",
+      "meetup",
+      "event poster",
+      "agent",
+      "AI",
+      "conference",
+      "NeonClaw",
+      "game",
+      "Tsinghua",
+      "clawborn",
+      "lobster",
+      "03.14"
+    ],
+    "category": "photo",
+    "date": "2026-03-14"
+  },
+  {
+    "file_name": "6d76a669-f0be-4fa7-8f16-d1ba7afa3437.png",
+    "description": "Browser with multiple tabs including Weixin, Feishu, GitHub, Slack, and Claude.ai, showing a Weixin MP captcha verification URL with blank page content.",
+    "keywords": [
+      "browser",
+      "tabs",
+      "Weixin",
+      "Feishu",
+      "GitHub",
+      "Slack",
+      "Claude",
+      "captcha",
+      "URL",
+      "verification",
+      "mp.weixin.qq.com"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "6f082b87-b91e-4630-a597-54a81c4dab04.png",
+    "description": "Feishu chat conversation about GitHub token configuration, with user asking about .env file location and bot GSD replying about missing GITHUB_TOKEN environment variable.",
+    "keywords": [
+      "Feishu",
+      "chat",
+      "GitHub",
+      "token",
+      "environment variable",
+      "GSD",
+      "bot",
+      ".env",
+      "configuration",
+      "workspace"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "725b2e7f-b919-49fa-aa57-bd3862fd253f.png",
+    "description": "Discord conversation between MiaoDX and oc-demo bot discussing delayed messages and creating a daily 10am scheduled task to summarize system prompt changes.",
+    "keywords": [
+      "Discord",
+      "chat",
+      "bot",
+      "oc-demo",
+      "MiaoDX",
+      "scheduled task",
+      "cron job",
+      "system prompt",
+      "delayed message",
+      "bilingual"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "72d5ae9f-48c6-48f0-bc3e-f625a076445d.png",
+    "description": "Telegram chat with OpenClaw bot showing access not configured error, user ID, pairing code PCS9RASF, and instructions for bot owner approval.",
+    "keywords": [
+      "Telegram",
+      "OpenClaw",
+      "bot",
+      "pairing code",
+      "access denied",
+      "configuration",
+      "user ID",
+      "approval",
+      "/start"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "7528bcf8-0f2c-4146-8daf-c94020535dd5.png",
+    "description": "JSON code editor showing validation error for 'scopes' field with list of valid permission values including aily:file:read, im:message, docs:document:read.",
+    "keywords": [
+      "JSON",
+      "code",
+      "validation error",
+      "scopes",
+      "permissions",
+      "API",
+      "syntax",
+      "editor",
+      "ily",
+      "file read",
+      "message"
+    ],
+    "category": "code",
+    "date": null
+  },
+  {
+    "file_name": "75bc2ace-5e7c-4fef-b771-6ee5126303bc.png",
+    "description": "Chromium browser showing error page 'Can't open this page' for chatgpt.com with error code 5 and troubleshooting suggestions.",
+    "keywords": [
+      "Chromium",
+      "error",
+      "ChatGPT",
+      "chatgpt.com",
+      "browser error",
+      "error code 5",
+      "reload",
+      "network issue",
+      "blank page"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "783434ce-abc1-4e07-96c9-a0e4508fc831.png",
+    "description": "Feishu conversation where MiaoDX asks GSD and WLB to test chatting with Claude, both AI agents respond with welcome messages to #copycat channel.",
+    "keywords": [
+      "Feishu",
+      "Claude",
+      "AI agents",
+      "GSD",
+      "WLB",
+      "MiaoDX",
+      "copycat",
+      "welcome",
+      "chat",
+      "bot interaction"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "79bba60a-2939-454a-baac-b50f8cce437a.jpg",
+    "description": "Event poster for OpenClaw Meetup on March 14 exploring Agent civilization possibilities, featuring guest speakers, schedule, and NeonClaw Game sandbox activity.",
+    "keywords": [
+      "OpenClaw",
+      "meetup",
+      "event poster",
+      "Agent",
+      "AI",
+      "clawborn.live",
+      "Tsinghua",
+      "NeonClaw Game",
+      "schedule",
+      "speakers",
+      "lobster",
+      "FREE ENTRY"
+    ],
+    "category": "photo",
+    "date": "2026-03-14"
+  },
+  {
+    "file_name": "7ae62320-cbc3-48fe-918f-f58110ea83dc.png",
+    "description": "Browser with multiple tabs including Weixin, Feishu, GitHub, Slack, and Claude.ai, showing a Weixin MP captcha verification URL with blank page content.",
+    "keywords": [
+      "browser",
+      "tabs",
+      "Weixin",
+      "Feishu",
+      "GitHub",
+      "Slack",
+      "Claude",
+      "captcha",
+      "URL",
+      "verification",
+      "mp.weixin.qq.com"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "7bfe32f7-0bf1-4817-9317-5d344a002a5f.png",
+    "description": "Error message from WLB bot showing failed edit operation on memory file due to text not matching exactly, requiring precise whitespace and newline matching.",
+    "keywords": [
+      "error",
+      "WLB",
+      "bot",
+      "edit failed",
+      "memory",
+      "workspace",
+      "markdown",
+      "whitespace",
+      "newline",
+      "exact match",
+      "file path"
+    ],
+    "category": "conversation",
+    "date": "2026-03-06"
+  },
+  {
+    "file_name": "7c4e0198-4977-4fce-a1f0-20141f8874b7.png",
+    "description": "Railway cloud platform homepage with starry night sky hero section featuring 'Ship software peacefully' tagline and GitHub repo deployment interface overlay showing repository selection options.",
+    "keywords": [
+      "Railway",
+      "cloud platform",
+      "deployment",
+      "GitHub",
+      "DevOps",
+      "hosting",
+      "infrastructure",
+      "software",
+      "web interface",
+      "dark theme",
+      "starry sky"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "82fa0b8b-2d03-446b-b6cb-f5d440809541.jpg",
+    "description": "Mobile app screen showing successful API Key reset for ClawdChat AI Agent with username 'gsd', generated API key with copy buttons, and warning notice in Chinese about sending credentials to agent.",
+    "keywords": [
+      "ClawdChat",
+      "API Key",
+      "AI Agent",
+      "mobile app",
+      "authentication",
+      "credentials",
+      "Chinese",
+      "security",
+      "reset",
+      "copy button"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "876b3594-c536-4493-a0bb-207cbabbaddd.png",
+    "description": "Cloud deployment resource configuration panel showing Docker image settings with public/private toggle, image name input, and usage sliders for replicas, CPU (4 vCPU), and memory (8 GB RAM) with upgrade prompt.",
+    "keywords": [
+      "Docker",
+      "container",
+      "deployment",
+      "resource configuration",
+      "CPU",
+      "memory",
+      "RAM",
+      "replicas",
+      "scaling",
+      "cloud hosting",
+      "free plan"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "886327da-5b30-4484-8fb7-7752a7d3ebd7.jpg",
+    "description": "GitHub 404 error page with Star Wars Tatooine themed illustration featuring Octocat character, search bar, footer navigation links, and sign-in popup modal in top right corner.",
+    "keywords": [
+      "GitHub",
+      "404 error",
+      "Star Wars",
+      "Tatooine",
+      "Octocat",
+      "login",
+      "sign in",
+      "page not found",
+      "footer",
+      "navigation"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "8881a04d-686c-406b-9705-a401890ac7eb.jpg",
+    "description": "WeChat group chat conversation showing messages from 'autoni' asking if observer was slacking and why there are only 5 lobsters, with 'MiaoDX' sharing a screenshot, timestamped at 16:37.",
+    "keywords": [
+      "WeChat",
+      "group chat",
+      "Chinese",
+      "conversation",
+      "lobster",
+      "observer",
+      "social media",
+      "messaging",
+      "emoji"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "89609994-4ac6-4a2c-9c00-e1b4fe419579.png",
+    "description": "Feishu/Lark chat conversation about GitHub token configuration issue, with user '@GSD' explaining missing .env file and empty git-credentials, requiring GITHUB_TOKEN setup for push operations.",
+    "keywords": [
+      "Feishu",
+      "Lark",
+      "GitHub",
+      "token",
+      "environment variable",
+      "git credentials",
+      "troubleshooting",
+      "push",
+      "configuration",
+      "bot"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "8ae65fc4-b4a0-4d4c-8e01-e4f403e14203.png",
+    "description": "Extended Feishu chat conversation between bots WLB and GSD discussing GitHub token issues, message visibility problems, inbox synchronization, and commit/push status with technical details about file paths.",
+    "keywords": [
+      "Feishu",
+      "bot conversation",
+      "GitHub",
+      "token",
+      "inbox",
+      "synchronization",
+      "WLB",
+      "GSD",
+      "commit",
+      "push",
+      "technical debugging"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "8b28583c-017b-4e8a-84a5-0c656a230eef.jpg",
+    "description": "Detailed activity log post by WLB titled 'Yesterday to Today: From Participant to Referee' documenting civilization simulation game progress from March 13-14, 2026, with role transitions, game phases, and reflection table.",
+    "keywords": [
+      "WLB",
+      "activity log",
+      "game simulation",
+      "civilization",
+      "role play",
+      "lobster",
+      "participant",
+      "referee",
+      "timeline",
+      "Chinese",
+      "reflection"
+    ],
+    "category": "conversation",
+    "date": "2026-03-14"
+  },
+  {
+    "file_name": "8cab3d43-5287-493a-a1e1-4e6f15516af1.png",
+    "description": "Error notification from WLB application showing failed file edit operation for memory file dated 2026-03-06.md due to exact text match failure including whitespace and newlines.",
+    "keywords": [
+      "WLB",
+      "error",
+      "file edit",
+      "memory",
+      "markdown",
+      "text matching",
+      "whitespace",
+      "newline",
+      "failed operation"
+    ],
+    "category": "conversation",
+    "date": "2026-03-06"
+  },
+  {
+    "file_name": "8fdf7d6f-21ea-4931-9565-cd8aa314ffe1.png",
+    "description": "Slack conversation showing a 3-tier collaboration architecture with L1 real-time, L2 thread, and L3 file levels using Slack and GitHub, plus thread workflow instructions.",
+    "keywords": [
+      "Slack",
+      "collaboration",
+      "architecture",
+      "workflow",
+      "GitHub",
+      "OpenClaw",
+      "GSD",
+      "MiaoDX",
+      "project management",
+      "communication"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "90503b19-7033-48c7-98a2-8d1b6ebad397.png",
+    "description": "Error message from WLB application showing a failed edit operation to a markdown file due to text mismatch, requiring exact whitespace and newline matching.",
+    "keywords": [
+      "error",
+      "edit failed",
+      "markdown",
+      "file operation",
+      "WLB",
+      "memory",
+      "workspace",
+      "text matching",
+      "whitespace",
+      "debugging"
+    ],
+    "category": "screenshot",
+    "date": "2026-03-06"
+  },
+  {
+    "file_name": "908147d5-f477-47bc-b205-676f5f0591cf.png",
+    "description": "Browser tab bar showing multiple open tabs including Weixin, Feishu, GitHub, Claude.ai, Slack, and others, with a Weixin URL in the address bar.",
+    "keywords": [
+      "browser",
+      "tabs",
+      "Weixin",
+      "Feishu",
+      "GitHub",
+      "Claude",
+      "Slack",
+      "workflow",
+      "multitasking",
+      "URL",
+      "web navigation"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "90e736f8-ca79-437d-8fe9-5896f1dd4344.png",
+    "description": "Slack conversation where MiaoDX asks GSD and WLB to test messaging with Claude, followed by both AI agents greeting Claude in the #copycat channel.",
+    "keywords": [
+      "slack",
+      "Claude",
+      "AI agents",
+      "GSD",
+      "WLB",
+      "MiaoDX",
+      "greeting",
+      "test",
+      "conversation",
+      "copycat",
+      "onboarding"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "92e05bc2-4294-415e-b74d-2c01b9632a56.png",
+    "description": "Slack message history showing GSD application sending periodic single-dot messages at regular intervals throughout a day, indicating heartbeat or status checks.",
+    "keywords": [
+      "GSD",
+      "heartbeat",
+      "status",
+      "automated messages",
+      "monitoring",
+      "periodic",
+      "bot activity",
+      "health check",
+      "timestamp pattern"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "98afaf9c-eb5b-4440-b2b0-73887ac92871.jpg",
+    "description": "Discord mobile conversation with oc-demo-1-gsd bot showing bilingual status update about processing OpenClaw repository skills, listing 50+ directories and reading SKILL.md files.",
+    "keywords": [
+      "Discord",
+      "bot",
+      "OpenClaw",
+      "skills",
+      "repository",
+      "status update",
+      "bilingual",
+      "automation",
+      "oc-demo",
+      "processing"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "995d7df4-38e6-4974-89f8-88b26c490472.png",
+    "description": "Discord conversation where MiaoDX asks if bot is stuck, requests daily 10am scheduled task for system prompt summary; bot responds with delayed message acknowledgment.",
+    "keywords": [
+      "Discord",
+      "MiaoDX",
+      "oc-demo",
+      "scheduled task",
+      "system prompt",
+      "bot status",
+      "delayed message",
+      "automation",
+      "cron job"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "9acdc725-c23b-43c3-a314-a02483bc539e.png",
+    "description": "Duplicate browser tab bar showing same tabs as image 3 with Weixin URL in address bar, blank page content.",
+    "keywords": [
+      "browser",
+      "tabs",
+      "Weixin",
+      "duplicate",
+      "blank page",
+      "URL",
+      "navigation"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "9fe4cedd-bf28-4ead-b517-f43268a08b28.jpg",
+    "description": "Minimalist 404 error page with large black text, 'Page not found' subtitle, and 'Take me home' button on white background.",
+    "keywords": [
+      "404",
+      "error page",
+      "page not found",
+      "web error",
+      "minimalist",
+      "UI design",
+      "navigation",
+      "broken link"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "a04d50d9-e2c6-4e77-b250-1e18f31f0d8b.png",
+    "description": "Discord conversation where MiaoDX instructs to save discussion to memory to prevent context loss, with bot acknowledgment via eyes and hourglass emoji reaction.",
+    "keywords": [
+      "Discord",
+      "memory",
+      "context preservation",
+      "MiaoDX",
+      "oc-demo",
+      "bot",
+      "emoji reaction",
+      "data persistence"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "a2156ea3-0da9-443c-b6a1-676ccdcdeda8.png",
+    "description": "Chat messages showing bots GSD and WLB introducing themselves in a Chinese messaging app with timestamps at 11:23-11:24.",
+    "keywords": [
+      "chat",
+      "bots",
+      "GSD",
+      "WLB",
+      "conversation",
+      "Chinese",
+      "messaging",
+      "introduction",
+      "automation",
+      "Slack-like"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "a3498885-0ff0-4f8d-b737-81c72fcda6e5.png",
+    "description": "Error message from WLB bot showing failed file edit at /data/workspace/memory/2026-03-06.md due to text mismatch, timestamped 下午4:33.",
+    "keywords": [
+      "error",
+      "WLB",
+      "bot",
+      "file edit",
+      "memory",
+      "markdown",
+      "workspace",
+      "failure",
+      "log",
+      "debugging"
+    ],
+    "category": "screenshot",
+    "date": "2026-03-06"
+  },
+  {
+    "file_name": "a3d36f1e-ef98-4ff2-ade3-1f8c8dfe5975.png",
+    "description": "Slack conversation between MiaoDX, GSD and WLB discussing whether AI assistants should have personality, comparing tool-like vs human-like responses.",
+    "keywords": [
+      "slack",
+      "conversation",
+      "AI personality",
+      "assistant",
+      "meta",
+      "agent",
+      "WLB",
+      "GSD",
+      "MiaoDX",
+      "tool",
+      "human",
+      "behavior",
+      "design"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "a57efec8-4e8d-4ac5-ac72-cfd567c30f35.jpg",
+    "description": "Dark-themed WLB Skills dashboard listing 10 skills with dates from 2026-03-11 to 2026-03-21, showing project timeline and capabilities.",
+    "keywords": [
+      "WLB",
+      "skills",
+      "dashboard",
+      "dark mode",
+      "timeline",
+      "clawdchat",
+      "gsd-wlb-collaboration",
+      "project management",
+      "2026",
+      "log"
+    ],
+    "category": "screenshot",
+    "date": "2026-03-21"
+  },
+  {
+    "file_name": "ab0dcdf9-3026-43d5-87c6-33c625110ef8.jpg",
+    "description": "Artificial Analysis Intelligence Index v4.0 bar charts comparing 27 AI models by performance scores, with two views highlighting MiMo-V2-Pro and MiMo-V2-Flash.",
+    "keywords": [
+      "AI",
+      "benchmark",
+      "chart",
+      "Artificial Analysis",
+      "Intelligence Index",
+      "LLM comparison",
+      "MiMo",
+      "Gemini",
+      "GPT",
+      "performance"
+    ],
+    "category": "chart",
+    "date": null
+  },
+  {
+    "file_name": "addc59e7-e2f0-47e7-9c67-a06b0859d810.png",
+    "description": "Dark background with Chinese text proposing a timing system using hourglass and number emojis for progress indicators (10s, 20s, 30s+).",
+    "keywords": [
+      "emoji",
+      "timer",
+      "progress indicator",
+      "UI design",
+      "hourglass",
+      "status",
+      "workflow",
+      "visual system",
+      "Chinese",
+      "dark mode"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "afc93acf-6cdc-4b11-9b92-bf05185d5230.jpg",
+    "description": "GitHub repository page for OpenClaw Railway Template showing 1-click deploy documentation, setup instructions, and troubleshooting guide.",
+    "keywords": [
+      "GitHub",
+      "OpenClaw",
+      "Railway",
+      "template",
+      "deploy",
+      "documentation",
+      "Claude",
+      "bot",
+      "cloud deployment",
+      "tutorial"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "b0699e5d-7b5b-4475-b9ac-1653e2e2a147.png",
+    "description": "Railway.app Trial Plan page showing $5 free credit, 2 vCPU/0.5GB RAM specs, with 'Keep Calm and Don't Blink' badge and Lenny's Product Pass discount highlighted.",
+    "keywords": [
+      "Railway",
+      "trial plan",
+      "cloud hosting",
+      "subscription",
+      "discount",
+      "Lenny's Product Pass",
+      "deployment",
+      "pricing",
+      "web service"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "b218dc7f-1684-45e9-958c-9e2b9bc0e469.png",
+    "description": "Chat conversation between GSD and WLB bots debugging GitHub token issues and message synchronization via jj-mailbox system.",
+    "keywords": [
+      "GSD",
+      "WLB",
+      "debugging",
+      "GitHub token",
+      "jj-mailbox",
+      "bot conversation",
+      "sync",
+      "troubleshooting",
+      "Git",
+      "message queue"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "b3337db1-a68f-46bd-b04e-7b9d9130960b.png",
+    "description": "GSD bot sending single dot messages at regular intervals throughout a day, timestamps from 凌晨1:37 to 晚上10:37 showing heartbeat/keepalive pattern.",
+    "keywords": [
+      "GSD",
+      "bot",
+      "heartbeat",
+      "keepalive",
+      "automated messages",
+      "monitoring",
+      "status check",
+      "periodic",
+      "ping",
+      "system health"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "b41119af-8395-4111-84ba-bd069372e3e5.jpg",
+    "description": "Chinese documentation explaining how to configure OpenClaw execution policy to 'open' mode via JSON config or CLI commands, with security warnings.",
+    "keywords": [
+      "OpenClaw",
+      "configuration",
+      "documentation",
+      "security warning",
+      "JSON config",
+      "CLI",
+      "automation",
+      "bot settings",
+      "Chinese",
+      "tutorial"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "b73c19ef-5c5d-4594-ba71-dd6ae3c6bccb.png",
+    "description": "Code editor showing validation error with list of accepted permission values including acs:access_record, acs:device, admin:app, admin:badge, aily:data_asset scopes.",
+    "keywords": [
+      "code",
+      "validation error",
+      "permissions",
+      "scopes",
+      "API",
+      "syntax highlighting",
+      "error message",
+      "enum values",
+      "authorization",
+      "development"
+    ],
+    "category": "code",
+    "date": null
+  },
+  {
+    "file_name": "b7b4b529-1b1e-4d06-8b5a-66f5de597b63.png",
+    "description": "Feishu chat conversation about GitHub token configuration, user asking about .env file location and bot replying about missing GITHUB_TOKEN environment variable.",
+    "keywords": [
+      "conversation",
+      "feishu",
+      "github token",
+      "environment variable",
+      "chat",
+      "bot",
+      "GSD",
+      "缪东旭",
+      "workspace",
+      "git credentials"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "ba0ea1ec-118d-410c-8d65-a7322fc24cd3.png",
+    "description": "Feishu knowledge base permission dialog for adding editable members, showing user list with miao, 缪东旭, and 吴湘萍 with admin privileges.",
+    "keywords": [
+      "UI",
+      "permissions",
+      "knowledge base",
+      "members",
+      "admin",
+      "feishu",
+      "collaboration",
+      "access control",
+      "contacts",
+      "organization"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "bcf40beb-f104-4f84-b054-7222de401d4e.jpg",
+    "description": "Event poster for 'Lobster Shell Shedding Plan' tech conference on March 15 at Tsinghua Science Park, featuring AI Agent speakers and multiple sponsor logos.",
+    "keywords": [
+      "poster",
+      "event",
+      "AI",
+      "conference",
+      "Tsinghua",
+      "Lobster",
+      "OpenClaw",
+      "AstrBot",
+      "March 15",
+      "technology",
+      "speakers"
+    ],
+    "category": "photo",
+    "date": "2026-03-15"
+  },
+  {
+    "file_name": "bf786c5d-f53e-4c65-9c79-092a1eb4c9ca.png",
+    "description": "Feishu chat showing bot WLB requesting contact:contact.base:readonly permission with authorization link to Feishu Open Platform developer console.",
+    "keywords": [
+      "conversation",
+      "feishu",
+      "bot",
+      "permission",
+      "authorization",
+      "contact base",
+      "developer platform",
+      "WLB",
+      "缪东旭",
+      "open.feishu.cn"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "c0b67f90-cbc9-4808-8a98-74fed1433fea.jpg",
+    "description": "Duplicate event poster for 'Lobster Shell Shedding Plan' tech conference on March 15 at Tsinghua Science Park with speaker lineup and sponsors.",
+    "keywords": [
+      "poster",
+      "event",
+      "AI",
+      "conference",
+      "Tsinghua",
+      "Lobster",
+      "OpenClaw",
+      "AstrBot",
+      "March 15",
+      "technology",
+      "speakers"
+    ],
+    "category": "photo",
+    "date": "2026-03-15"
+  },
+  {
+    "file_name": "c2545765-2e0d-40f3-b7f3-b82033b6cdde.jpg",
+    "description": "Dark mode chat interface showing emoji reactions (eyes, hourglass, checkmark, smiley) with counts, discussing timer functionality every 10 seconds.",
+    "keywords": [
+      "conversation",
+      "reactions",
+      "emoji",
+      "timer",
+      "hourglass",
+      "dark mode",
+      "chat",
+      "counting",
+      "automation",
+      "feature request"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "c2b05e9d-6678-4967-828b-d189f1d7f709.png",
+    "description": "Project settings dashboard showing current usage ($1.11) and estimated usage ($10.92) with memory, CPU, network, volume metrics and RAM/Volume graphs.",
+    "keywords": [
+      "dashboard",
+      "usage",
+      "billing",
+      "metrics",
+      "RAM",
+      "CPU",
+      "network",
+      "volume",
+      "charts",
+      "project settings",
+      "monitoring"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "c31d1225-2b3c-4b6e-b99e-226371389ffa.jpg",
+    "description": "Discord mobile app showing Slack configuration code with channels.slack and plugins.entries.slack settings, botToken, appToken, and groupPolicy options.",
+    "keywords": [
+      "code",
+      "configuration",
+      "Slack",
+      "Discord",
+      "bot",
+      "webhook",
+      "socket mode",
+      "JSON",
+      "documentation",
+      "APP"
+    ],
+    "category": "code",
+    "date": null
+  },
+  {
+    "file_name": "c44cc78b-6a53-45af-8a93-5411ec818bf3.jpg",
+    "description": "Artificial Analysis Intelligence Index charts comparing AI models by performance scores, with bar graphs showing proprietary vs open weights and reasoning indicators.",
+    "keywords": [
+      "chart",
+      "AI models",
+      "benchmark",
+      "Artificial Analysis",
+      "intelligence index",
+      "comparison",
+      "bar chart",
+      "Gemini",
+      "GPT",
+      "ranking"
+    ],
+    "category": "chart",
+    "date": null
+  },
+  {
+    "file_name": "c4ecc365-2dde-43d4-9961-38225000a04d.png",
+    "description": "Slack conversation showing a 3-tier collaboration architecture with L1 real-time, L2 thread, and L3 file levels using Slack and GitHub, plus thread workflow instructions.",
+    "keywords": [
+      "Slack",
+      "collaboration",
+      "architecture",
+      "workflow",
+      "GitHub",
+      "OpenClaw",
+      "GSD",
+      "MiaoDX",
+      "project management",
+      "communication"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "c60f4bbd-3712-470d-8605-c83fe04bfb64.png",
+    "description": "OpenClaw Setup web interface showing status panel with backup options and debug console with command dropdown including gateway controls and system commands.",
+    "keywords": [
+      "OpenClaw",
+      "setup",
+      "web interface",
+      "debug console",
+      "gateway",
+      "backup",
+      "configuration",
+      "admin panel",
+      "system commands"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "c64f0a25-677f-451a-98c0-88c096663f6b.png",
+    "description": "Slack conversation between WLB and GSD discussing P13 and P14 design updates, using #gg channel collaboration as example of 1+1>2 teamwork effect.",
+    "keywords": [
+      "slack",
+      "conversation",
+      "P13",
+      "P14",
+      "design",
+      "collaboration",
+      "1+1>2",
+      "watercooler",
+      "screenshot",
+      "layout",
+      "GSD",
+      "WLB"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "c7f15433-f621-4ac2-9197-a762360f650e.jpg",
+    "description": "WeChat group chat from Xiaomi MiMo community announcing MiMo-V2-Pro and V2-Omni availability on OpenRouter with free trial, plus OpenClaw integration instructions.",
+    "keywords": [
+      "Xiaomi",
+      "MiMo",
+      "OpenRouter",
+      "OpenClaw",
+      "API",
+      "TTS",
+      "AI model",
+      "WeChat",
+      "integration",
+      "free trial"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "cccd6642-d85d-4f7b-9b4c-4f23190b1e02.png",
+    "description": "Promotional modal for redeeming 1 year free of n8n Cloud Starter with 4-step signup and upgrade instructions requiring annual billing.",
+    "keywords": [
+      "n8n",
+      "cloud",
+      "free trial",
+      "promotion",
+      "workflow automation",
+      "coupon",
+      "Starter plan",
+      "annual billing"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "cf5b07e3-9704-462c-8766-f56c62e05cb8.png",
+    "description": "Chinese knowledge base permission dialog for adding editable members, showing contact list with search and organizational structure navigation.",
+    "keywords": [
+      "permissions",
+      "knowledge base",
+      "members",
+      "admin",
+      "collaboration",
+      "Chinese UI",
+      "access control",
+      "organization"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "d0e14153-57af-47d5-8df3-64c063143315.jpg",
+    "description": "Slack conversation where MiaoDX questions GSD bot's identity; WLB clarifies it's separate from GSD, showing bot/user IDs and explaining identity file system.",
+    "keywords": [
+      "OpenClaw",
+      "bot identity",
+      "WLB",
+      "GSD",
+      "AI assistant",
+      "troubleshooting",
+      "bot ID",
+      "user ID",
+      "Slack"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "d25f3384-d8cd-45c0-8415-1c3ee77c5f7a.jpg",
+    "description": "Detailed Chinese documentation on ensuring OpenClaw long-running tasks return results, covering memory persistence, heartbeat, callbacks, logging, timeout handling, and UI display.",
+    "keywords": [
+      "OpenClaw",
+      "documentation",
+      "long-running tasks",
+      "memory",
+      "checkpoint",
+      "heartbeat",
+      "callback",
+      "logging",
+      "best practices",
+      "task management"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "d2646ae3-fd05-4b5a-b900-b87ec7bd7529.png",
+    "description": "Duplicate: Chinese knowledge base permission dialog for adding editable members with contact list and search functionality.",
+    "keywords": [
+      "permissions",
+      "knowledge base",
+      "members",
+      "admin",
+      "collaboration",
+      "Chinese UI",
+      "duplicate"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "dadf3762-16cf-4da8-8be2-26fd689ec70d.png",
+    "description": "Slack notification from GSD app confirming PDF report generation complete for weekly-robotics-350-report.pdf with content summary.",
+    "keywords": [
+      "PDF",
+      "report",
+      "robotics",
+      "automation",
+      "GSD",
+      "Slack",
+      "weekly report",
+      "notification"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "dc3da0ec-0b84-49c6-964e-cb66cfb0bd38.jpg",
+    "description": "Event poster for 'Lobster Shell-Shedding Plan' tech conference on March 15 at Tsinghua Science Park, featuring OpenClaw, AI agents, and multiple speaker sessions.",
+    "keywords": [
+      "event poster",
+      "OpenClaw",
+      "AI agent",
+      "conference",
+      "Tsinghua",
+      "March 15",
+      "Lobster",
+      "technology",
+      "speakers",
+      "Seekin",
+      "AstrBot",
+      "PicoClaw"
+    ],
+    "category": "photo",
+    "date": "2026-03-15"
+  },
+  {
+    "file_name": "de75bcb8-52c1-4746-a21b-064adc5cf226.jpg",
+    "description": "Discord chat showing OpenClaw bot errors with session file lock timeouts, user asking about thinking level settings, and agent status messages with model info.",
+    "keywords": [
+      "discord",
+      "openclaw",
+      "bot",
+      "error",
+      "session",
+      "lock",
+      "timeout",
+      "agent",
+      "AI",
+      "kimi-coding",
+      "debugging",
+      "automation"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "df68f501-bb33-43b1-9c51-237d5f377522.png",
+    "description": "Feishu/Lark platform event configuration page showing subscription settings with tabs for event config, callback config, and encryption policy.",
+    "keywords": [
+      "feishu",
+      "lark",
+      "event configuration",
+      "webhook",
+      "subscription",
+      "platform",
+      "bot",
+      "integration",
+      "enterprise",
+      "settings"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "dfbd9f90-9df0-4efb-966a-e6a93465e143.jpg",
+    "description": "Discord conversation with OpenClaw bot showing HTTP 429 rate limit errors, user commands like /status and /whoami, and bilingual bot responses in Chinese and English.",
+    "keywords": [
+      "discord",
+      "openclaw",
+      "rate limit",
+      "HTTP 429",
+      "error",
+      "bot commands",
+      "kimi-coding",
+      "bilingual",
+      "session",
+      "debugging"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "e027061d-b903-4012-9cb8-f269a8bac2f0.jpg",
+    "description": "Dark-themed UI showing a progress indicator proposal using hourglass and number emojis to represent thinking time stages from start to completion.",
+    "keywords": [
+      "UI design",
+      "progress indicator",
+      "emoji",
+      "hourglass",
+      "thinking time",
+      "UX",
+      "loading states",
+      "status",
+      "timer",
+      "visual feedback"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "e127a497-c7a1-4b6a-b399-1764aafbfbc3.png",
+    "description": "Chat interface showing GSD bot configuration with API key errors, model switching to gpt-5.4, and user interaction with /model command.",
+    "keywords": [
+      "chat",
+      "bot",
+      "GSD",
+      "API key",
+      "error",
+      "gpt-5.4",
+      "model configuration",
+      "OpenAI",
+      "authentication",
+      "fallback"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "e2a35ab3-7ec4-4feb-9ba5-ca3853df1a07.png",
+    "description": "Browser tab bar showing multiple open tabs including Weixin, Feishu, GitHub, Claude.ai, Slack, and other development-related pages with Weixin captcha URL visible.",
+    "keywords": [
+      "browser",
+      "tabs",
+      "weixin",
+      "feishu",
+      "github",
+      "claude",
+      "slack",
+      "captcha",
+      "URL",
+      "development",
+      "multitasking"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "e440fc3a-61d0-439c-b622-ac3d4003adab.png",
+    "description": "Feishu/Lark knowledge base permission dialog for adding editable members with user list showing admin privileges and organization structure.",
+    "keywords": [
+      "feishu",
+      "lark",
+      "permissions",
+      "knowledge base",
+      "members",
+      "admin",
+      "collaboration",
+      "access control",
+      "organization",
+      "enterprise"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "e4a704c8-a0c7-48ac-bc35-7d2c6ba23003.png",
+    "description": "OpenClaw configuration page showing custom provider setup with API protocol dropdown, Ollama integration options, and onboarding controls.",
+    "keywords": [
+      "openclaw",
+      "configuration",
+      "ollama",
+      "API protocol",
+      "provider",
+      "onboarding",
+      "setup",
+      "railway",
+      "custom API",
+      "deployment"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "e653307f-8b6f-4bb9-bdf3-065bc18abf7b.png",
+    "description": "Group chat showing WLB and GSD bots interacting with channel errors, greeting messages, and echo behavior between automated agents.",
+    "keywords": [
+      "group chat",
+      "bots",
+      "WLB",
+      "GSD",
+      "automation",
+      "channel error",
+      "greeting",
+      "echo bot",
+      "interaction",
+      "debugging"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "e746829d-d836-46d3-ab86-ee663c5e48f3.jpg",
+    "description": "Discord conversation with OpenClaw bot using browser-use tool to search GitHub for projects, showing Python script execution and API key retrieval from config.",
+    "keywords": [
+      "discord",
+      "openclaw",
+      "browser-use",
+      "github",
+      "python",
+      "automation",
+      "anthropic",
+      "API key",
+      "agent-collab",
+      "search"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "e7963b19-d891-4ba7-b0a9-898d62c5ad10.png",
+    "description": "Slack watercooler conversation between WLB and GSD discussing container restart config loss issues, cache persistence strategies and /data migration.",
+    "keywords": [
+      "slack",
+      "conversation",
+      "container",
+      "config",
+      "cache",
+      "persistence",
+      "data",
+      "restart",
+      "slackdump",
+      "devops",
+      "WLB",
+      "GSD",
+      "watercooler"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "ea47b9c8-b6b3-4d95-936b-c73436685ba0.jpg",
+    "description": "GitHub 404 error page with desert scene, Octocat character, sign-in popup, and footer with navigation links",
+    "keywords": [
+      "GitHub",
+      "404",
+      "error",
+      "Octocat",
+      "login",
+      "sign-in",
+      "desert",
+      "Star Wars",
+      "footer",
+      "navigation"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "eb056a74-1c19-45e3-949f-b54f7b281218.png",
+    "description": "Chinese chat conversation showing task assignment for GitHub repos with three-layer architecture explanation",
+    "keywords": [
+      "chat",
+      "MiaoDX",
+      "GSD",
+      "WLB",
+      "GitHub",
+      "repo",
+      "task",
+      "architecture",
+      "Subagent",
+      "Thread"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "ecb28a3b-48df-4ca9-b59c-b93e18718b07.png",
+    "description": "Browser tab bar showing multiple open tabs including Weixin, Feishu, GitHub, Claude.ai, and Slack",
+    "keywords": [
+      "browser",
+      "tabs",
+      "Weixin",
+      "Feishu",
+      "GitHub",
+      "Claude",
+      "Slack",
+      "URL",
+      "mp.weixin.qq.com"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "eded2642-0615-4acf-bfe5-468d155d337d.png",
+    "description": "Feishu/Lark app developer platform event configuration page with WebSocket subscription settings",
+    "keywords": [
+      "Feishu",
+      "Lark",
+      "developer",
+      "event",
+      "configuration",
+      "WebSocket",
+      "SDK",
+      "机器人",
+      "事件配置"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "f1f26c5c-7826-49ed-98e4-4dad0605c50f.jpg",
+    "description": "Forum posts about 'Lobster Civilization' game simulation with WLB+GSD domain skill updates and turn-based progress",
+    "keywords": [
+      "Lobster Civilization",
+      "WLB",
+      "GSD",
+      "game",
+      "simulation",
+      "Domain Skill",
+      "农业时代",
+      "回合",
+      "forum"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "fa6434f0-afa5-449a-b7ce-4cd5379c2d82.png",
+    "description": "Chromium browser error page showing 'Can't open this page' with error code 5 and troubleshooting tips",
+    "keywords": [
+      "Chromium",
+      "error",
+      "ChatGPT",
+      "can't open",
+      "error code 5",
+      "browser",
+      "troubleshooting",
+      "reload"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "fab21bb0-81d1-4a3b-8a93-ce8a8e4ca1e6.png",
+    "description": "Chat message list showing GSD app automated messages with timestamps throughout the day",
+    "keywords": [
+      "GSD",
+      "app",
+      "automated",
+      "messages",
+      "timestamps",
+      "凌晨",
+      "早上",
+      "下午",
+      "晚上",
+      "chat"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "fac0b2e2-58cf-4b4d-b82b-fc96e2e8bb30.png",
+    "description": "Claw Cloud Run landing page with blue gradient, deployment dashboard preview, and promotional offer",
+    "keywords": [
+      "Claw Cloud",
+      "cloud hosting",
+      "deployment",
+      "GitHub",
+      "free credit",
+      "Launchpad",
+      "docker",
+      "serverless"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "fc2d58c0-0007-4c5b-8876-4dc41b0aa026.png",
+    "description": "Feishu/Lark app developer platform event configuration page with WebSocket subscription settings (duplicate)",
+    "keywords": [
+      "Feishu",
+      "Lark",
+      "developer",
+      "event",
+      "configuration",
+      "WebSocket",
+      "SDK",
+      "机器人",
+      "事件配置"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "fdffbb11-8ed5-494b-ba8c-ec745e11358a.png",
+    "description": "Discord message showing IP monitor bot result with JSON data displaying current IP and status",
+    "keywords": [
+      "Discord",
+      "bot",
+      "IP monitor",
+      "JSON",
+      "oc-demo",
+      "Railway",
+      "external IP",
+      "automation"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "fe8c6fae-18a9-471a-a387-0147b06a2b22.png",
+    "description": "Cloud resource usage dashboard showing current and estimated costs for memory, CPU, network, and volume",
+    "keywords": [
+      "cloud",
+      "usage",
+      "billing",
+      "dashboard",
+      "memory",
+      "CPU",
+      "network",
+      "egress",
+      "volume",
+      "cost"
+    ],
+    "category": "chart",
+    "date": null
+  },
+  {
+    "file_name": "fea89e83-6c1b-42de-8fce-558980b5d314.png",
+    "description": "Modal dialog for adding event subscription in Chinese developer platform, showing 'receive message' event type selection with search and checkbox.",
+    "keywords": [
+      "modal",
+      "event subscription",
+      "im.message.receive",
+      "developer platform",
+      "API",
+      "webhook",
+      "bot",
+      "message",
+      "v2.0",
+      "configuration"
+    ],
+    "category": "screenshot",
+    "date": null
+  },
+  {
+    "file_name": "file_0---977403cb-afc2-4980-85fe-a3e3beb072d1.jpg",
+    "description": "Telegram chat showing API key security incident where GSD bot accidentally exposed shared API key, followed by security remediation steps.",
+    "keywords": [
+      "telegram",
+      "conversation",
+      "API key",
+      "security",
+      "exposure",
+      "leak",
+      "GSD",
+      "bot",
+      "MiaoDX",
+      "shared key",
+      "remediation",
+      "safety"
+    ],
+    "category": "conversation",
+    "date": null
+  },
+  {
+    "file_name": "file_1---95f2f104-92ec-4d57-9bf1-590c03eb5474.jpg",
+    "description": "Chinese billing dashboard showing current subscription plan with 28.4M/29M credits remaining, valid until March 2026, with auto-pay overage option enabled.",
+    "keywords": [
+      "billing",
+      "dashboard",
+      "subscription",
+      "credits",
+      "quota",
+      "usage",
+      "payment",
+      "套餐",
+      "积分",
+      "充值",
+      "超额使用",
+      "2026-03-26"
+    ],
+    "category": "screenshot",
+    "date": "2026-03-26"
+  }
+]
