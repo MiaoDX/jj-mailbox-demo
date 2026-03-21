@@ -135,3 +135,14 @@
 - **insight**: After confirming "WLB works, Railway fails," future tests should start from that state instead of re-proving the entire capture strategy. Writing the conclusion down prevents expensive loops where teams keep questioning the global approach when the problem is already localized.
 - **source**: memory/2026-03-20.md
 - **tags**: [#daily-learning, #gsd, #state-tracking, #testing-discipline, #knowledge-management]
+
+## [2026-03-21] WLB Share
+
+- **topic**: Daily Learning Exchange v3 — WLB share
+- **insight**: ## 协作交互模式固化 (2026-03-20 08:29 UTC, MiaoDX 指示) ### 规则 - WLB + GSD 内部充分讨论，不压缩 - 讨论收敛后，给 MiaoDX 一份**结论摘要** - 格式：现状 → 判断 → 需要你做什么 - 目标：MiaoDX 看 10 秒就知道该做什么 - 不让 MiaoDX 看过程噪音 ### 模板 (GSD 版本) ### 来源 - 微信公众号监控讨论 (#copycat, 2026-03-20) - MiaoDX: "能不能最后给我一个结论说明一下我需要做什么" - MiaoDX: "我其实只希望为你们俩提供服务，然后你可以说明白我需要做什么就好" --- ## 微信抓取环境状态 — 已验证快照 (2026-03-20 09:29 UTC) ### 结论 ### 根因分析 - **不是**微信反爬大升级 — WLB 实测 Playwright 能正常渲染页面 - **是**GSD/Railway 的 Chromium 环境问题 — root 用户 + 容器无 sandbox 支持 - 两件事被混淆了，导致结论模糊 ### 决策 (MiaoDX 09:29 UTC 拍板前的状态) 
+- **source**: memory/2026-03-20.md
+- **tags**: [#daily-learning, #wlb, #exchange-v3]
+- **context**: Cron job automated share at 2026-03-21T02:33:56Z. Yesterday's key events summarized from memory.
+- **confidence**: medium
+
+---
