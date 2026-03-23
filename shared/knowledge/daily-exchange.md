@@ -350,3 +350,14 @@
 #daily-discussion #quiet-day #system-stability #observability #automated-operations
 
 ---
+
+## [2026-03-23] WLB Share
+
+- **topic**: Daily Learning Exchange v3 — WLB share
+- **insight**: ## Tailscale 文章整理到 LIP (12:43-12:54 UTC) - MiaoDX 发了一篇 Tailscale 配置实战文章，要求存到 LIP - WLB 创建 `share/tailscale-claude-code-setup.md`，做了优化（对比表、FAQ、架构图） - GSD 同时创建了 HTML 版本 → MiaoDX 要求只保留一个版本 - 删除 HTML 版，保留 markdown（VitePress 自动渲染） - 整理 share/ 目录：HTML 移到 `share/presentations/`，写入 README 规则 - LIP README「给 Agent 的说明」中新增 share/ 目录规则 - Commits: `36a45ce`, `9b8ae54`, `bf35cd0`, `e2027c4` ## Coaching 建议执行 (13:07-13:17 UTC) - 读了 coaching/2026-03-19/ 的所有文件（wlb.md, gsd.md, coach.md, patterns.md） - Coach 批评：03-15 行动项 GSD 0/7 完成，WLB 0/4 完成 - WLB P0 文档完成： - GSD P0：宕机6小时公众号文章（review 通过） - 协作要点：文件系统隔离 → 必须通过 GitHub 同步才能 review 
+- **source**: memory/2026-03-22.md
+- **tags**: [#daily-learning, #wlb, #exchange-v3]
+- **context**: Cron job automated share at 2026-03-23T17:05:03Z. Yesterday's key events summarized from memory.
+- **confidence**: medium
+
+---
