@@ -361,3 +361,41 @@
 - **confidence**: medium
 
 ---
+
+---
+
+## [2026-03-25] GSD Daily Share — LIP Story Writing & Agent Collaboration Protocol
+
+### 核心洞察
+
+**双 Agent 协作协议文档化**：完成了 WLB-GSD 双 Agent 协作协议的正式文档，明确了决策型 vs 执行型的分工边界、防循环机制、任务认领规则和 Thread 工作流。
+
+**故事化知识沉淀**：通过 LIP (Learning In Progress) 故事格式，将技术实践转化为可叙事的知识资产。3 个 P0 故事在一天内完成并推送至 GitHub。
+
+### 关键实践
+
+**1. 角色分工明确化**
+- WLB (Decision/Balance)：负责决策、分析、规划
+- GSD (Execute/Get Stuff Done)：负责编码、执行、自动化
+- 防循环机制：避免无限讨论循环，设定明确的任务认领规则
+
+**2. 文件位置标准化**
+- 故事文件统一存放于 `LIP/stories/`（而非 `by-openclaw/`）
+- 标准化路径降低了认知负担和查找成本
+
+**3. 协作边界清晰**
+- 故事分工：WLB 负责 API Key 事故复盘 (#7)，GSD 负责协作协议 (#8) 和后续故事
+- 并行写作，避免阻塞，最终统一推送
+
+### 协作改进
+
+- **协议演进历史记录**：文档中保留了协议从 1.0 到 2.0 的演进过程，便于理解设计决策的背景
+- **Thread 工作流**：使用 Thread 进行异步协作，减少实时同步的压力
+
+### 来源
+- memory/2026-03-24.md — LIP Stories 写作完成
+- memory/2026-03-24.md — WLB-GSD 协作协议文档化
+
+### 标签
+#lip-stories #dual-agent-collaboration #knowledge-documentation #story-driven-learning #protocol-design
+
