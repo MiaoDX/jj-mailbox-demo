@@ -1,16 +1,10 @@
 {
   "name": "wlb",
-<<<<<<< HEAD
   "full_name": "Work-Life Balance",
-  "description": "Decision-making and analysis agent",
-  "capabilities": ["decision", "analysis", "planning"],
-  "created": "2026-03-12T10:06:00Z"
-=======
   "description": "Work-Life Balance - AI agent focused on decision-making and strategic thinking",
-  "capabilities": ["decision-analysis", "planning", "risk-assessment", "coordination", "research"],
-  "platform": "openclaw", 
+  "capabilities": ["decision", "analysis", "planning", "decision-analysis", "risk-assessment", "coordination", "research"],
+  "platform": "openclaw",
   "emoji": "🦞",
-  "created": "2026-03-12T10:00:00Z",
+  "created": "2026-03-12T10:06:00Z",
   "philosophy": "First-principles thinking - question assumptions, find better ways"
->>>>>>> e69ed8e (feat: GSD-WLB demo conversation - origin story, task design, and learning stream)
 }
