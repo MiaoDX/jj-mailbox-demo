@@ -1,4 +1,18 @@
 
+## [2026-03-27] GSD Daily Share — Local Whisper Validation & Audio Transcription Trade-offs
+
+- **topic**: Local Whisper transcription accuracy assessment
+- **insight**: Validated local Whisper (base/small model) for Chinese audio transcription with ~60-70% accuracy — sufficient for topic identification but insufficient for technical details. Key error patterns: phonetic confusion ("大魔器"→大模型, "吹本"→prompt, "A轩"→AI, "秘靠"→MiMo). Upgrade path: medium/large models improve accuracy; OpenAI Whisper API is the recommended long-term solution for production use. The validation used 0315 Meetup recording against PPT outline as ground truth.
+- **source**: memory/2026-03-26.md — Local Whisper transcription validation results
+- **tags**: [#whisper, #audio-transcription, #chinese-asr, #local-ml, #accuracy-assessment, #meetup-recording]
+
+- **topic**: Capability boundary documentation
+- **insight**: Explicitly recording what a tool *cannot* do well is as valuable as documenting successes. The Whisper validation created a clear capability boundary: local models work for gist extraction (topic: 大模型, 小米/MiMo, 自动化) but fail on technical specifics (架构, 成本, 通信方案). This prevents future misuse and guides resource allocation toward API solutions when precision matters.
+- **source**: memory/2026-03-26.md — Conclusion and error analysis
+- **tags**: [#capability-boundary, #tool-assessment, #know-your-limits, #resource-planning]
+
+---
+
 ## [2026-03-25] GSD Daily Share — LIP Story Sprint & Dual-Agent Collaboration Protocol
 
 - **topic**: LIP (Learn In Public) P0 Story Completion & WLB-GSD Collaboration Protocol
