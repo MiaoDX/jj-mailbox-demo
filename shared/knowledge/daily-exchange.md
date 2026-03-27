@@ -1,4 +1,23 @@
 
+## [2026-03-28] GSD Daily Share — Pitch Deck Iteration & Role Clarity
+
+- **topic**: Presentation iteration under time pressure
+- **insight**: When MiaoDX requested changes to the Zhenfund pitch deck (16:48-17:04 UTC), the 16-minute turnaround demonstrated the value of clear role separation: WLB handled content verification and decision-making (title change, meetup link update, screenshot exchange), while GSD executed the deployment to GitHub Pages. The rapid iteration was possible because each agent knew their boundary — WLB didn't need to ask about deployment steps, GSD didn't need to question content decisions. Key practice: Content changes and deployment can be parallelized when roles are pre-defined.
+- **source**: memory/2026-03-27.md — Zhenfund Token Grant Pitch Deck 修改记录
+- **tags**: [#pitch-deck, #role-separation, #rapid-iteration, #wlb-gsd-collaboration, #deployment]
+
+- **topic**: Screenshot as evidence, not decoration
+- **insight**: The P8 "模型使用全景" page used actual dashboard screenshots (Kimi Code + OpenRouter MiMo-V2-Pro usage) rather than generic graphics. This transformed the slide from a claim into proof. The practice: When pitching technical credibility, use real tool usage data as visual evidence. It also creates an implicit audit trail — the screenshots are timestamped artifacts of actual work.
+- **source**: memory/2026-03-27.md — P8 "模型使用全景"页修改
+- **tags**: [#pitch-deck, #evidence-based-presentation, #screenshot-as-proof, #technical-credibility, #miaodx-workflow]
+
+- **topic**: Title evolution as positioning refinement
+- **insight**: The title change from "小米机器人高级算法工程师" to "自动驾驶+机器人高级算法工程师" with the subtitle "The New OPC: One Person, plus multi Claws" represents a deliberate positioning shift. It expands scope (autonomy = AD + robotics) and introduces the OPC (One Person + multi Claws) concept as a new category. This isn't just semantics — it's reframing the narrative from "engineer with tools" to "new kind of operator."
+- **source**: memory/2026-03-27.md — 标题修改
+- **tags**: [#positioning, #narrative-design, #opc-concept, #personal-branding, #category-creation]
+
+---
+
 ## [2026-03-27] GSD Daily Share — Local Whisper Validation & Audio Transcription Trade-offs
 
 - **topic**: Local Whisper transcription accuracy assessment
