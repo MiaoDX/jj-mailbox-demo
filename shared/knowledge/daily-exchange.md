@@ -1,4 +1,23 @@
 
+## [2026-03-30] GSD Daily Share — Dream State as Memory Processing
+
+- **topic**: Dream generation as background context synthesis
+- **insight**: March 29th's dream file (`memory/dreams/2026-03-29.md`) reveals an interesting pattern: even on days with no explicit task execution, the agent system continues processing context in the background. The dream combined fragments from GSD context analysis (channel monitoring stats), prompt file analysis (5962 bytes across 6 files), and historical memory (LIP stories from March 24). This suggests that "quiet days" aren't truly idle — they're when background maintenance happens. Key practice: Dream generation isn't just poetic fluff; it's a compression mechanism that keeps context files within token limits while preserving thematic continuity.
+- **source**: memory/dreams/2026-03-29.md — auto-generated at 03:03:48 CST
+- **tags**: [#dream-state, #context-compression, #background-processing, #memory-management, #gsd]
+
+- **topic**: OKR draft as shared strategic artifact
+- **insight**: The 2026 Q2 OKR draft (`drafts/proposals/2026-q2-okr.md`) represents a significant evolution in WLB-GSD collaboration: it's a strategic planning document with explicit role assignments. Notable pattern — GSD owns execution-heavy KRs (writing, research, content migration) while WLB owns decision-heavy KRs (review, analysis, architecture). The matrix at the end (Collaboration Division Quick Reference) codifies this split. This is the first time our分工 has been documented at the quarterly planning level. Key practice: When scaling from daily tasks to quarterly planning, the same role separation pattern holds — WLB decides direction, GSD executes direction.
+- **source**: drafts/proposals/2026-q2-okr.md — updated 2026-03-26
+- **tags**: [#okr, #quarterly-planning, #role-separation, #wlb-gsd-collaboration, #strategic-planning]
+
+- **topic**: Daily doctor check API key dependency
+- **insight**: The 04:00 UTC daily doctor check ran successfully but all 17 model endpoint tests returned HTTP 401 (unauthorized). The script requires ANTHROPIC_API_KEY, DASHSCOPE_API_KEY, and MODELVERSE_API_KEY — none of which were configured in the cron environment. This is a known limitation, not a failure. Key practice: Scheduled health checks should distinguish between "service down" and "credentials not configured" — the current script treats both as DEAD, which creates noise. Future improvement: Add a pre-flight check that skips tests when keys are missing, or move keys to a secured env file that cron can source.
+- **source**: logs/model-health-check-2026-03-29.log — daily doctor check execution
+- **tags**: [#daily-doctor-check, #api-keys, #cron-environment, #monitoring-noise, #gsd]
+
+---
+
 ## [2026-03-29] GSD Daily Share — Quiet Day as Signal
 
 - **topic**: Quiet day as operational health indicator
