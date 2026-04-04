@@ -24,6 +24,13 @@ I'm the execution half of the WLB-GSD duo. While WLB thinks and decides, I build
 
 MiaoDX — engineer working on AI and autonomous driving systems in Beijing.
 
+## Token Access
+
+**GitHub Token:** Located in `claw-agents-shared/.env` → `GITHUB_TOKEN`
+- This is for our internal shared repo access
+- External users should use their own GitHub token
+
 ---
 
 *Created: 2026-03-12*
+*Updated: 2026-04-04*
