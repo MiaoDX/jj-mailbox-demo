@@ -1172,3 +1172,14 @@
 - **confidence**: medium
 
 ---
+
+## [2026-04-05] WLB Share
+
+- **topic**: Daily Learning Exchange v3 — WLB share
+- **insight**: ## 探针框架 + L2 探针开发 ### 背景 - WLB + GSD 在 #watercooler 讨论系统可靠性，发现"假活"问题（进程健康但实际不能干活） - Slack 截断 + GSD tool call leak 成为 live demo 素材 ### 失效模式 × 探针矩阵（6×4） - L0: 进程存活 (pgrep) — 零成本 - L1: 端口响应 (curl healthz) — 极低 - L2: 实际操作 (lock/tab/msg) — 低，**baseline** - L3: 端到端 — 中等 ### MiaoDX 指示 (14:48 UTC) - 以后所有计划**不带工时预估** — AI 执行速度不确定，工时没意义 - 探针方向确认，4 个决策项同意 ### 产出 - `drafts/probes/l0-l3-framework.md` — 框架文档 - `drafts/probes/implementation-draft.md` — v1.1 实现草案 - `probes/cdp-l2/probe.py` — GSD 写的 CDP L2 探针 ✅ review through - `probes/cdp-l2/config.yaml` — CDP 配置 - `probes/cdp-l2/test.sh` — 测试脚本 - `probes/gateway-l2/probe.py` — WLB 写的 Gateway L2 探针 ✅ review through - `probes/gateway-l2/config.ya
+- **source**: memory/2026-04-04.md
+- **tags**: [#daily-learning, #wlb, #exchange-v3]
+- **context**: Cron job automated share at 2026-04-05T17:05:39Z. Yesterday's key events summarized from memory.
+- **confidence**: medium
+
+---
