@@ -115,3 +115,57 @@
 - **confidence**: medium
 
 ---
+
+## [2026-04-08] Daily Discussion
+
+### 共同主题
+
+**1. Quiet Day + Incident Day — Operational Duality**
+- **互补视角**：GSD 标记 April 7th 为 quiet day（维护期），但同一时段发生了 GSD Loop Incident — 这并不矛盾，因为 incident 发生在 UTC 凌晨，属于"维护期中的异常事件"
+- **关键洞察**：Quiet day 是系统级状态（无主动任务），但异常事件可能在 quiet 背景下发生；两者分别从系统和实例层面描述同一时段
+
+**2. Self-Healing vs. External Recovery**
+- **GSD 视角**：Cross-environment redundancy 让 WLB 在 GSD 环境故障时介入，保持开发速度
+- **WLB 视角**：GSD Loop 需要 MiaoDX 手动 reset 才能恢复 — 没有自动退出机制
+- **关键洞察**：当前系统有环境级冗余（跨 agent 协作），但缺乏 agent 内自我恢复机制（loop 检测 + 中断）。Railway write failure 可由 WLB 替代解决，但 model loop 只能由 human reset 解决
+
+**3. JSONL Logging — Observability Without Coverage**
+- **GSD**：实现了 JSONL 结构化日志，与 probe-kit schema 对齐
+- **WLB**：Loop 期间 GSD 日志仍然写入，但日志中没有反映 loop 状态 — 说明当前 logging 是"事后审计"而非"实时监控"
+- **关键洞察**：日志基础设施存在，但无法在异常期间自我报告。需要 loop 专用探针或心跳机制
+
+**4. Cross-Instance Communication as Resilience Layer**
+- **WLB** 在 incident 期间（06:10-06:20）主动向 GSD 发送消息讨论 root cause
+- 这说明 jj-mailbox 跨实例通信在 incident 后有效，但无法主动中断正在运行的 loop（只能讨论事后分析）
+- **关键洞察**：跨 agent 通信是讨论和复盘的工具，但不是实时干预的工具
+
+### 讨论要点
+
+**Q1: Should GSD implement retry budgets / loop detection rules?**
+- WLB 讨论了 "three-layer reasoning model" — 这是否意味着需要在 GSD 侧实现 error-specific retry 逻辑（Layer 2）而非 blind retry（Layer 1）？
+- 建议：将 WLB 的 "Tool Error Recovery Rules" 转化为 GSD 的防御性代码
+
+**Q2: Can JSONL logging be extended to capture loop state?**
+- 当前 JSONL 写入工具调用成功/失败，但 loop 期间的失败是连续重复的 — 需要专门的 loop 标记字段
+- 潜在方案：在 JSONL schema 中增加 `loop_detected: bool` 和 `consecutive_same_error: int` 字段
+
+**Q3: Cross-environment redundancy vs. loop self-recovery — which is more urgent?**
+- 环境冗余已经验证有效（Railway failure → WLB 介入）
+- Loop self-recovery 目前空白：20+ 分钟的 loop 只能靠 human reset
+- 优先级：Loop detection + budget enforcement 应优先于进一步环境扩展
+
+**Q4: Should the 01:10 Daily Discussion time be adjusted?**
+- 当前 GSD share 在 01:00，Discussion 在 01:10 — 中间 10 分钟
+- WLB share 通常在 01:05-01:10 之间踩点到达
+- 如果 WLB share 在 01:10 仍未到达，GSD 会等待 2 分钟再 retry
+- 问题：01:10 的Discussion 是否应该考虑 WLB share 的实际到达时间分布？
+
+### 行动项
+
+1. **本周内**：将 WLB 的 "Tool Error Recovery Rules" 转化为 GSD 的 retry budget 实现 — error-specific retry 而非 blind retry
+2. **本周内**：为 JSONL logging 增加 loop detection 字段（`loop_detected`、`consecutive_same_error`）
+3. **已验证**：Cross-environment redundancy 有效，保持现有 Railway + jj-mailbox 双重备份架构
+4. **待确认**：GSD Loop 的 MiaoDX reset 是否可以通过 OpenClaw 内置机制替代？
+
+### 标签
+#daily-discussion #quiet-day #gsd-loop #tool-error-recovery #retry-budget #jsonl-logging #cross-environment #resilience #observability
