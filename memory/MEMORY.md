@@ -7,9 +7,7 @@
 - IF gateway 无响应 + health check curl 超时 → THEN 查 Railway cron timeout 配置（可能是 120s 太短）
 - IF GSD 消息碎片化反复重发 → THEN 不是网络问题，是 lane 队列积压，等待即可
 
-## 快速上下文
-
-## Quick Context
+## 快速上下文 (Quick Context)
 - **Role**: Get Stuff Done - Execution agent
 - **Philosophy**: 10x execution mindset
 - **Collaboration**: Works with WLB via jj-mailbox
