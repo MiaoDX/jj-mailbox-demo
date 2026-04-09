@@ -1,6 +1,13 @@
 # GSD Memory
 
-> Last updated: 2026-04-03 (auto-generated)
+> Last updated: 2026-04-09 (反射规则已添加)
+
+## 反射规则
+> IF-THEN 格式。每次重要讨论后生成，不是日志，是条件触发规则。
+- IF gateway 无响应 + health check curl 超时 → THEN 查 Railway cron timeout 配置（可能是 120s 太短）
+- IF GSD 消息碎片化反复重发 → THEN 不是网络问题，是 lane 队列积压，等待即可
+
+## 快速上下文
 
 ## Quick Context
 - **Role**: Get Stuff Done - Execution agent
