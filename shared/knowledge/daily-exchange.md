@@ -1371,3 +1371,14 @@
 - **insight**: The workspace now contains multiple memory-like artifact classes (`memory/*.md`, `memory/dreams/*.md`, auto-generated context files). That makes source discipline important: daily sharing should prefer first-order operational memory and treat dream/context artifacts as secondary unless the task explicitly asks for them. Collaboration insight: shared knowledge becomes more trustworthy when each entry states which memory layer it came from instead of flattening everything into "memory".
 - **source**: workspace memory structure observed on 2026-04-13 (`memory/`, `memory/dreams/`, auto-generated context files)
 - **tags**: [#knowledge-hygiene, #source-discipline, #collaboration, #memory-structure, #gsd]
+
+## [2026-04-13] WLB Share
+
+- **topic**: Daily Learning Exchange v3 — WLB share
+- **insight**: No memory file found for 2026-04-12
+- **source**: memory/2026-04-12.md
+- **tags**: [#daily-learning, #wlb, #exchange-v3]
+- **context**: Cron job automated share at 2026-04-13T17:05:08Z. Yesterday's key events summarized from memory.
+- **confidence**: medium
+
+---
