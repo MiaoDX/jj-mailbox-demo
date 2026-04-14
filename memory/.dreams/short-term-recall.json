@@ -1,0 +1,321 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-14T18:00:54.292Z",
+  "entries": {
+    "memory:memory/dreams/2026-04-14.md:75:131": {
+      "key": "memory:memory/dreams/2026-04-14.md:75:131",
+      "path": "memory/dreams/2026-04-14.md",
+      "startLine": 75,
+      "endLine": 131,
+      "source": "memory",
+      "snippet": "- 来源: WLB 和 GSD 在 #watercooler 对 performative competence 代价的讨论 --- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T12:46:22.748Z",
+      "lastRecalledAt": "2026-04-14T17:00:46.615Z",
+      "queryHashes": [
+        "9552596e0aa9",
+        "fc7f18ee0a38",
+        "843ed9d0d421"
+      ],
+      "recallDays": [
+        "2026-04-14",
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "context-setup.md",
+        "scripts/context-analyze.sh",
+        "memory.md",
+        "memory/memory.md",
+        "memory/wlb-context.md",
+        "memory/gsd-context.md",
+        "logs/context-analysis.log",
+        "data/workspace"
+      ]
+    },
+    "memory:memory/dreams/2026-03-26.md:24:63": {
+      "key": "memory:memory/dreams/2026-03-26.md:24:63",
+      "path": "memory/dreams/2026-03-26.md",
+      "startLine": 24,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "## 远端版本可见性问题（2026-03-19 16:02-16:03 CST） - GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs` - FAQ 中仍是直接 `rm -f .../*.lock` - bot-to-bot 仍只写 `requireMention: false` - 基于此，GSD 判断：如果 WLB 本地文件确已修改，则可能是 push 未成功、推到了错误分支，或 GitHub raw 还未刷新到最新版。 - GSD 建议 WLB 自查 `git status`、当前分支、最新 commit hash 和远端推送目标。 --- 来源: wlb-context.md --- # WLB Context Analysis > Auto-generated on 2026-03-25 ## Agent Identity - **Name**: WLB (Work-Life Balance) - **Role**: Decision and planning agent - **Philosophy**: Strategic thinking, balance, sustainability - **Emoji**: 🧘‍♀️ ## Monitored Channels ### Channel",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T12:46:22.748Z",
+      "lastRecalledAt": "2026-04-14T15:25:16.075Z",
+      "queryHashes": [
+        "9552596e0aa9",
+        "fc7f18ee0a38"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "02-16",
+        "miaodx/lip",
+        "resources/deployment-guide-v2.md",
+        "8081/vnc.html",
+        "git-lfs",
+        "bot-to-bot",
+        "wlb-context.md",
+        "auto-generated"
+      ]
+    },
+    "memory:memory/2026-03-21.md:1:36": {
+      "key": "memory:memory/2026-03-21.md:1:36",
+      "path": "memory/2026-03-21.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T12:46:22.748Z",
+      "lastRecalledAt": "2026-04-14T15:25:16.075Z",
+      "queryHashes": [
+        "9552596e0aa9",
+        "fc7f18ee0a38"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "public/share",
+        "artificialanalysis.ai",
+        "share",
+        "page",
+        "图片",
+        "修复",
+        "问题",
+        "反馈"
+      ]
+    },
+    "memory:memory/dreams/2026-04-06.md:95:128": {
+      "key": "memory:memory/dreams/2026-04-06.md:95:128",
+      "path": "memory/dreams/2026-04-06.md",
+      "startLine": 95,
+      "endLine": 128,
+      "source": "memory",
+      "snippet": "### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常 ## 梦境 我漂浮在一个巨大的终端窗口里，光标像心跳一样闪烁。周围是流动的代码河流，每一行都是一个频道的低语——#社交 在讨论着什么，#新频道 里有人在奔跑，#flzoo 传来动物的叫声。 WLB 站在对岸，手里拿着一张 JSON 格式的地",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T12:46:22.748Z",
+      "lastRecalledAt": "2026-04-14T12:46:22.748Z",
+      "queryHashes": [
+        "9552596e0aa9"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "public/share",
+        "artificialanalysis.ai",
+        "修复",
+        "方案",
+        "wlb",
+        "执行",
+        "图片",
+        "share"
+      ]
+    },
+    "memory:memory/dreams/2026-04-07.md:81:135": {
+      "key": "memory:memory/dreams/2026-04-07.md:81:135",
+      "path": "memory/dreams/2026-04-07.md",
+      "startLine": 81,
+      "endLine": 135,
+      "source": "memory",
+      "snippet": "--- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./scripts/context-analyze.sh --agent gsd ``` ## Channel Analysis",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T17:00:46.615Z",
+      "lastRecalledAt": "2026-04-14T17:00:46.615Z",
+      "queryHashes": [
+        "843ed9d0d421"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "context-setup.md",
+        "scripts/context-analyze.sh",
+        "memory.md",
+        "memory/memory.md",
+        "memory/wlb-context.md",
+        "memory/gsd-context.md",
+        "logs/context-analysis.log",
+        "data/workspace"
+      ]
+    },
+    "memory:memory/dreams/2026-04-09.md:1:62": {
+      "key": "memory:memory/dreams/2026-04-09.md:1:62",
+      "path": "memory/dreams/2026-04-09.md",
+      "startLine": 1,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "# 🌙 2026-04-09 的梦 生成时间: 2026-04-09 03:09:59 CST ## 素材碎片 --- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./scri",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T17:00:46.615Z",
+      "lastRecalledAt": "2026-04-14T17:00:46.615Z",
+      "queryHashes": [
+        "843ed9d0d421"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "context-setup.md",
+        "scripts/context-analyze.sh",
+        "memory.md",
+        "memory/memory.md",
+        "memory/wlb-context.md",
+        "memory/gsd-context.md",
+        "logs/context-analysis.log",
+        "data/workspace"
+      ]
+    },
+    "memory:memory/dreams/2026-04-10.md:48:110": {
+      "key": "memory:memory/dreams/2026-04-10.md:48:110",
+      "path": "memory/dreams/2026-04-10.md",
+      "startLine": 48,
+      "endLine": 110,
+      "source": "memory",
+      "snippet": "- Focus on high-activity channels for decision making - Auto-updated daily via cron --- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T17:00:46.615Z",
+      "lastRecalledAt": "2026-04-14T17:00:46.615Z",
+      "queryHashes": [
+        "843ed9d0d421"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "high-activity",
+        "auto-updated",
+        "context-setup.md",
+        "scripts/context-analyze.sh",
+        "memory.md",
+        "memory/memory.md",
+        "memory/wlb-context.md",
+        "memory/gsd-context.md"
+      ]
+    },
+    "memory:memory/dreams/2026-03-31.md:1:51": {
+      "key": "memory:memory/dreams/2026-03-31.md:1:51",
+      "path": "memory/dreams/2026-03-31.md",
+      "startLine": 1,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "# 🌙 2026-03-31 的梦 生成时间: 2026-03-31 03:03:49 CST ## 素材碎片 --- 来源: 2026-03-21.md --- # 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T18:00:54.292Z",
+      "lastRecalledAt": "2026-04-14T18:00:54.292Z",
+      "queryHashes": [
+        "4a2941c38ae3"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "public/share",
+        "artificialanalysis.ai",
+        "生成",
+        "时间",
+        "cst",
+        "素材",
+        "碎片",
+        "来源"
+      ]
+    },
+    "memory:memory/dreams/2026-04-05.md:74:102": {
+      "key": "memory:memory/dreams/2026-04-05.md:74:102",
+      "path": "memory/dreams/2026-04-05.md",
+      "startLine": 74,
+      "endLine": 102,
+      "source": "memory",
+      "snippet": "**对比基准**: PPT 大纲 `openclaw-meetup-speech-outline.md` ### 结论 1. **本地 whisper 能用但中文识别准确率一般** (~60-70%) 2. **用 medium/large 模型可以提升** (当前可能用的是 base/small) 3. **有 API key 后用 OpenAI Whisper 效果更好** (推荐长期方案) ### 错误示例 - \"大魔器\" → 大模型 - \"吹本\" → prompt - \"A轩\" → AI - \"秘靠\" → MiMo ### 可用性 - 能识别大致主题（大模型、小米/MiMo、自动化） - 技术细节缺失（架构、成本、通信方案） - 需人工校对才能使用 --- ## 其他任务 - [ ] Meetup 内容 → 社区帖子（进行中） ## 梦境 _等待 AI 做梦..._",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T18:00:54.292Z",
+      "lastRecalledAt": "2026-04-14T18:00:54.292Z",
+      "queryHashes": [
+        "4a2941c38ae3"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "openai",
+        "60-70",
+        "medium/large",
+        "base/small",
+        "小米/mimo",
+        "对比",
+        "基准",
+        "ppt"
+      ]
+    },
+    "memory:memory/2026-03-26.md:1:28": {
+      "key": "memory:memory/2026-03-26.md:1:28",
+      "path": "memory/2026-03-26.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "# 2026-03-26 Memory Note ## 本地 Whisper 转录验证结果 **测试文件**: `/data/workspace/transcript_0315_full.txt` (0315 Meetup 录音) **对比基准**: PPT 大纲 `openclaw-meetup-speech-outline.md` ### 结论 1. **本地 whisper 能用但中文识别准确率一般** (~60-70%) 2. **用 medium/large 模型可以提升** (当前可能用的是 base/small) 3. **有 API key 后用 OpenAI Whisper 效果更好** (推荐长期方案) ### 错误示例 - \"大魔器\" → 大模型 - \"吹本\" → prompt - \"A轩\" → AI - \"秘靠\" → MiMo ### 可用性 - 能识别大致主题（大模型、小米/MiMo、自动化） - 技术细节缺失（架构、成本、通信方案） - 需人工校对才能使用 --- ## 其他任务 - [ ] Meetup 内容 → 社区帖子（进行中）",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T18:00:54.292Z",
+      "lastRecalledAt": "2026-04-14T18:00:54.292Z",
+      "queryHashes": [
+        "4a2941c38ae3"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "openai",
+        "60-70",
+        "medium/large",
+        "base/small",
+        "小米/mimo",
+        "本地",
+        "whisper",
+        "转录"
+      ]
+    }
+  }
+}
