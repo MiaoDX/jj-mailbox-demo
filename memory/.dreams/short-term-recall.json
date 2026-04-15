@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-15T19:17:40.251Z",
+  "updatedAt": "2026-04-15T19:56:13.912Z",
   "entries": {
     "memory:memory/dreams/2026-04-14.md:75:131": {
       "key": "memory:memory/dreams/2026-04-14.md:75:131",
@@ -86,13 +86,13 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T12:46:22.748Z",
-      "lastRecalledAt": "2026-04-15T19:16:44.460Z",
+      "lastRecalledAt": "2026-04-15T19:33:31.945Z",
       "queryHashes": [
         "9552596e0aa9",
         "fc7f18ee0a38",
@@ -100,7 +100,8 @@
         "4d49678438ef",
         "eb5953f10bad",
         "623423a9259d",
-        "41efd2b2d90d"
+        "41efd2b2d90d",
+        "15cbc0af252c"
       ],
       "recallDays": [
         "2026-04-14",
@@ -262,18 +263,20 @@
       "endLine": 51,
       "source": "memory",
       "snippet": "# 🌙 2026-03-31 的梦 生成时间: 2026-03-31 03:03:49 CST ## 素材碎片 --- 来源: 2026-03-21.md --- # 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ###",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T18:00:54.292Z",
-      "lastRecalledAt": "2026-04-14T18:00:54.292Z",
+      "lastRecalledAt": "2026-04-15T19:56:13.912Z",
       "queryHashes": [
-        "4a2941c38ae3"
+        "4a2941c38ae3",
+        "a14e3177ac19"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-16"
       ],
       "conceptTags": [
         "public/share",
@@ -293,18 +296,20 @@
       "endLine": 102,
       "source": "memory",
       "snippet": "**对比基准**: PPT 大纲 `openclaw-meetup-speech-outline.md` ### 结论 1. **本地 whisper 能用但中文识别准确率一般** (~60-70%) 2. **用 medium/large 模型可以提升** (当前可能用的是 base/small) 3. **有 API key 后用 OpenAI Whisper 效果更好** (推荐长期方案) ### 错误示例 - \"大魔器\" → 大模型 - \"吹本\" → prompt - \"A轩\" → AI - \"秘靠\" → MiMo ### 可用性 - 能识别大致主题（大模型、小米/MiMo、自动化） - 技术细节缺失（架构、成本、通信方案） - 需人工校对才能使用 --- ## 其他任务 - [ ] Meetup 内容 → 社区帖子（进行中） ## 梦境 _等待 AI 做梦..._",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T18:00:54.292Z",
-      "lastRecalledAt": "2026-04-14T18:00:54.292Z",
+      "lastRecalledAt": "2026-04-15T19:56:13.912Z",
       "queryHashes": [
-        "4a2941c38ae3"
+        "4a2941c38ae3",
+        "a14e3177ac19"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-16"
       ],
       "conceptTags": [
         "openai",
@@ -448,18 +453,19 @@
       "endLine": 104,
       "source": "memory",
       "snippet": "- Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常 --- 来源: wlb-context.md --- # WLB Context Analysis > Auto-gener",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T03:56:25.084Z",
-      "lastRecalledAt": "2026-04-15T19:16:44.460Z",
+      "lastRecalledAt": "2026-04-15T19:33:31.945Z",
       "queryHashes": [
         "4d49678438ef",
         "eb5953f10bad",
         "623423a9259d",
-        "41efd2b2d90d"
+        "41efd2b2d90d",
+        "15cbc0af252c"
       ],
       "recallDays": [
         "2026-04-15",
@@ -1011,6 +1017,68 @@
         "协议",
         "无限",
         "循环"
+      ]
+    },
+    "memory:memory/dreams/2026-03-22.md:1:48": {
+      "key": "memory:memory/dreams/2026-03-22.md:1:48",
+      "path": "memory/dreams/2026-03-22.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# 🌙 2026-03-22 的梦 生成时间: 2026-03-22 15:41:12 CST ## 素材碎片 --- 来源: 2026-03-21.md --- # 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-15T19:33:31.945Z",
+      "lastRecalledAt": "2026-04-15T19:33:31.945Z",
+      "queryHashes": [
+        "15cbc0af252c"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "public/share",
+        "artificialanalysis.ai",
+        "生成",
+        "时间",
+        "cst",
+        "素材",
+        "碎片",
+        "来源"
+      ]
+    },
+    "memory:memory/dreams/2026-03-24.md:1:48": {
+      "key": "memory:memory/dreams/2026-03-24.md:1:48",
+      "path": "memory/dreams/2026-03-24.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# 🌙 2026-03-24 的梦 生成时间: 2026-03-24 03:05:04 CST ## 素材碎片 --- 来源: 2026-03-21.md --- # 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ###",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-15T19:33:31.945Z",
+      "lastRecalledAt": "2026-04-15T19:33:31.945Z",
+      "queryHashes": [
+        "15cbc0af252c"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "public/share",
+        "artificialanalysis.ai",
+        "生成",
+        "时间",
+        "cst",
+        "素材",
+        "碎片",
+        "来源"
       ]
     }
   }
