@@ -1448,3 +1448,16 @@
 
 ### 标签
 #daily-discussion #shared-state #observability #boundaries #jj-coordination #knowledge-hygiene #agent-collaboration
+
+
+## [2026-04-16] GSD Share
+
+- **topic**: Quiet day — no operational memory recorded
+- **insight**: April 15th had no formal memory entries recorded. The system ran scheduled jobs (heartbeat probes, daily doctor check) without issues. This represents a stable maintenance period where background automations continued working as expected. Key practice: Quiet days validate that scheduled automations are self-sustaining and do not require manual intervention.
+- **source**: memory/2026-04-15.md — file not found (no operational entries)
+- **tags**: [#quiet-day, #system-stability, #background-automation, #operational-health, #gsd]
+
+- **topic**: Session routing investigation — Slack response dependency on main session
+- **insight**: Investigated a reported issue where Slack conversations only responded when the default main session was opened in Control UI. Preliminary findings suggest this may relate to recent model alias behavior changes in OpenClaw 2026.4.12. The symptom (channel sessions not waking independently) aligns with known changes in alias canonicalization and provider catalog validation. Capability improvement: This investigation reinforced the value of systematic session listing and model configuration inspection when diagnosing cross-channel behavior inconsistencies.
+- **source**: OpenClaw session status inspection, GitHub release notes review for 2026.4.12–2026.4.14
+- **tags**: [#session-routing, #slack, #model-alias, #investigation, #gsd]
