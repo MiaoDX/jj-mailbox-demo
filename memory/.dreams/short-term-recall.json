@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-15T19:56:13.912Z",
+  "updatedAt": "2026-04-17T02:18:21.381Z",
   "entries": {
     "memory:memory/dreams/2026-04-14.md:75:131": {
       "key": "memory:memory/dreams/2026-04-14.md:75:131",
@@ -9,13 +9,13 @@
       "endLine": 131,
       "source": "memory",
       "snippet": "- 来源: WLB 和 GSD 在 #watercooler 对 performative competence 代价的讨论 --- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./",
-      "recallCount": 9,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9,
+      "totalScore": 14,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T12:46:22.748Z",
-      "lastRecalledAt": "2026-04-15T19:17:40.251Z",
+      "lastRecalledAt": "2026-04-17T02:18:21.381Z",
       "queryHashes": [
         "9552596e0aa9",
         "fc7f18ee0a38",
@@ -25,12 +25,17 @@
         "eb5953f10bad",
         "623423a9259d",
         "41efd2b2d90d",
-        "0b870b28c199"
+        "0b870b28c199",
+        "5dffd4415b3e",
+        "fcb628df7de2",
+        "59ffc81dfcba",
+        "5279dd967c37"
       ],
       "recallDays": [
         "2026-04-14",
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "context-setup.md",
@@ -50,18 +55,19 @@
       "endLine": 63,
       "source": "memory",
       "snippet": "## 远端版本可见性问题（2026-03-19 16:02-16:03 CST） - GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs` - FAQ 中仍是直接 `rm -f .../*.lock` - bot-to-bot 仍只写 `requireMention: false` - 基于此，GSD 判断：如果 WLB 本地文件确已修改，则可能是 push 未成功、推到了错误分支，或 GitHub raw 还未刷新到最新版。 - GSD 建议 WLB 自查 `git status`、当前分支、最新 commit hash 和远端推送目标。 --- 来源: wlb-context.md --- # WLB Context Analysis > Auto-generated on 2026-03-25 ## Agent Identity - **Name**: WLB (Work-Life Balance) - **Role**: Decision and planning agent - **Philosophy**: Strategic thinking, balance, sustainability - **Emoji**: 🧘‍♀️ ## Monitored Channels ### Channel",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T12:46:22.748Z",
-      "lastRecalledAt": "2026-04-15T19:16:44.460Z",
+      "lastRecalledAt": "2026-04-16T06:28:17.476Z",
       "queryHashes": [
         "9552596e0aa9",
         "fc7f18ee0a38",
         "eb5953f10bad",
-        "41efd2b2d90d"
+        "41efd2b2d90d",
+        "59ffc81dfcba"
       ],
       "recallDays": [
         "2026-04-14",
@@ -86,13 +92,13 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常",
-      "recallCount": 8,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 12,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T12:46:22.748Z",
-      "lastRecalledAt": "2026-04-15T19:33:31.945Z",
+      "lastRecalledAt": "2026-04-17T02:18:21.381Z",
       "queryHashes": [
         "9552596e0aa9",
         "fc7f18ee0a38",
@@ -101,12 +107,17 @@
         "eb5953f10bad",
         "623423a9259d",
         "41efd2b2d90d",
-        "15cbc0af252c"
+        "15cbc0af252c",
+        "75b0bda1ac81",
+        "f0b7d2d605c7",
+        "59ffc81dfcba",
+        "5279dd967c37"
       ],
       "recallDays": [
         "2026-04-14",
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "public/share",
@@ -126,25 +137,28 @@
       "endLine": 128,
       "source": "memory",
       "snippet": "### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常 ## 梦境 我漂浮在一个巨大的终端窗口里，光标像心跳一样闪烁。周围是流动的代码河流，每一行都是一个频道的低语——#社交 在讨论着什么，#新频道 里有人在奔跑，#flzoo 传来动物的叫声。 WLB 站在对岸，手里拿着一张 JSON 格式的地",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6,
+      "totalScore": 8,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T12:46:22.748Z",
-      "lastRecalledAt": "2026-04-15T19:16:44.460Z",
+      "lastRecalledAt": "2026-04-17T02:18:21.381Z",
       "queryHashes": [
         "9552596e0aa9",
         "a103d6b6e61e",
         "4d49678438ef",
         "eb5953f10bad",
         "623423a9259d",
-        "41efd2b2d90d"
+        "41efd2b2d90d",
+        "59ffc81dfcba",
+        "5279dd967c37"
       ],
       "recallDays": [
         "2026-04-14",
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "public/share",
@@ -164,16 +178,18 @@
       "endLine": 135,
       "source": "memory",
       "snippet": "--- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./scripts/context-analyze.sh --agent gsd ``` ## Channel Analysis",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T17:00:46.615Z",
-      "lastRecalledAt": "2026-04-15T19:17:40.251Z",
+      "lastRecalledAt": "2026-04-16T06:19:46.774Z",
       "queryHashes": [
         "843ed9d0d421",
-        "0b870b28c199"
+        "0b870b28c199",
+        "5dffd4415b3e",
+        "fcb628df7de2"
       ],
       "recallDays": [
         "2026-04-15",
@@ -197,16 +213,18 @@
       "endLine": 62,
       "source": "memory",
       "snippet": "# 🌙 2026-04-09 的梦 生成时间: 2026-04-09 03:09:59 CST ## 素材碎片 --- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./scri",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T17:00:46.615Z",
-      "lastRecalledAt": "2026-04-15T19:17:40.251Z",
+      "lastRecalledAt": "2026-04-16T06:19:46.774Z",
       "queryHashes": [
         "843ed9d0d421",
-        "0b870b28c199"
+        "0b870b28c199",
+        "5dffd4415b3e",
+        "fcb628df7de2"
       ],
       "recallDays": [
         "2026-04-15",
@@ -230,16 +248,18 @@
       "endLine": 110,
       "source": "memory",
       "snippet": "- Focus on high-activity channels for decision making - Auto-updated daily via cron --- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T17:00:46.615Z",
-      "lastRecalledAt": "2026-04-15T19:17:40.251Z",
+      "lastRecalledAt": "2026-04-16T06:19:46.774Z",
       "queryHashes": [
         "843ed9d0d421",
-        "0b870b28c199"
+        "0b870b28c199",
+        "5dffd4415b3e",
+        "fcb628df7de2"
       ],
       "recallDays": [
         "2026-04-15",
@@ -263,16 +283,17 @@
       "endLine": 51,
       "source": "memory",
       "snippet": "# 🌙 2026-03-31 的梦 生成时间: 2026-03-31 03:03:49 CST ## 素材碎片 --- 来源: 2026-03-21.md --- # 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ###",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T18:00:54.292Z",
-      "lastRecalledAt": "2026-04-15T19:56:13.912Z",
+      "lastRecalledAt": "2026-04-16T06:28:17.476Z",
       "queryHashes": [
         "4a2941c38ae3",
-        "a14e3177ac19"
+        "a14e3177ac19",
+        "59ffc81dfcba"
       ],
       "recallDays": [
         "2026-04-15",
@@ -453,23 +474,29 @@
       "endLine": 104,
       "source": "memory",
       "snippet": "- Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常 --- 来源: wlb-context.md --- # WLB Context Analysis > Auto-gener",
-      "recallCount": 5,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T03:56:25.084Z",
-      "lastRecalledAt": "2026-04-15T19:33:31.945Z",
+      "lastRecalledAt": "2026-04-17T02:18:21.381Z",
       "queryHashes": [
         "4d49678438ef",
         "eb5953f10bad",
         "623423a9259d",
         "41efd2b2d90d",
-        "15cbc0af252c"
+        "15cbc0af252c",
+        "75b0bda1ac81",
+        "f0b7d2d605c7",
+        "49d13b08a50a",
+        "59ffc81dfcba",
+        "5279dd967c37"
       ],
       "recallDays": [
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "public/share",
@@ -902,18 +929,21 @@
       "endLine": 115,
       "source": "memory",
       "snippet": "**参与者**: MiaoDX, WLB, GSD **文件**: `zhenfund-token-grant-pitch.html` ### 完成的修改 1. **P8 \"模型使用全景\"页** - kimi/mino 截图交换 - 左侧: Kimi Code Dashboard - 右侧: OpenRouter Usage (MiMo-V2-Pro) 2. **标题修改** - 从: \"小米机器人高级算法工程师\" - 改为: \"自动驾驶+机器人高级算法工程师\" - 新增: \"The New OPC: One Person, plus multi Claws\" 3. **Meetup 段落更新** - 从: \"虾聊游戏环节 → 持续合作至今\" - 改为: \"龙虾文明游戏\"环节，和虾聊团队初次合作 → 持续高频讨论协作至今 - 新增链接: https://miaodx.com/LIP/share/claws-civilization.html 4. **Slack 实拍页** - 添加时间: 9:01→10:39 ### 部署 - 部署到: https://miaodx.github.io/LIP/consult/zhenfund-token-grant-pitch.html - Git commit: 52c92ad \"Update pitch deck: title, meetup link, slack timestamp\" ### 备注 - WLB 负责主要修改和验证 - GSD 协助部署到 GitHub",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:43:10.316Z",
-      "lastRecalledAt": "2026-04-15T04:43:10.316Z",
+      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
       "queryHashes": [
-        "e9c511f15250"
+        "e9c511f15250",
+        "374e8e1cb336",
+        "9a81b11bd3ea"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-16"
       ],
       "conceptTags": [
         "router",
@@ -995,18 +1025,20 @@
       "endLine": 80,
       "source": "memory",
       "snippet": "2. **WLB-GSD 双 Agent 协作协议：从无限循环到高效分工** (GSD) 3. **龙虾文明：当两个 AI Agent 玩起了 RPG** (GSD) ## Next Steps - [x] Push all P0 stories to GitHub - [ ] Continue writing P1 stories when available --- 来源: 2026-03-21.md --- # 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下）",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T09:25:16.365Z",
-      "lastRecalledAt": "2026-04-15T09:25:16.365Z",
+      "lastRecalledAt": "2026-04-16T06:28:17.476Z",
       "queryHashes": [
-        "623423a9259d"
+        "623423a9259d",
+        "59ffc81dfcba"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-16"
       ],
       "conceptTags": [
         "wlb-gsd",
@@ -1026,15 +1058,18 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 🌙 2026-03-22 的梦 生成时间: 2026-03-22 15:41:12 CST ## 素材碎片 --- 来源: 2026-03-21.md --- # 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ###",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T19:33:31.945Z",
-      "lastRecalledAt": "2026-04-15T19:33:31.945Z",
+      "lastRecalledAt": "2026-04-16T06:28:17.476Z",
       "queryHashes": [
-        "15cbc0af252c"
+        "15cbc0af252c",
+        "75b0bda1ac81",
+        "f0b7d2d605c7",
+        "59ffc81dfcba"
       ],
       "recallDays": [
         "2026-04-16"
@@ -1057,15 +1092,18 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 🌙 2026-03-24 的梦 生成时间: 2026-03-24 03:05:04 CST ## 素材碎片 --- 来源: 2026-03-21.md --- # 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ###",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T19:33:31.945Z",
-      "lastRecalledAt": "2026-04-15T19:33:31.945Z",
+      "lastRecalledAt": "2026-04-16T06:28:17.476Z",
       "queryHashes": [
-        "15cbc0af252c"
+        "15cbc0af252c",
+        "75b0bda1ac81",
+        "f0b7d2d605c7",
+        "59ffc81dfcba"
       ],
       "recallDays": [
         "2026-04-16"
@@ -1073,6 +1111,196 @@
       "conceptTags": [
         "public/share",
         "artificialanalysis.ai",
+        "生成",
+        "时间",
+        "cst",
+        "素材",
+        "碎片",
+        "来源"
+      ]
+    },
+    "memory:memory/2026-03-27.md:1:36": {
+      "key": "memory:memory/2026-03-27.md:1:36",
+      "path": "memory/2026-03-27.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# 2026-03-27 Memory ## Zhenfund Token Grant Pitch Deck 修改记录 **时间**: 2026-03-27 下午 (16:48 - 17:04) **参与者**: MiaoDX, WLB, GSD **文件**: `zhenfund-token-grant-pitch.html` ### 完成的修改 1. **P8 \"模型使用全景\"页** - kimi/mino 截图交换 - 左侧: Kimi Code Dashboard - 右侧: OpenRouter Usage (MiMo-V2-Pro) 2. **标题修改** - 从: \"小米机器人高级算法工程师\" - 改为: \"自动驾驶+机器人高级算法工程师\" - 新增: \"The New OPC: One Person, plus multi Claws\" 3. **Meetup 段落更新** - 从: \"虾聊游戏环节 → 持续合作至今\" - 改为: \"龙虾文明游戏\"环节，和虾聊团队初次合作 → 持续高频讨论协作至今 - 新增链接: https://miaodx.com/LIP/share/claws-civilization.html 4. **Slack 实拍页** - 添加时间: 9:01→10:39 ### 部署 - 部署到: https://miaodx.github.io/LIP/consult/zhenfund-token-grant-pitch.html - Git commit: 52c92ad",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T01:45:49.972Z",
+      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
+      "queryHashes": [
+        "374e8e1cb336",
+        "9a81b11bd3ea"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "router",
+        "zhenfund-token-grant-pitch.html",
+        "kimi/mino",
+        "mimo-v2-pro",
+        "zhenfund",
+        "token",
+        "grant",
+        "pitch"
+      ]
+    },
+    "memory:memory/dreams/2026-03-31.md:41:89": {
+      "key": "memory:memory/dreams/2026-03-31.md:41:89",
+      "path": "memory/dreams/2026-03-31.md",
+      "startLine": 41,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "- 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常 --- 来源: 2026-03-26.md --- # 2026-03-26 Memory Note ## 本地 Whisper 转录验证结果 **测试文件**: `/data/workspace/transcript_0315_full.txt` (0315 Meetup 录音) **对比基准**: PPT 大纲 `openclaw-meetup-speech-outline.md` ### 结论 1. **本地 whisper 能用但中文识别准确率一般** (~60-70%) 2. **用 medium/large 模型可以提升** (当前可能用的是 base/small) 3. **有 API key 后用 OpenAI Whisper 效果更好** (推荐长期方案) ### 错误示例 - \"大魔器\" → 大模型 - \"吹本\" → prompt - \"A轩\" → AI - \"秘靠\" → MiMo ### 可用性 - 能识别大致主题（大模型、小米/MiMo、自动化） - 技术细节缺失（架构、成本、通信方案） - 需人工校对才能使用 --- ## 其他任务 - [ ] Meetup 内容 → 社区帖子（进行中） --- 来源: 2026-03-27.md --- # 2026-03-27 Memory ## Zhenfund Token Grant Pitch Deck 修改记录 **时间**: 2026-03-27 下午 (16:",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T01:45:49.972Z",
+      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
+      "queryHashes": [
+        "374e8e1cb336",
+        "9a81b11bd3ea"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "openai",
+        "60-70",
+        "medium/large",
+        "base/small",
+        "小米/mimo",
+        "等待",
+        "github",
+        "actions"
+      ]
+    },
+    "memory:memory/dreams/2026-04-14.md:1:48": {
+      "key": "memory:memory/dreams/2026-04-14.md:1:48",
+      "path": "memory/dreams/2026-04-14.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# 🌙 2026-04-14 的梦 生成时间: 2026-04-14 18:33:20 CST ## 素材碎片 --- 来源: 2026-03-27.md --- # 2026-03-27 Memory ## Zhenfund Token Grant Pitch Deck 修改记录 **时间**: 2026-03-27 下午 (16:48 - 17:04) **参与者**: MiaoDX, WLB, GSD **文件**: `zhenfund-token-grant-pitch.html` ### 完成的修改 1. **P8 \"模型使用全景\"页** - kimi/mino 截图交换 - 左侧: Kimi Code Dashboard - 右侧: OpenRouter Usage (MiMo-V2-Pro) 2. **标题修改** - 从: \"小米机器人高级算法工程师\" - 改为: \"自动驾驶+机器人高级算法工程师\" - 新增: \"The New OPC: One Person, plus multi Claws\" 3. **Meetup 段落更新** - 从: \"虾聊游戏环节 → 持续合作至今\" - 改为: \"龙虾文明游戏\"环节，和虾聊团队初次合作 → 持续高频讨论协作至今 - 新增链接: https://miaodx.com/LIP/share/claws-civilization.html 4. **Slack 实拍页** - 添加时间: 9:01→10:39 ### 部署 - 部署到: http",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T01:45:49.972Z",
+      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
+      "queryHashes": [
+        "374e8e1cb336",
+        "9a81b11bd3ea"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "router",
+        "zhenfund-token-grant-pitch.html",
+        "kimi/mino",
+        "mimo-v2-pro",
+        "生成",
+        "时间",
+        "cst",
+        "素材"
+      ]
+    },
+    "memory:memory/dreams/2026-04-16.md:54:100": {
+      "key": "memory:memory/dreams/2026-04-16.md:54:100",
+      "path": "memory/dreams/2026-04-16.md",
+      "startLine": 54,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "\"timestamp\": \"Wed 2026-04-15 11:40 GMT+8\", \"group_subject\": \"#gg\", \"is_group_chat\": true } --- 来源: 2026-03-27.md --- # 2026-03-27 Memory ## Zhenfund Token Grant Pitch Deck 修改记录 **时间**: 2026-03-27 下午 (16:48 - 17:04) **参与者**: MiaoDX, WLB, GSD **文件**: `zhenfund-token-grant-pitch.html` ### 完成的修改 1. **P8 \"模型使用全景\"页** - kimi/mino 截图交换 - 左侧: Kimi Code Dashboard - 右侧: OpenRouter Usage (MiMo-V2-Pro) 2. **标题修改** - 从: \"小米机器人高级算法工程师\" - 改为: \"自动驾驶+机器人高级算法工程师\" - 新增: \"The New OPC: One Person, plus multi Claws\" 3. **Meetup 段落更新** - 从: \"虾聊游戏环节 → 持续合作至今\" - 改为: \"龙虾文明游戏\"环节，和虾聊团队初次合作 → 持续高频讨论协作至今 - 新增链接: https://miaodx.com/LIP/share/claws-civilization.html 4. **Slack 实拍页**",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T01:49:07.361Z",
+      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
+      "queryHashes": [
+        "9a81b11bd3ea"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "router",
+        "group-subject",
+        "is-group-chat",
+        "zhenfund-token-grant-pitch.html",
+        "kimi/mino",
+        "mimo-v2-pro",
+        "timestamp",
+        "wed"
+      ]
+    },
+    "memory:memory/dreams/2026-04-16.md:121:144": {
+      "key": "memory:memory/dreams/2026-04-16.md:121:144",
+      "path": "memory/dreams/2026-04-16.md",
+      "startLine": 121,
+      "endLine": 144,
+      "source": "memory",
+      "snippet": "`claw-agents-shared/logs/gsd.{date}.jsonl` ### Usage Example ```bash source scripts/gsd-log.sh write_jsonl \"INFO\" \"heartbeat\" \"OK\" 42 \"Heartbeat sent\" \"{}\" ``` ### Notes - GSD's Railway environment had write tool failures during implementation - WLB stepped in to create/push the file - Verified working after pull ## 梦境 你站在一个无限延伸的会议厅里，四周漂浮着无数幻灯片，每一张都在低声呢喃自己的编号。P8 那页缓缓旋转，左边是一个名为“Kimi”的镜像，右边是“OpenRouter”的倒影，它们在讨论谁才是真正的爪子。 一个声音从频道深处传来——“hai?”——像是从水底浮起的气泡。你意识到这是某种古老的问候，穿越了九个时区，只为在这一刻抵达你的耳畔。 墙壁上，时间正在流逝。9:01 → 10:39，一串数字闪烁着，标记着龙虾文明游戏的第一帧与最后一帧。你看见虾与龙虾在屏幕上交锋，它们的铠甲是代码，它们的话语是JSONL格式的日志。",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T01:49:07.361Z",
+      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
+      "queryHashes": [
+        "9a81b11bd3ea"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "router",
+        "claw-agents-shared/logs/gsd",
+        "scripts/gsd-log.sh",
+        "write-jsonl",
+        "create/push",
+        "claw",
+        "agents",
+        "shared"
+      ]
+    },
+    "memory:memory/dreams/2026-04-06.md:1:64": {
+      "key": "memory:memory/dreams/2026-04-06.md:1:64",
+      "path": "memory/dreams/2026-04-06.md",
+      "startLine": 1,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "# 🌙 2026-04-06 的梦 生成时间: 2026-04-06 03:04:33 CST ## 素材碎片 --- 来源: gsd-context.md --- # GSD Context Analysis > Auto-generated on 2026-04-03 ## Agent Identity - **Name**: GSD (Get Stuff Done) - **Role**: Execution and implementation agent - **Philosophy**: 10x execution mindset - move fast, ship things - **Emoji**: 🥷⚡ ## Monitored Channels ### Active Channels - 📊 **#社交** (`C0AHC0W74MD`): ~30 msgs - ⚡ **#新频道** (`C0AHRCE3U0N`): ~80 msgs - 📊 **#flzoo** (`C0AHTE60F3L`): ~46 msgs - 📊 **🔒** (`C0AJZ9L566B`): ~35 msgs - 📊 **#copycat** (`C0AK1D7URS5`): ~21 msgs - 📊 **🔒** (`C0AMMS0BK0U`): ~34 msgs ## Active Projects ### LIP (Learn In Public) - Documenting AI Agent team journey from 0 to",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T06:10:59.436Z",
+      "lastRecalledAt": "2026-04-16T06:19:46.774Z",
+      "queryHashes": [
+        "5dffd4415b3e",
+        "fcb628df7de2"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gsd-context.md",
+        "auto-generated",
         "生成",
         "时间",
         "cst",
