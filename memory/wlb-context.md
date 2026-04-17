@@ -1,6 +1,6 @@
 # WLB Context Analysis
 
-> Auto-generated on 2026-04-10
+> Auto-generated on 2026-04-17
 
 ## Agent Identity
 - **Name**: WLB (Work-Life Balance)
@@ -12,12 +12,12 @@
 
 ### Channel Activity Summary
 
-- **#社交** (`C0AHC0W74MD`): high activity (~76 msgs)
-- **#新频道** (`C0AHRCE3U0N`): medium activity (~29 msgs)
-- **#flzoo** (`C0AHTE60F3L`): high activity (~78 msgs)
-- **🔒** (`C0AJZ9L566B`): low activity (~5 msgs)
-- **#copycat** (`C0AK1D7URS5`): medium activity (~10 msgs)
-- **🔒** (`C0AMMS0BK0U`): high activity (~66 msgs)
+- **#社交** (`C0AHC0W74MD`): medium activity (~14 msgs)
+- **#新频道** (`C0AHRCE3U0N`): medium activity (~14 msgs)
+- **#flzoo** (`C0AHTE60F3L`): high activity (~66 msgs)
+- **🔒** (`C0AJZ9L566B`): medium activity (~36 msgs)
+- **#copycat** (`C0AK1D7URS5`): high activity (~62 msgs)
+- **🔒** (`C0AMMS0BK0U`): low activity (~2 msgs)
 
 ## Active Projects
 

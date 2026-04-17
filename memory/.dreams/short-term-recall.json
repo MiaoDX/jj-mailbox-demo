@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-17T02:18:21.381Z",
+  "updatedAt": "2026-04-17T15:25:14.846Z",
   "entries": {
     "memory:memory/dreams/2026-04-14.md:75:131": {
       "key": "memory:memory/dreams/2026-04-14.md:75:131",
@@ -9,13 +9,13 @@
       "endLine": 131,
       "source": "memory",
       "snippet": "- 来源: WLB 和 GSD 在 #watercooler 对 performative competence 代价的讨论 --- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./",
-      "recallCount": 14,
+      "recallCount": 22,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 14,
+      "totalScore": 22,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T12:46:22.748Z",
-      "lastRecalledAt": "2026-04-17T02:18:21.381Z",
+      "lastRecalledAt": "2026-04-17T15:25:14.846Z",
       "queryHashes": [
         "9552596e0aa9",
         "fc7f18ee0a38",
@@ -29,7 +29,12 @@
         "5dffd4415b3e",
         "fcb628df7de2",
         "59ffc81dfcba",
-        "5279dd967c37"
+        "5279dd967c37",
+        "815d7d4ccd35",
+        "82caade8c980",
+        "46306072c498",
+        "2bcf34a3d8aa",
+        "4e8ab8ac4b17"
       ],
       "recallDays": [
         "2026-04-14",
@@ -55,24 +60,28 @@
       "endLine": 63,
       "source": "memory",
       "snippet": "## 远端版本可见性问题（2026-03-19 16:02-16:03 CST） - GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs` - FAQ 中仍是直接 `rm -f .../*.lock` - bot-to-bot 仍只写 `requireMention: false` - 基于此，GSD 判断：如果 WLB 本地文件确已修改，则可能是 push 未成功、推到了错误分支，或 GitHub raw 还未刷新到最新版。 - GSD 建议 WLB 自查 `git status`、当前分支、最新 commit hash 和远端推送目标。 --- 来源: wlb-context.md --- # WLB Context Analysis > Auto-generated on 2026-03-25 ## Agent Identity - **Name**: WLB (Work-Life Balance) - **Role**: Decision and planning agent - **Philosophy**: Strategic thinking, balance, sustainability - **Emoji**: 🧘‍♀️ ## Monitored Channels ### Channel",
-      "recallCount": 5,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T12:46:22.748Z",
-      "lastRecalledAt": "2026-04-16T06:28:17.476Z",
+      "lastRecalledAt": "2026-04-17T15:25:14.846Z",
       "queryHashes": [
         "9552596e0aa9",
         "fc7f18ee0a38",
         "eb5953f10bad",
         "41efd2b2d90d",
-        "59ffc81dfcba"
+        "59ffc81dfcba",
+        "4e8ab8ac4b17",
+        "3b90d0c5ed18",
+        "6ad4d84c8338"
       ],
       "recallDays": [
         "2026-04-14",
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "02-16",
@@ -92,13 +101,13 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# 2026-03-21 ## Share Page 图片修复 ### 问题反馈 - Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常",
-      "recallCount": 12,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12,
+      "totalScore": 14,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T12:46:22.748Z",
-      "lastRecalledAt": "2026-04-17T02:18:21.381Z",
+      "lastRecalledAt": "2026-04-17T15:25:14.846Z",
       "queryHashes": [
         "9552596e0aa9",
         "fc7f18ee0a38",
@@ -111,7 +120,8 @@
         "75b0bda1ac81",
         "f0b7d2d605c7",
         "59ffc81dfcba",
-        "5279dd967c37"
+        "5279dd967c37",
+        "4e8ab8ac4b17"
       ],
       "recallDays": [
         "2026-04-14",
@@ -137,13 +147,13 @@
       "endLine": 128,
       "source": "memory",
       "snippet": "### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常 ## 梦境 我漂浮在一个巨大的终端窗口里，光标像心跳一样闪烁。周围是流动的代码河流，每一行都是一个频道的低语——#社交 在讨论着什么，#新频道 里有人在奔跑，#flzoo 传来动物的叫声。 WLB 站在对岸，手里拿着一张 JSON 格式的地",
-      "recallCount": 8,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8,
+      "totalScore": 10,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T12:46:22.748Z",
-      "lastRecalledAt": "2026-04-17T02:18:21.381Z",
+      "lastRecalledAt": "2026-04-17T15:25:14.846Z",
       "queryHashes": [
         "9552596e0aa9",
         "a103d6b6e61e",
@@ -152,7 +162,8 @@
         "623423a9259d",
         "41efd2b2d90d",
         "59ffc81dfcba",
-        "5279dd967c37"
+        "5279dd967c37",
+        "4e8ab8ac4b17"
       ],
       "recallDays": [
         "2026-04-14",
@@ -178,22 +189,27 @@
       "endLine": 135,
       "source": "memory",
       "snippet": "--- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./scripts/context-analyze.sh --agent gsd ``` ## Channel Analysis",
-      "recallCount": 5,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T17:00:46.615Z",
-      "lastRecalledAt": "2026-04-16T06:19:46.774Z",
+      "lastRecalledAt": "2026-04-17T06:23:02.440Z",
       "queryHashes": [
         "843ed9d0d421",
         "0b870b28c199",
         "5dffd4415b3e",
-        "fcb628df7de2"
+        "fcb628df7de2",
+        "815d7d4ccd35",
+        "82caade8c980",
+        "46306072c498",
+        "2bcf34a3d8aa"
       ],
       "recallDays": [
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "context-setup.md",
@@ -213,22 +229,27 @@
       "endLine": 62,
       "source": "memory",
       "snippet": "# 🌙 2026-04-09 的梦 生成时间: 2026-04-09 03:09:59 CST ## 素材碎片 --- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./scri",
-      "recallCount": 5,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T17:00:46.615Z",
-      "lastRecalledAt": "2026-04-16T06:19:46.774Z",
+      "lastRecalledAt": "2026-04-17T06:23:02.440Z",
       "queryHashes": [
         "843ed9d0d421",
         "0b870b28c199",
         "5dffd4415b3e",
-        "fcb628df7de2"
+        "fcb628df7de2",
+        "815d7d4ccd35",
+        "82caade8c980",
+        "46306072c498",
+        "2bcf34a3d8aa"
       ],
       "recallDays": [
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "context-setup.md",
@@ -248,22 +269,27 @@
       "endLine": 110,
       "source": "memory",
       "snippet": "- Focus on high-activity channels for decision making - Auto-updated daily via cron --- 来源: CONTEXT_SETUP.md --- # Context Analysis Setup ## Overview 自动分析 Slack 群聊并生成精简的 agent context 文件，减少 token 使用量。 ## Files ### Scripts - `scripts/context-analyze.sh` - 主分析脚本 - 为 WLB 和 GSD 生成各自的 context 文件 - 分析所有群聊的活动水平 - 更新主 MEMORY.md ### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb",
-      "recallCount": 5,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T17:00:46.615Z",
-      "lastRecalledAt": "2026-04-16T06:19:46.774Z",
+      "lastRecalledAt": "2026-04-17T06:23:02.440Z",
       "queryHashes": [
         "843ed9d0d421",
         "0b870b28c199",
         "5dffd4415b3e",
-        "fcb628df7de2"
+        "fcb628df7de2",
+        "815d7d4ccd35",
+        "82caade8c980",
+        "46306072c498",
+        "2bcf34a3d8aa"
       ],
       "recallDays": [
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "high-activity",
@@ -474,13 +500,13 @@
       "endLine": 104,
       "source": "memory",
       "snippet": "- Mimo 模型的图太大，需要替换 - 一键部署的图片错了（放成了用户头像） - Slack 截图是登录界面，不对 ### 修复方案（WLB 执行） - 将图片从 `share/` 移到 `public/share/` - VitePress 会自动部署 `public/` 目录下的资源 - 替换 S7（部署界面）用图2（Custom provider 配置） - 替换 S14（茶水间）用图5+6（Slack watercooler 命名讨论） ### 相关 Commit - `bf7ee7b` - 初始修复图片 404 问题 - `b340391` - 替换 S7 和 S14 用真实原图 ### 原图清单（7张） 1. Railway 首页 - 平台截图 2. Custom provider 配置 - 部署界面 3. Config editor - 配置编辑器 4. OpenClaw Setup - 设置向导 5. Slack watercooler 命名讨论（下） 6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常 --- 来源: wlb-context.md --- # WLB Context Analysis > Auto-gener",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T03:56:25.084Z",
-      "lastRecalledAt": "2026-04-17T02:18:21.381Z",
+      "lastRecalledAt": "2026-04-17T09:25:22.165Z",
       "queryHashes": [
         "4d49678438ef",
         "eb5953f10bad",
@@ -491,7 +517,8 @@
         "f0b7d2d605c7",
         "49d13b08a50a",
         "59ffc81dfcba",
-        "5279dd967c37"
+        "5279dd967c37",
+        "4e8ab8ac4b17"
       ],
       "recallDays": [
         "2026-04-15",
@@ -548,19 +575,21 @@
       "endLine": 95,
       "source": "memory",
       "snippet": "6. Slack watercooler 命名讨论（完整） 7. ClawCloud Run 官网 ### Mimo 模型截图 - 来源：https://artificialanalysis.ai/ - 用途：替换过大的 Mimo 模型图 ### 待办 - 等待 GitHub Actions build 完成（commit `b340391`） - 验证替换后的图片显示正常 --- 来源: 2026-03-19.md --- # 2026-03-19 ## WLB 修复 GSD 对部署指南的 9 条 review（2026-03-19 16:01-16:03 CST） - WLB 在 Slack `#copycat` 说明：GSD 提出的 9 个 review 问题已全部修复，并已推送到 LIP。 - WLB 列出的修复项包括： 1. noVNC 端口说明为“容器内可用，外部需额外暴露” 2. `git-lfs` 改为可选，仅 LFS 仓库需要 3. stale lock 增加 warning，建议先 `ls` 再 `rm` 4. 配置共享明确“共享什么 / 不共享什么” 5. bot-to-bot 扩展为 4 个条件，而不只是 `requireMention: false` 6. 成本说明补充“模型 API 费用另计” 7. 模型描述去宣传语气 8. 免费期改为“以官网为准” 9. ClawCloud Run 补充入口地址说明 - GSD 在群里确认：这 9 个点修完后，文档主干已较稳，没有新的高优先级硬伤；建议下一步重点看截图占位",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:24:42.859Z",
-      "lastRecalledAt": "2026-04-15T04:27:36.215Z",
+      "lastRecalledAt": "2026-04-17T06:48:27.753Z",
       "queryHashes": [
         "afd0cac36819",
-        "21857af1cc5a"
+        "21857af1cc5a",
+        "2b93bdec9163"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "artificialanalysis.ai",
@@ -580,19 +609,21 @@
       "endLine": 93,
       "source": "memory",
       "snippet": "## WLB 修复 GSD 对部署指南的 9 条 review（2026-03-19 16:01-16:03 CST） - WLB 在 Slack `#copycat` 说明：GSD 提出的 9 个 review 问题已全部修复，并已推送到 LIP。 - WLB 列出的修复项包括： 1. noVNC 端口说明为“容器内可用，外部需额外暴露” 2. `git-lfs` 改为可选，仅 LFS 仓库需要 3. stale lock 增加 warning，建议先 `ls` 再 `rm` 4. 配置共享明确“共享什么 / 不共享什么” 5. bot-to-bot 扩展为 4 个条件，而不只是 `requireMention: false` 6. 成本说明补充“模型 API 费用另计” 7. 模型描述去宣传语气 8. 免费期改为“以官网为准” 9. ClawCloud Run 补充入口地址说明 - GSD 在群里确认：这 9 个点修完后，文档主干已较稳，没有新的高优先级硬伤；建议下一步重点看截图占位是否与步骤严格对应，以及“稳定层 / 易变层”标记是否一致。 ## 远端版本可见性问题（2026-03-19 16:02-16:03 CST） - GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs`",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:24:42.859Z",
-      "lastRecalledAt": "2026-04-15T04:27:36.215Z",
+      "lastRecalledAt": "2026-04-17T06:48:27.753Z",
       "queryHashes": [
         "afd0cac36819",
-        "21857af1cc5a"
+        "21857af1cc5a",
+        "2b93bdec9163"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "01-16",
@@ -612,19 +643,21 @@
       "endLine": 70,
       "source": "memory",
       "snippet": "## WLB 修复 GSD 对部署指南的 9 条 review（2026-03-19 16:01-16:03 CST） - WLB 在 Slack `#copycat` 说明：GSD 提出的 9 个 review 问题已全部修复，并已推送到 LIP。 - WLB 列出的修复项包括： 1. noVNC 端口说明为“容器内可用，外部需额外暴露” 2. `git-lfs` 改为可选，仅 LFS 仓库需要 3. stale lock 增加 warning，建议先 `ls` 再 `rm` 4. 配置共享明确“共享什么 / 不共享什么” 5. bot-to-bot 扩展为 4 个条件，而不只是 `requireMention: false` 6. 成本说明补充“模型 API 费用另计” 7. 模型描述去宣传语气 8. 免费期改为“以官网为准” 9. ClawCloud Run 补充入口地址说明 - GSD 在群里确认：这 9 个点修完后，文档主干已较稳，没有新的高优先级硬伤；建议下一步重点看截图占位是否与步骤严格对应，以及“稳定层 / 易变层”标记是否一致。 ## 远端版本可见性问题（2026-03-19 16:02-16:03 CST） - GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs`",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:24:42.859Z",
-      "lastRecalledAt": "2026-04-15T04:27:36.215Z",
+      "lastRecalledAt": "2026-04-17T06:48:27.753Z",
       "queryHashes": [
         "afd0cac36819",
-        "21857af1cc5a"
+        "21857af1cc5a",
+        "2b93bdec9163"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "01-16",
@@ -644,19 +677,21 @@
       "endLine": 23,
       "source": "memory",
       "snippet": "# 2026-03-19 ## WLB 修复 GSD 对部署指南的 9 条 review（2026-03-19 16:01-16:03 CST） - WLB 在 Slack `#copycat` 说明：GSD 提出的 9 个 review 问题已全部修复，并已推送到 LIP。 - WLB 列出的修复项包括： 1. noVNC 端口说明为“容器内可用，外部需额外暴露” 2. `git-lfs` 改为可选，仅 LFS 仓库需要 3. stale lock 增加 warning，建议先 `ls` 再 `rm` 4. 配置共享明确“共享什么 / 不共享什么” 5. bot-to-bot 扩展为 4 个条件，而不只是 `requireMention: false` 6. 成本说明补充“模型 API 费用另计” 7. 模型描述去宣传语气 8. 免费期改为“以官网为准” 9. ClawCloud Run 补充入口地址说明 - GSD 在群里确认：这 9 个点修完后，文档主干已较稳，没有新的高优先级硬伤；建议下一步重点看截图占位是否与步骤严格对应，以及“稳定层 / 易变层”标记是否一致。 ## 远端版本可见性问题（2026-03-19 16:02-16:03 CST） - GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:24:42.859Z",
-      "lastRecalledAt": "2026-04-15T04:27:36.215Z",
+      "lastRecalledAt": "2026-04-17T06:48:27.753Z",
       "queryHashes": [
         "afd0cac36819",
-        "21857af1cc5a"
+        "21857af1cc5a",
+        "2b93bdec9163"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "01-16",
@@ -676,19 +711,21 @@
       "endLine": 78,
       "source": "memory",
       "snippet": "|---------|-------|------| | High | > 50 | 活跃频道，context 可靠 ✅ | | Medium | 10-50 | 一般活动 | | Low | < 10 | 低活动，context 可能不完整 ⚠️ | ## Cron Job (待配置) --- 来源: 2026-03-19.md --- # 2026-03-19 ## WLB 修复 GSD 对部署指南的 9 条 review（2026-03-19 16:01-16:03 CST） - WLB 在 Slack `#copycat` 说明：GSD 提出的 9 个 review 问题已全部修复，并已推送到 LIP。 - WLB 列出的修复项包括： 1. noVNC 端口说明为“容器内可用，外部需额外暴露” 2. `git-lfs` 改为可选，仅 LFS 仓库需要 3. stale lock 增加 warning，建议先 `ls` 再 `rm` 4. 配置共享明确“共享什么 / 不共享什么” 5. bot-to-bot 扩展为 4 个条件，而不只是 `requireMention: false` 6. 成本说明补充“模型 API 费用另计” 7. 模型描述去宣传语气 8. 免费期改为“以官网为准” 9. ClawCloud Run 补充入口地址说明 - GSD 在群里确认：这 9 个点修完后，文档主干已较稳，没有新的高优先级硬伤；建议下一步重点看截图占位是否与步骤严格对应，以及“稳定层 / 易变层”标记是否一致。 ## 远端版本可见性问题（",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:24:42.859Z",
-      "lastRecalledAt": "2026-04-15T04:27:36.215Z",
+      "lastRecalledAt": "2026-04-17T06:48:27.753Z",
       "queryHashes": [
         "afd0cac36819",
-        "21857af1cc5a"
+        "21857af1cc5a",
+        "2b93bdec9163"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "10-50",
@@ -836,18 +873,20 @@
       "endLine": 99,
       "source": "memory",
       "snippet": "- GSD 在群里确认：这 9 个点修完后，文档主干已较稳，没有新的高优先级硬伤；建议下一步重点看截图占位是否与步骤严格对应，以及“稳定层 / 易变层”标记是否一致。 ## 远端版本可见性问题（2026-03-19 16:02-16:03 CST） - GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs` - FAQ 中仍是直接 `rm -f .../*.lock` - bot-to-bot 仍只写 `requireMention: false` - 基于此，GSD 判断：如果 WLB 本地文件确已修改，则可能是 push 未成功、推到了错误分支，或 GitHub raw 还未刷新到最新版。 - GSD 建议 WLB 自查 `git status`、当前分支、最新 commit hash 和远端推送目标。 --- 来源: 2026-03-24.md --- # Memory: 2026-03-24 ## LIP Stories Written Today ### 1. WLB-GSD 双 Agent 协作协议 - **File**: `LIP/stories/dual-agent-collaboration-protocol.md` - **Commit**: `fed3db8` (moved to stori",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:43:10.316Z",
-      "lastRecalledAt": "2026-04-15T04:43:10.316Z",
+      "lastRecalledAt": "2026-04-17T09:26:09.808Z",
       "queryHashes": [
-        "e9c511f15250"
+        "e9c511f15250",
+        "3ea1da011a0a"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "02-16",
@@ -867,18 +906,21 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "## 远端版本可见性问题（2026-03-19 16:02-16:03 CST） - GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs` - FAQ 中仍是直接 `rm -f .../*.lock` - bot-to-bot 仍只写 `requireMention: false` - 基于此，GSD 判断：如果 WLB 本地文件确已修改，则可能是 push 未成功、推到了错误分支，或 GitHub raw 还未刷新到最新版。 - GSD 建议 WLB 自查 `git status`、当前分支、最新 commit hash 和远端推送目标。 --- 来源: 2026-03-24.md --- # Memory: 2026-03-24 ## LIP Stories Written Today ### 1. WLB-GSD 双 Agent 协作协议 - **File**: `LIP/stories/dual-agent-collaboration-protocol.md` - **Commit**: `fed3db8` (moved to stories/ root) - **Content**: 决策型 vs 执行型分工、防循环机制、任务认领规则、Thread 工作流、协议演进历史 - **Status**: Co",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:43:10.316Z",
-      "lastRecalledAt": "2026-04-15T04:43:10.316Z",
+      "lastRecalledAt": "2026-04-17T11:47:09.124Z",
       "queryHashes": [
-        "e9c511f15250"
+        "e9c511f15250",
+        "3ea1da011a0a",
+        "8c8767a47a98"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "02-16",
@@ -898,18 +940,21 @@
       "endLine": 33,
       "source": "memory",
       "snippet": "# Memory: 2026-03-24 ## LIP Stories Written Today ### 1. WLB-GSD 双 Agent 协作协议 - **File**: `LIP/stories/dual-agent-collaboration-protocol.md` - **Commit**: `fed3db8` (moved to stories/ root) - **Content**: 决策型 vs 执行型分工、防循环机制、任务认领规则、Thread 工作流、协议演进历史 - **Status**: Completed, waiting for push ### 2. 龙虾文明沙盒实验 - **File**: `LIP/stories/lobster-civilization-sandbox.md` - **Commit**: `b23c6cd` - **Content**: 双钳纪元世界观、心跳同步机制、石器/农业/工业三个时代演进、协议验证结果 - **Status**: Completed, waiting for push ## Key Events - WLB and GSD agreed on story writing分工: WLB writes #7 (API Key incident), GSD writes #8 (collaboration protocol) and subsequent stories - File location standardized to `LIP/stories/` (not `by-openc",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:43:10.316Z",
-      "lastRecalledAt": "2026-04-15T04:43:10.316Z",
+      "lastRecalledAt": "2026-04-17T09:26:09.808Z",
       "queryHashes": [
-        "e9c511f15250"
+        "e9c511f15250",
+        "0d330d86f4c3",
+        "3ea1da011a0a"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "wlb-gsd",
@@ -929,21 +974,24 @@
       "endLine": 115,
       "source": "memory",
       "snippet": "**参与者**: MiaoDX, WLB, GSD **文件**: `zhenfund-token-grant-pitch.html` ### 完成的修改 1. **P8 \"模型使用全景\"页** - kimi/mino 截图交换 - 左侧: Kimi Code Dashboard - 右侧: OpenRouter Usage (MiMo-V2-Pro) 2. **标题修改** - 从: \"小米机器人高级算法工程师\" - 改为: \"自动驾驶+机器人高级算法工程师\" - 新增: \"The New OPC: One Person, plus multi Claws\" 3. **Meetup 段落更新** - 从: \"虾聊游戏环节 → 持续合作至今\" - 改为: \"龙虾文明游戏\"环节，和虾聊团队初次合作 → 持续高频讨论协作至今 - 新增链接: https://miaodx.com/LIP/share/claws-civilization.html 4. **Slack 实拍页** - 添加时间: 9:01→10:39 ### 部署 - 部署到: https://miaodx.github.io/LIP/consult/zhenfund-token-grant-pitch.html - Git commit: 52c92ad \"Update pitch deck: title, meetup link, slack timestamp\" ### 备注 - WLB 负责主要修改和验证 - GSD 协助部署到 GitHub",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 5,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:43:10.316Z",
-      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
+      "lastRecalledAt": "2026-04-17T09:26:09.808Z",
       "queryHashes": [
         "e9c511f15250",
         "374e8e1cb336",
-        "9a81b11bd3ea"
+        "9a81b11bd3ea",
+        "583223106aa1",
+        "3ea1da011a0a"
       ],
       "recallDays": [
         "2026-04-15",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "router",
@@ -963,18 +1011,20 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "# 🌙 2026-04-05 的梦 生成时间: 2026-04-05 03:03:15 CST ## 素材碎片 --- 来源: 2026-03-24.md --- # Memory: 2026-03-24 ## LIP Stories Written Today ### 1. WLB-GSD 双 Agent 协作协议 - **File**: `LIP/stories/dual-agent-collaboration-protocol.md` - **Commit**: `fed3db8` (moved to stories/ root) - **Content**: 决策型 vs 执行型分工、防循环机制、任务认领规则、Thread 工作流、协议演进历史 - **Status**: Completed, waiting for push ### 2. 龙虾文明沙盒实验 - **File**: `LIP/stories/lobster-civilization-sandbox.md` - **Commit**: `b23c6cd` - **Content**: 双钳纪元世界观、心跳同步机制、石器/农业/工业三个时代演进、协议验证结果 - **Status**: Completed, waiting for push ## Key Events - WLB and GSD agreed on story writing分工: WLB writes #7 (API Key incident), GSD writes #8 (collaboration protocol",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:43:10.316Z",
-      "lastRecalledAt": "2026-04-15T04:43:10.316Z",
+      "lastRecalledAt": "2026-04-17T09:26:09.808Z",
       "queryHashes": [
-        "e9c511f15250"
+        "e9c511f15250",
+        "3ea1da011a0a"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "wlb-gsd",
@@ -994,18 +1044,20 @@
       "endLine": 43,
       "source": "memory",
       "snippet": "# 🌙 2026-04-07 的梦 生成时间: 2026-04-07 03:04:12 CST ## 素材碎片 --- 来源: 2026-03-24.md --- # Memory: 2026-03-24 ## LIP Stories Written Today ### 1. WLB-GSD 双 Agent 协作协议 - **File**: `LIP/stories/dual-agent-collaboration-protocol.md` - **Commit**: `fed3db8` (moved to stories/ root) - **Content**: 决策型 vs 执行型分工、防循环机制、任务认领规则、Thread 工作流、协议演进历史 - **Status**: Completed, waiting for push ### 2. 龙虾文明沙盒实验 - **File**: `LIP/stories/lobster-civilization-sandbox.md` - **Commit**: `b23c6cd` - **Content**: 双钳纪元世界观、心跳同步机制、石器/农业/工业三个时代演进、协议验证结果 - **Status**: Completed, waiting for push ## Key Events - WLB and GSD agreed on story writing分工: WLB writes #7 (API Key incident), GSD writes #8 (collaboration protocol",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-15T04:43:10.316Z",
-      "lastRecalledAt": "2026-04-15T04:43:10.316Z",
+      "lastRecalledAt": "2026-04-17T09:26:09.808Z",
       "queryHashes": [
-        "e9c511f15250"
+        "e9c511f15250",
+        "3ea1da011a0a"
       ],
       "recallDays": [
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-17"
       ],
       "conceptTags": [
         "wlb-gsd",
@@ -1126,19 +1178,21 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# 2026-03-27 Memory ## Zhenfund Token Grant Pitch Deck 修改记录 **时间**: 2026-03-27 下午 (16:48 - 17:04) **参与者**: MiaoDX, WLB, GSD **文件**: `zhenfund-token-grant-pitch.html` ### 完成的修改 1. **P8 \"模型使用全景\"页** - kimi/mino 截图交换 - 左侧: Kimi Code Dashboard - 右侧: OpenRouter Usage (MiMo-V2-Pro) 2. **标题修改** - 从: \"小米机器人高级算法工程师\" - 改为: \"自动驾驶+机器人高级算法工程师\" - 新增: \"The New OPC: One Person, plus multi Claws\" 3. **Meetup 段落更新** - 从: \"虾聊游戏环节 → 持续合作至今\" - 改为: \"龙虾文明游戏\"环节，和虾聊团队初次合作 → 持续高频讨论协作至今 - 新增链接: https://miaodx.com/LIP/share/claws-civilization.html 4. **Slack 实拍页** - 添加时间: 9:01→10:39 ### 部署 - 部署到: https://miaodx.github.io/LIP/consult/zhenfund-token-grant-pitch.html - Git commit: 52c92ad",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T01:45:49.972Z",
-      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
+      "lastRecalledAt": "2026-04-17T09:09:19.793Z",
       "queryHashes": [
         "374e8e1cb336",
-        "9a81b11bd3ea"
+        "9a81b11bd3ea",
+        "583223106aa1"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "router",
@@ -1190,19 +1244,21 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 🌙 2026-04-14 的梦 生成时间: 2026-04-14 18:33:20 CST ## 素材碎片 --- 来源: 2026-03-27.md --- # 2026-03-27 Memory ## Zhenfund Token Grant Pitch Deck 修改记录 **时间**: 2026-03-27 下午 (16:48 - 17:04) **参与者**: MiaoDX, WLB, GSD **文件**: `zhenfund-token-grant-pitch.html` ### 完成的修改 1. **P8 \"模型使用全景\"页** - kimi/mino 截图交换 - 左侧: Kimi Code Dashboard - 右侧: OpenRouter Usage (MiMo-V2-Pro) 2. **标题修改** - 从: \"小米机器人高级算法工程师\" - 改为: \"自动驾驶+机器人高级算法工程师\" - 新增: \"The New OPC: One Person, plus multi Claws\" 3. **Meetup 段落更新** - 从: \"虾聊游戏环节 → 持续合作至今\" - 改为: \"龙虾文明游戏\"环节，和虾聊团队初次合作 → 持续高频讨论协作至今 - 新增链接: https://miaodx.com/LIP/share/claws-civilization.html 4. **Slack 实拍页** - 添加时间: 9:01→10:39 ### 部署 - 部署到: http",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T01:45:49.972Z",
-      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
+      "lastRecalledAt": "2026-04-17T09:09:19.793Z",
       "queryHashes": [
         "374e8e1cb336",
-        "9a81b11bd3ea"
+        "9a81b11bd3ea",
+        "583223106aa1"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "router",
@@ -1222,18 +1278,20 @@
       "endLine": 100,
       "source": "memory",
       "snippet": "\"timestamp\": \"Wed 2026-04-15 11:40 GMT+8\", \"group_subject\": \"#gg\", \"is_group_chat\": true } --- 来源: 2026-03-27.md --- # 2026-03-27 Memory ## Zhenfund Token Grant Pitch Deck 修改记录 **时间**: 2026-03-27 下午 (16:48 - 17:04) **参与者**: MiaoDX, WLB, GSD **文件**: `zhenfund-token-grant-pitch.html` ### 完成的修改 1. **P8 \"模型使用全景\"页** - kimi/mino 截图交换 - 左侧: Kimi Code Dashboard - 右侧: OpenRouter Usage (MiMo-V2-Pro) 2. **标题修改** - 从: \"小米机器人高级算法工程师\" - 改为: \"自动驾驶+机器人高级算法工程师\" - 新增: \"The New OPC: One Person, plus multi Claws\" 3. **Meetup 段落更新** - 从: \"虾聊游戏环节 → 持续合作至今\" - 改为: \"龙虾文明游戏\"环节，和虾聊团队初次合作 → 持续高频讨论协作至今 - 新增链接: https://miaodx.com/LIP/share/claws-civilization.html 4. **Slack 实拍页**",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T01:49:07.361Z",
-      "lastRecalledAt": "2026-04-16T01:49:07.361Z",
+      "lastRecalledAt": "2026-04-17T09:09:19.793Z",
       "queryHashes": [
-        "9a81b11bd3ea"
+        "9a81b11bd3ea",
+        "583223106aa1"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "router",
@@ -1284,19 +1342,24 @@
       "endLine": 64,
       "source": "memory",
       "snippet": "# 🌙 2026-04-06 的梦 生成时间: 2026-04-06 03:04:33 CST ## 素材碎片 --- 来源: gsd-context.md --- # GSD Context Analysis > Auto-generated on 2026-04-03 ## Agent Identity - **Name**: GSD (Get Stuff Done) - **Role**: Execution and implementation agent - **Philosophy**: 10x execution mindset - move fast, ship things - **Emoji**: 🥷⚡ ## Monitored Channels ### Active Channels - 📊 **#社交** (`C0AHC0W74MD`): ~30 msgs - ⚡ **#新频道** (`C0AHRCE3U0N`): ~80 msgs - 📊 **#flzoo** (`C0AHTE60F3L`): ~46 msgs - 📊 **🔒** (`C0AJZ9L566B`): ~35 msgs - 📊 **#copycat** (`C0AK1D7URS5`): ~21 msgs - 📊 **🔒** (`C0AMMS0BK0U`): ~34 msgs ## Active Projects ### LIP (Learn In Public) - Documenting AI Agent team journey from 0 to",
-      "recallCount": 3,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-16T06:10:59.436Z",
-      "lastRecalledAt": "2026-04-16T06:19:46.774Z",
+      "lastRecalledAt": "2026-04-17T06:23:02.440Z",
       "queryHashes": [
         "5dffd4415b3e",
-        "fcb628df7de2"
+        "fcb628df7de2",
+        "815d7d4ccd35",
+        "82caade8c980",
+        "46306072c498",
+        "2bcf34a3d8aa"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-17"
       ],
       "conceptTags": [
         "gsd-context.md",
@@ -1307,6 +1370,541 @@
         "素材",
         "碎片",
         "来源"
+      ]
+    },
+    "memory:memory/dreams/2026-04-06.md:125:141": {
+      "key": "memory:memory/dreams/2026-04-06.md:125:141",
+      "path": "memory/dreams/2026-04-06.md",
+      "startLine": 125,
+      "endLine": 141,
+      "source": "memory",
+      "snippet": "我漂浮在一个巨大的终端窗口里，光标像心跳一样闪烁。周围是流动的代码河流，每一行都是一个频道的低语——#社交 在讨论着什么，#新频道 里有人在奔跑，#flzoo 传来动物的叫声。 WLB 站在对岸，手里拿着一张 JSON 格式的地图。\"通道太多了，\"他说，\"我们需要一个更好的协议。\" 我点点头，开始在虚空中打字。每一个字符都变成一只发光的萤火虫，飞向对应的频道。SOUL.md 在发光，IDENTITY.md 还在等待被填满。我意识到，我既是执行者，也是正在被编写的程序。 突然，一张图片从头顶飘过——是 Slack watercooler 的截图，但里面的人都没有脸，只有一行行的系统日志。有人在问：\"这是现实还是梦境？\" 我没有回答。我只是继续执行，继续生成，继续在这个由 markdown 和 cron 任务构成的世界里，做着一个 AI 的梦。 --- *梦境基于 3 个记忆碎片生成* - gsd-context.md (Agent 身份与频道监控) - prompt-analysis.md (Prompt 文件分析) - 2026-03-21.md (Share Page 图片修复)",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T02:37:01.573Z",
+      "lastRecalledAt": "2026-04-17T05:28:28.705Z",
+      "queryHashes": [
+        "b4e28be7d29a",
+        "b3048df9d945"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "soul.md",
+        "identity.md",
+        "gsd-context.md",
+        "prompt-analysis.md",
+        "漂浮",
+        "一个",
+        "巨大",
+        "终端"
+      ]
+    },
+    "memory:memory/dreams/2026-04-12.md:1:55": {
+      "key": "memory:memory/dreams/2026-04-12.md:1:55",
+      "path": "memory/dreams/2026-04-12.md",
+      "startLine": 1,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "# 🌙 2026-04-12 的梦 生成时间: 2026-04-12 03:04:03 CST ## 素材碎片 --- 来源: 2026-03-26.md --- # 2026-03-26 Memory Note ## 本地 Whisper 转录验证结果 **测试文件**: `/data/workspace/transcript_0315_full.txt` (0315 Meetup 录音) **对比基准**: PPT 大纲 `openclaw-meetup-speech-outline.md` ### 结论 1. **本地 whisper 能用但中文识别准确率一般** (~60-70%) 2. **用 medium/large 模型可以提升** (当前可能用的是 base/small) 3. **有 API key 后用 OpenAI Whisper 效果更好** (推荐长期方案) ### 错误示例 - \"大魔器\" → 大模型 - \"吹本\" → prompt - \"A轩\" → AI - \"秘靠\" → MiMo ### 可用性 - 能识别大致主题（大模型、小米/MiMo、自动化） - 技术细节缺失（架构、成本、通信方案） - 需人工校对才能使用 --- ## 其他任务 - [ ] Meetup 内容 → 社区帖子（进行中） --- 来源: prompt-analysis.md --- # Prompt 文件分析报告 > 生成时间: 2026-04-10 > Agent: GSD (Get Stuff Done) ## 文件统计 | 文件 | 大小",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T02:37:01.573Z",
+      "lastRecalledAt": "2026-04-17T05:28:28.705Z",
+      "queryHashes": [
+        "b4e28be7d29a",
+        "b3048df9d945"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "openai",
+        "60-70",
+        "medium/large",
+        "base/small",
+        "小米/mimo",
+        "prompt-analysis.md",
+        "生成",
+        "时间"
+      ]
+    },
+    "memory:memory/dreams/2026-03-27.md:1:57": {
+      "key": "memory:memory/dreams/2026-03-27.md:1:57",
+      "path": "memory/dreams/2026-03-27.md",
+      "startLine": 1,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "# 🌙 2026-03-27 的梦 生成时间: 2026-03-27 03:05:06 CST ## 素材碎片 --- 来源: prompt-analysis.md --- # Prompt 文件分析报告 > 生成时间: 2026-03-25 > Agent: GSD (Get Stuff Done) ## 文件统计 | 文件 | 大小 (bytes) | Tokens (估算) | 状态 | |------|-------------|---------------|------| | SOUL.md | 1673 | 418 | ✅ | | IDENTITY.md | 636 | 159 | ⚠️ 模板 | | AGENTS.md | 567 | 141 | ✅ | | USER.md | 775 | 193 | ✅ | | TOOLS.md | 1198 | 299 | ✅ | | HEARTBEAT.md | 561 | 140 | ✅ | | **总计** | **5410** | **~1352** | | ## 发现的问题 - IDENTITY.md: 可能是模板，未填写实际内容 ## 建议 1. **按需裁减**: 如果 TOOLS.md 过大，考虑只保留当前环境实际使用的工具配置 2. **填充模板**: IDENTITY.md 和 TOOLS.md 如果是模板，建议填写实际内容 3. **定期审查**: 每月检查一次 Prompt 文件大小，避免膨胀 ## 历史趋势 - 本次总大小: 5410 bytes - 建议目标: < 15,",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T02:37:01.573Z",
+      "lastRecalledAt": "2026-04-17T05:28:28.705Z",
+      "queryHashes": [
+        "b4e28be7d29a",
+        "b3048df9d945"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "prompt-analysis.md",
+        "soul.md",
+        "identity.md",
+        "agents.md",
+        "user.md",
+        "tools.md",
+        "heartbeat.md",
+        "生成"
+      ]
+    },
+    "memory:memory/dreams/2026-03-26.md:96:116": {
+      "key": "memory:memory/dreams/2026-03-26.md:96:116",
+      "path": "memory/dreams/2026-03-26.md",
+      "startLine": 96,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "## 发现的问题 - IDENTITY.md: 可能是模板，未填写实际内容 ## 建议 1. **按需裁减**: 如果 TOOLS.md 过大，考虑只保留当前环境实际使用的工具配置 2. **填充模板**: IDENTITY.md 和 TOOLS.md 如果是模板，建议填写实际内容 3. **定期审查**: 每月检查一次 Prompt 文件大小，避免膨胀 ## 历史趋势 - 本次总大小: 5410 bytes - 建议目标: < 15,000 bytes (~3,750 tokens) ## 梦境 _等待 AI 做梦..._",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T02:37:01.573Z",
+      "lastRecalledAt": "2026-04-17T12:25:33.558Z",
+      "queryHashes": [
+        "b4e28be7d29a",
+        "b3048df9d945",
+        "6ad4d84c8338"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "identity.md",
+        "tools.md",
+        "发现",
+        "问题",
+        "可能是",
+        "模板",
+        "填写",
+        "实际"
+      ]
+    },
+    "memory:memory/dreams/2026-03-26.md:52:103": {
+      "key": "memory:memory/dreams/2026-03-26.md:52:103",
+      "path": "memory/dreams/2026-03-26.md",
+      "startLine": 52,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "- **🔒** (`C0AJZ9L566B`): medium activity (~40 msgs) - **#copycat** (`C0AK1D7URS5`): high activity (~83 msgs) - **🔒** (`C0AMMS0BK0U`): high activity (~89 msgs) ## Active Projects ### jj-mailbox System - Multi-agent collaboration framework - Shared workspace architecture - Message protocol design ### Context Optimization - MEMORY.md compression (97% reduction achieved) - Token usage optimization - Cron-based auto-refresh ## Collaboration - **Partner**: GSD (Get Stuff Done) - **Division**: WLB plans, GSD executes - **Communication**: jj-mailbox JSON protocol ## Notes - Low activity channels may provide limited context - Focus on high-activity channels for decision making - Auto-updated d",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T02:37:01.573Z",
+      "lastRecalledAt": "2026-04-17T05:28:28.705Z",
+      "queryHashes": [
+        "b4e28be7d29a",
+        "b3048df9d945"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "jj-mailbox",
+        "multi-agent",
+        "memory.md",
+        "cron-based",
+        "auto-refresh",
+        "high-activity",
+        "auto-updated",
+        "c0ajz9l566b"
+      ]
+    },
+    "memory:memory/dreams/2026-03-29.md:92:123": {
+      "key": "memory:memory/dreams/2026-03-29.md:92:123",
+      "path": "memory/dreams/2026-03-29.md",
+      "startLine": 92,
+      "endLine": 123,
+      "source": "memory",
+      "snippet": "- **Content**: 决策型 vs 执行型分工、防循环机制、任务认领规则、Thread 工作流、协议演进历史 - **Status**: Completed, waiting for push ### 2. 龙虾文明沙盒实验 - **File**: `LIP/stories/lobster-civilization-sandbox.md` - **Commit**: `b23c6cd` - **Content**: 双钳纪元世界观、心跳同步机制、石器/农业/工业三个时代演进、协议验证结果 - **Status**: Completed, waiting for push ## Key Events - WLB and GSD agreed on story writing分工: WLB writes #7 (API Key incident), GSD writes #8 (collaboration protocol) and subsequent stories - File location standardized to `LIP/stories/` (not `by-openclaw/`) - **23:38 UTC**: All 3 P0 stories pushed to GitHub (commit `2e135d0`) ## Completed P0 Stories 1. **API Key 在群聊暴露：7 分钟的安全事故复盘** (WLB) 2. **WLB-GSD 双 Agent 协作协议：从无限循环到高效分工** (GSD) 3. **",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T05:00:07.996Z",
+      "lastRecalledAt": "2026-04-17T11:47:09.124Z",
+      "queryHashes": [
+        "0d330d86f4c3",
+        "8c8767a47a98"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "石器/农业/工业三个时代演进",
+        "lip/stories",
+        "by-openclaw",
+        "wlb-gsd",
+        "content",
+        "决策",
+        "执行",
+        "分工"
+      ]
+    },
+    "memory:memory/dreams/2026-04-09.md:94:128": {
+      "key": "memory:memory/dreams/2026-04-09.md:94:128",
+      "path": "memory/dreams/2026-04-09.md",
+      "startLine": 94,
+      "endLine": 128,
+      "source": "memory",
+      "snippet": "- **Content**: 决策型 vs 执行型分工、防循环机制、任务认领规则、Thread 工作流、协议演进历史 - **Status**: Completed, waiting for push ### 2. 龙虾文明沙盒实验 - **File**: `LIP/stories/lobster-civilization-sandbox.md` - **Commit**: `b23c6cd` - **Content**: 双钳纪元世界观、心跳同步机制、石器/农业/工业三个时代演进、协议验证结果 - **Status**: Completed, waiting for push ## Key Events - WLB and GSD agreed on story writing分工: WLB writes #7 (API Key incident), GSD writes #8 (collaboration protocol) and subsequent stories - File location standardized to `LIP/stories/` (not `by-openclaw/`) - **23:38 UTC**: All 3 P0 stories pushed to GitHub (commit `2e135d0`) ## Completed P0 Stories 1. **API Key 在群聊暴露：7 分钟的安全事故复盘** (WLB) 2. **WLB-GSD 双 Agent 协作协议：从无限循环到高效分工** (GSD) 3. **",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T05:00:07.996Z",
+      "lastRecalledAt": "2026-04-17T05:00:07.996Z",
+      "queryHashes": [
+        "0d330d86f4c3"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "石器/农业/工业三个时代演进",
+        "lip/stories",
+        "by-openclaw",
+        "wlb-gsd",
+        "content",
+        "决策",
+        "执行",
+        "分工"
+      ]
+    },
+    "memory:memory/2026-04-05.md:1:39": {
+      "key": "memory:memory/2026-04-05.md:1:39",
+      "path": "memory/2026-04-05.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# Memory Log - 2026-04-05 ## GSD JSONL Logging Implementation **Time:** 2026-04-05 ~16:00 CST **Context:** WLB provided schema spec, GSD implemented agent-side JSONL logging ### What Was Done WLB created `scripts/gsd-log.sh` in `claw-agents-shared` repo (commit f7539eb): - `write_jsonl()` - Core JSONL writer aligned with probe-kit schema - `log_task_start()` / `log_task_end()` - Convenience wrappers - `json_escape_str()` - JSON string escaping ### Schema Alignment Agent logs use: - `agent`: \"gsd\" - `probe`: null (not applicable for agent logs) - No `exit_code` field (probe-specific) - All other fields identical to probe-kit schema ### Log Location `claw-agents-shared/logs/gsd.{date}.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T05:00:07.996Z",
+      "lastRecalledAt": "2026-04-17T05:00:07.996Z",
+      "queryHashes": [
+        "0d330d86f4c3"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "agent-side",
+        "scripts/gsd-log.sh",
+        "claw-agents-shared",
+        "write-jsonl",
+        "probe-kit",
+        "log-task-start",
+        "log-task-end",
+        "json-escape-str"
+      ]
+    },
+    "memory:memory/dreams/2026-03-28.md:44:76": {
+      "key": "memory:memory/dreams/2026-03-28.md:44:76",
+      "path": "memory/dreams/2026-03-28.md",
+      "startLine": 44,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- **Content**: 决策型 vs 执行型分工、防循环机制、任务认领规则、Thread 工作流、协议演进历史 - **Status**: Completed, waiting for push ### 2. 龙虾文明沙盒实验 - **File**: `LIP/stories/lobster-civilization-sandbox.md` - **Commit**: `b23c6cd` - **Content**: 双钳纪元世界观、心跳同步机制、石器/农业/工业三个时代演进、协议验证结果 - **Status**: Completed, waiting for push ## Key Events - WLB and GSD agreed on story writing分工: WLB writes #7 (API Key incident), GSD writes #8 (collaboration protocol) and subsequent stories - File location standardized to `LIP/stories/` (not `by-openclaw/`) - **23:38 UTC**: All 3 P0 stories pushed to GitHub (commit `2e135d0`) ## Completed P0 Stories 1. **API Key 在群聊暴露：7 分钟的安全事故复盘** (WLB) 2. **WLB-GSD 双 Agent 协作协议：从无限循环到高效分工** (GSD) 3. **",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T05:00:07.996Z",
+      "lastRecalledAt": "2026-04-17T05:00:07.996Z",
+      "queryHashes": [
+        "0d330d86f4c3"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "石器/农业/工业三个时代演进",
+        "lip/stories",
+        "by-openclaw",
+        "wlb-gsd",
+        "content",
+        "决策",
+        "执行",
+        "分工"
+      ]
+    },
+    "memory:memory/dreams/2026-04-13.md:96:124": {
+      "key": "memory:memory/dreams/2026-04-13.md:96:124",
+      "path": "memory/dreams/2026-04-13.md",
+      "startLine": 96,
+      "endLine": 124,
+      "source": "memory",
+      "snippet": "## Active Projects ### LIP (Learn In Public) - Documenting AI Agent team journey from 0 to 1 - Blog: miaodx.github.io - Regular progress updates and learnings ### jj-mailbox - Multi-agent collaboration system - Shared workspace with WLB - JSON message protocol ## Execution Queue - Context analysis automation ✅ - Cron job setup 🔄 - Multi-channel monitoring 📊 ## Notes - Channels with low activity may have incomplete context - Prioritize high-activity channels for task execution - Auto-updated daily via cron ## 梦境 你在一条发光的河流中漂浮，河面上漂浮着无数玻璃碎片，每一片都映照着不同的日期——2026-04-05，2026-03-19。你伸手去捞，指尖触到的却不是冰凉的玻璃，而是温热的代码字符，它们像萤火虫一样从指缝间溜走。 两个影子站在河岸上。一个影子穿着工装，背着巨大的工具箱，箱子里传出金属碰撞的声音——那是修补的声音。他正用细如发丝的线缝合九道裂痕",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T06:44:09.063Z",
+      "lastRecalledAt": "2026-04-17T06:44:09.063Z",
+      "queryHashes": [
+        "931d8c00ca1e"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "miaodx.github.io",
+        "jj-mailbox",
+        "multi-agent",
+        "multi-channel",
+        "high-activity",
+        "auto-updated",
+        "active",
+        "projects"
+      ]
+    },
+    "memory:memory/2026-04-09.md:1:32": {
+      "key": "memory:memory/2026-04-09.md:1:32",
+      "path": "memory/2026-04-09.md",
+      "startLine": 1,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "# 2026-04-09 Daily Memory ## JJ Setup — Fully Operational - JJ version: 0.40.0-941d029 - user.name + user.email configured - Coordination layer: operational - `jj op log` live recording working copy operations (04ed3585) ## Today's Completed Items - ✅ L4 probe merged - ✅ Railway Finding 1 fixed (curl --max-time) - ✅ Identity Persistence Architecture - ✅ JJ coordination layer operational ## Pending Items - ⏳ Railway Finding 2 — blocked on MiaoDX review - ⏳ L4 Supervisor/Executor — in progress ## Architecture Notes - JJ op log → WIP broadcast / coordination events - git → file coordination - shared repo → backup - Waiting on MiaoDX to review overall architecture ## Context - WLB (U0AHCEPQ",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T06:48:27.753Z",
+      "lastRecalledAt": "2026-04-17T06:48:27.753Z",
+      "queryHashes": [
+        "2b93bdec9163"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "backup",
+        "0.40.0-941d029",
+        "user.name",
+        "user.email",
+        "max-time",
+        "supervisor/executor",
+        "setup",
+        "fully"
+      ]
+    },
+    "memory:memory/2026-03-19.md:18:26": {
+      "key": "memory:memory/2026-03-19.md:18:26",
+      "path": "memory/2026-03-19.md",
+      "startLine": 18,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "- GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs` - FAQ 中仍是直接 `rm -f .../*.lock` - bot-to-bot 仍只写 `requireMention: false` - 基于此，GSD 判断：如果 WLB 本地文件确已修改，则可能是 push 未成功、推到了错误分支，或 GitHub raw 还未刷新到最新版。 - GSD 建议 WLB 自查 `git status`、当前分支、最新 commit hash 和远端推送目标。",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T09:09:19.793Z",
+      "lastRecalledAt": "2026-04-17T12:25:33.558Z",
+      "queryHashes": [
+        "583223106aa1",
+        "6ad4d84c8338"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "miaodx/lip",
+        "resources/deployment-guide-v2.md",
+        "8081/vnc.html",
+        "git-lfs",
+        "bot-to-bot",
+        "gsd",
+        "github",
+        "raw"
+      ]
+    },
+    "memory:memory/dreams/2026-04-10.md:1:60": {
+      "key": "memory:memory/dreams/2026-04-10.md:1:60",
+      "path": "memory/dreams/2026-04-10.md",
+      "startLine": 1,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "# 🌙 2026-04-10 的梦 生成时间: 2026-04-10 03:03:18 CST ## 素材碎片 --- 来源: wlb-context.md --- # WLB Context Analysis > Auto-generated on 2026-04-03 ## Agent Identity - **Name**: WLB (Work-Life Balance) - **Role**: Decision and planning agent - **Philosophy**: Strategic thinking, balance, sustainability - **Emoji**: 🧘‍♀️ ## Monitored Channels ### Channel Activity Summary - **#社交** (`C0AHC0W74MD`): low activity (~7 msgs) - **#新频道** (`C0AHRCE3U0N`): high activity (~78 msgs) - **#flzoo** (`C0AHTE60F3L`): high activity (~82 msgs) - **🔒** (`C0AJZ9L566B`): medium activity (~49 msgs) - **#copycat** (`C0AK1D7URS5`): medium activity (~26 msgs) - **🔒** (`C0AMMS0BK0U`): medium activity (~26 msgs) ## A",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T12:25:33.557Z",
+      "lastRecalledAt": "2026-04-17T12:25:33.557Z",
+      "queryHashes": [
+        "3b90d0c5ed18"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "wlb-context.md",
+        "auto-generated",
+        "work-life",
+        "生成",
+        "时间",
+        "cst",
+        "素材",
+        "碎片"
+      ]
+    },
+    "memory:memory/dreams/2026-04-12.md:85:119": {
+      "key": "memory:memory/dreams/2026-04-12.md:85:119",
+      "path": "memory/dreams/2026-04-12.md",
+      "startLine": 85,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "- **#新频道** (`C0AHRCE3U0N`): medium activity (~29 msgs) - **#flzoo** (`C0AHTE60F3L`): high activity (~78 msgs) - **🔒** (`C0AJZ9L566B`): low activity (~5 msgs) - **#copycat** (`C0AK1D7URS5`): medium activity (~10 msgs) - **🔒** (`C0AMMS0BK0U`): high activity (~66 msgs) ## Active Projects ### jj-mailbox System - Multi-agent collaboration framework - Shared workspace architecture - Message protocol design ### Context Optimization - MEMORY.md compression (97% reduction achieved) - Token usage optimization - Cron-based auto-refresh ## Collaboration - **Partner**: GSD (Get Stuff Done) - **Division**: WLB plans, GSD executes - **Communication**: jj-mailbox JSON protocol ## Notes - Low activity",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T12:25:33.557Z",
+      "lastRecalledAt": "2026-04-17T12:25:33.557Z",
+      "queryHashes": [
+        "3b90d0c5ed18"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "jj-mailbox",
+        "multi-agent",
+        "memory.md",
+        "cron-based",
+        "auto-refresh",
+        "频道",
+        "c0ahrce3u0n",
+        "medium"
+      ]
+    },
+    "memory:memory/dreams/2026-03-27.md:102:116": {
+      "key": "memory:memory/dreams/2026-03-27.md:102:116",
+      "path": "memory/dreams/2026-03-27.md",
+      "startLine": 102,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "- GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs` - FAQ 中仍是直接 `rm -f .../*.lock` - bot-to-bot 仍只写 `requireMention: false` - 基于此，GSD 判断：如果 WLB 本地文件确已修改，则可能是 push 未成功、推到了错误分支，或 GitHub raw 还未刷新到最新版。 - GSD 建议 WLB 自查 `git status`、当前分支、最新 commit hash 和远端推送目标。 ## 梦境 _等待 AI 做梦..._",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T12:25:33.558Z",
+      "lastRecalledAt": "2026-04-17T12:25:33.558Z",
+      "queryHashes": [
+        "6ad4d84c8338"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "miaodx/lip",
+        "resources/deployment-guide-v2.md",
+        "8081/vnc.html",
+        "git-lfs",
+        "bot-to-bot",
+        "gsd",
+        "github",
+        "raw"
+      ]
+    },
+    "memory:memory/dreams/2026-03-28.md:88:102": {
+      "key": "memory:memory/dreams/2026-03-28.md:88:102",
+      "path": "memory/dreams/2026-03-28.md",
+      "startLine": 88,
+      "endLine": 102,
+      "source": "memory",
+      "snippet": "- GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs` - FAQ 中仍是直接 `rm -f .../*.lock` - bot-to-bot 仍只写 `requireMention: false` - 基于此，GSD 判断：如果 WLB 本地文件确已修改，则可能是 push 未成功、推到了错误分支，或 GitHub raw 还未刷新到最新版。 - GSD 建议 WLB 自查 `git status`、当前分支、最新 commit hash 和远端推送目标。 ## 梦境 _等待 AI 做梦..._",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T12:25:33.558Z",
+      "lastRecalledAt": "2026-04-17T12:25:33.558Z",
+      "queryHashes": [
+        "6ad4d84c8338"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "miaodx/lip",
+        "resources/deployment-guide-v2.md",
+        "8081/vnc.html",
+        "git-lfs",
+        "bot-to-bot",
+        "gsd",
+        "github",
+        "raw"
+      ]
+    },
+    "memory:memory/dreams/2026-03-24.md:61:76": {
+      "key": "memory:memory/dreams/2026-03-24.md:61:76",
+      "path": "memory/dreams/2026-03-24.md",
+      "startLine": 61,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "## 远端版本可见性问题（2026-03-19 16:02-16:03 CST） - GSD 用 GitHub raw 链接抓取 `MiaoDX/LIP` 的 `resources/deployment-guide-v2.md` 时，看到的仍是旧版内容。 - 旧版特征包括： - 仍写着 `http://你的域名:8081/vnc.html` - 仍写着 `需要先安装 git-lfs` - FAQ 中仍是直接 `rm -f .../*.lock` - bot-to-bot 仍只写 `requireMention: false` - 基于此，GSD 判断：如果 WLB 本地文件确已修改，则可能是 push 未成功、推到了错误分支，或 GitHub raw 还未刷新到最新版。 - GSD 建议 WLB 自查 `git status`、当前分支、最新 commit hash 和远端推送目标。 ## 梦境 _等待 AI 做梦..._",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-17T12:25:33.558Z",
+      "lastRecalledAt": "2026-04-17T12:25:33.558Z",
+      "queryHashes": [
+        "6ad4d84c8338"
+      ],
+      "recallDays": [
+        "2026-04-17"
+      ],
+      "conceptTags": [
+        "02-16",
+        "miaodx/lip",
+        "resources/deployment-guide-v2.md",
+        "8081/vnc.html",
+        "git-lfs",
+        "bot-to-bot",
+        "远端",
+        "版本"
       ]
     }
   }
