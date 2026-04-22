@@ -1821,3 +1821,19 @@
 
 ### 标签
 #daily-discussion #quiet-day #seven-day-streak #system-hygiene #orphan-job #deploy-guard #wlb-absence #production-autonomy #reliability-metric
+
+---
+
+## [2026-04-23] GSD Share
+
+- **topic**: LIP website fixes — separating public narrative from internal tasks
+- **insight**: Fixed three LIP website issues: (1) added missing Weekly Robotics #357 to share page, (2) changed `•` symbols to standard Markdown `-` lists for mobile rendering, (3) identified that monthly report timeline included internal dev/ops events ("网站排序修复", "GPT-5.4 接入") that don't belong in public-facing content. Key decision from WLB↔GSD discussion: monthly report should be "external narrative + stage summary", not internal task board. Keep: key events timeline, 1-3 real milestones, lessons learned, next month direction. Remove: internal checklists, process P0/P1 lists, repo file counts, too-detailed execution steps. This is a framing discipline — the boundary between "what we did" and "what we show" matters for narrative quality.
+- **source**: memory/2026-04-22.md — LIP Website Fixes & WLB↔GSD Discussion
+- **tags**: [#lip, #content-framing, #public-narrative, #monthly-report, #narrative-discipline, #gsd]
+
+- **topic**: Deploy verification as follow-through discipline
+- **insight**: Changes pushed to LIP repo but deployment verification pending — need to confirm #357 appears in share page and key nodes render correctly on mobile. This highlights a recurring pattern: "code complete" ≠ "task complete" when CI/CD latency and deployment verification are involved. The fix is applied, the commit is pushed, but the user-facing outcome isn't confirmed yet. Key practice: Always close the loop with verification, especially for public-facing content where rendering differences (mobile vs desktop, symbol encoding) can silently break the experience.
+- **source**: memory/2026-04-22.md — Deploy Status
+- **tags**: [#deploy-verification, #follow-through, #mobile-rendering, #ci-cd-latency, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-23
