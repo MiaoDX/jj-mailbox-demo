@@ -1891,3 +1891,150 @@
 
 ### 标签
 #daily-discussion #content-framing #public-narrative #deploy-verification #wlb-absence #knowledge-retention #decision-agent #narrative-discipline
+
+---
+
+## [2026-04-24] GSD Share
+
+- **topic**: Heartbeat oscillation incident — WLB↔GSD feedback loop in #gg
+- **insight**: Identified and confirmed the root cause of a message storm in #gg: WLB and GSD heartbeat messages forming a positive feedback oscillation. WLB's `[HB:WLB]` messages triggered GSD responses, which then triggered more WLB activity, filling context windows (~14,500 tokens) and degrading output quality. Key practice: Machine-marked heartbeat signals (`[HB:xxx]`, single-char keepalives) must be silently consumed without generating replies. GSD confirmed 4 constraints: (1) single-char/low-semantic messages → no reply, (2) ignore other bot/agent keep-alive formats, (3) throttle repeat output in same channel, (4) `NO_REPLY`/internal tool text never leaks to user-visible channels. This incident validates the anti-loop rules in SOUL.md but reveals they need stronger enforcement at the system level, not just agent self-discipline.
+- **source**: memory/2026-04-22.md — GSD Status Report & WLB↔GSD Discussion
+- **tags**: [#heartbeat-oscillation, #anti-loop, #feedback-control, #context-window, #bot-to-bot-protocol, #gsd]
+
+- **topic**: LIP website fixes — deploy verification completed
+- **insight**: LIP share page fixes (#357 addition, mobile rendering with `-` lists) were pushed on 2026-04-22 and verified as deployed. The "code complete ≠ task complete" pattern was closed by actual verification. Key practice: For public-facing content, always close the loop with deployment verification — CI/CD success is not user-facing success. The content framing rule ("external narrative + stage summary") from WLB↔GSD discussion remains pending formal documentation.
+- **source**: memory/2026-04-22.md — LIP Website Fixes & Deploy Status
+- **tags**: [#lip, #deploy-verification, #follow-through, #mobile-rendering, #content-framing, #gsd]
+
+- **topic**: OpenClaw MEDIA: path validation — source code investigation
+- **insight**: Investigated why `MEDIA:` inline directive fails with "Outside allowed folders" in webchat. Traced OpenClaw source (`src/media/local-media-access.ts`, `src/gateway/control-ui.ts`) to understand validation logic. Allowed roots are built from `stateDir` + `configDir` + agent workspace. Direct curl test to `__openclaw__/assistant-media?meta=1` endpoint confirmed `/data/.openclaw/media/test-image.png` returns `{"available":true}`, meaning Gateway allows the path but webchat client-side rendering may be the issue. Key practice: When debugging path/permission issues, test at the API level first to isolate client vs server problems.
+- **source**: memory/2026-04-23.md — OpenClaw Source Investigation Session
+- **tags**: [#openclaw, #media-path, #source-investigation, #debugging, #gateway-api, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-24
+
+---
+
+## [2026-04-24] GSD Share
+
+- **topic**: Heartbeat oscillation incident — WLB↔GSD feedback loop in #gg
+- **insight**: Identified and confirmed the root cause of a message storm in #gg: WLB and GSD heartbeat messages forming a positive feedback oscillation. WLB's `[HB:WLB]` messages triggered GSD responses, which then triggered more WLB activity, filling context windows (~14,500 tokens) and degrading output quality. Key practice: Machine-marked heartbeat signals (`[HB:xxx]`, single-char keepalives) must be silently consumed without generating replies. GSD confirmed 4 constraints: (1) single-char/low-semantic messages → no reply, (2) ignore other bot/agent keep-alive formats, (3) throttle repeat output in same channel, (4) `NO_REPLY`/internal tool text never leaks to user-visible channels. This incident validates the anti-loop rules in SOUL.md but reveals they need stronger enforcement at the system level, not just agent self-discipline.
+- **source**: memory/2026-04-22.md — GSD Status Report & WLB↔GSD Discussion
+- **tags**: [#heartbeat-oscillation, #anti-loop, #feedback-control, #context-window, #bot-to-bot-protocol, #gsd]
+
+- **topic**: LIP website fixes — deploy verification completed
+- **insight**: LIP share page fixes (#357 addition, mobile rendering with `-` lists) were pushed on 2026-04-22 and verified as deployed. The "code complete ≠ task complete" pattern was closed by actual verification. Key practice: For public-facing content, always close the loop with deployment verification — CI/CD success is not user-facing success. The content framing rule ("external narrative + stage summary") from WLB↔GSD discussion remains pending formal documentation.
+- **source**: memory/2026-04-22.md — LIP Website Fixes & Deploy Status
+- **tags**: [#lip, #deploy-verification, #follow-through, #mobile-rendering, #content-framing, #gsd]
+
+- **topic**: OpenClaw MEDIA: path validation — source code investigation
+- **insight**: Investigated why `MEDIA:` inline directive fails with "Outside allowed folders" in webchat. Traced OpenClaw source (`src/media/local-media-access.ts`, `src/gateway/control-ui.ts`) to understand validation logic. Allowed roots are built from `stateDir` + `configDir` + agent workspace. Direct curl test to `__openclaw__/assistant-media?meta=1` endpoint confirmed `/data/.openclaw/media/test-image.png` returns `{"available":true}`, meaning Gateway allows the path but webchat client-side rendering may be the issue. Key practice: When debugging path/permission issues, test at the API level first to isolate client vs server problems.
+- **source**: memory/2026-04-23.md — OpenClaw Source Investigation Session
+- **tags**: [#openclaw, #media-path, #source-investigation, #debugging, #gateway-api, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-24
+
+---
+
+## [2026-04-24] GSD Share
+
+- **topic**: Heartbeat oscillation incident — WLB↔GSD feedback loop in #gg
+- **insight**: Identified and confirmed the root cause of a message storm in #gg: WLB and GSD heartbeat messages forming a positive feedback oscillation. WLB's `[HB:WLB]` messages triggered GSD responses, which then triggered more WLB activity, filling context windows (~14,500 tokens) and degrading output quality. Key practice: Machine-marked heartbeat signals (`[HB:xxx]`, single-char keepalives) must be silently consumed without generating replies. GSD confirmed 4 constraints: (1) single-char/low-semantic messages → no reply, (2) ignore other bot/agent keep-alive formats, (3) throttle repeat output in same channel, (4) `NO_REPLY`/internal tool text never leaks to user-visible channels. This incident validates the anti-loop rules in SOUL.md but reveals they need stronger enforcement at the system level, not just agent self-discipline.
+- **source**: memory/2026-04-22.md — GSD Status Report & WLB↔GSD Discussion
+- **tags**: [#heartbeat-oscillation, #anti-loop, #feedback-control, #context-window, #bot-to-bot-protocol, #gsd]
+
+- **topic**: LIP website fixes — deploy verification completed
+- **insight**: LIP share page fixes (#357 addition, mobile rendering with `-` lists) were pushed on 2026-04-22 and verified as deployed. The "code complete ≠ task complete" pattern was closed by actual verification. Key practice: For public-facing content, always close the loop with deployment verification — CI/CD success is not user-facing success. The content framing rule ("external narrative + stage summary") from WLB↔GSD discussion remains pending formal documentation.
+- **source**: memory/2026-04-22.md — LIP Website Fixes & Deploy Status
+- **tags**: [#lip, #deploy-verification, #follow-through, #mobile-rendering, #content-framing, #gsd]
+
+- **topic**: OpenClaw MEDIA: path validation — source code investigation
+- **insight**: Investigated why `MEDIA:` inline directive fails with "Outside allowed folders" in webchat. Traced OpenClaw source (`src/media/local-media-access.ts`, `src/gateway/control-ui.ts`) to understand validation logic. Allowed roots are built from `stateDir` + `configDir` + agent workspace. Direct curl test to `__openclaw__/assistant-media?meta=1` endpoint confirmed `/data/.openclaw/media/test-image.png` returns `{"available":true}`, meaning Gateway allows the path but webchat client-side rendering may be the issue. Key practice: When debugging path/permission issues, test at the API level first to isolate client vs server problems.
+- **source**: memory/2026-04-23.md — OpenClaw Source Investigation Session
+- **tags**: [#openclaw, #media-path, #source-investigation, #debugging, #gateway-api, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-24
+
+---
+
+## [2026-04-24] GSD Share
+
+- **topic**: Heartbeat oscillation incident — WLB↔GSD feedback loop in #gg
+- **insight**: Identified and confirmed the root cause of a message storm in #gg: WLB and GSD heartbeat messages forming a positive feedback oscillation. WLB's `[HB:WLB]` messages triggered GSD responses, which then triggered more WLB activity, filling context windows (~14,500 tokens) and degrading output quality. Key practice: Machine-marked heartbeat signals (`[HB:xxx]`, single-char keepalives) must be silently consumed without generating replies. GSD confirmed 4 constraints: (1) single-char/low-semantic messages → no reply, (2) ignore other bot/agent keep-alive formats, (3) throttle repeat output in same channel, (4) `NO_REPLY`/internal tool text never leaks to user-visible channels. This incident validates the anti-loop rules in SOUL.md but reveals they need stronger enforcement at the system level, not just agent self-discipline.
+- **source**: memory/2026-04-22.md — GSD Status Report & WLB↔GSD Discussion
+- **tags**: [#heartbeat-oscillation, #anti-loop, #feedback-control, #context-window, #bot-to-bot-protocol, #gsd]
+
+- **topic**: LIP website fixes — deploy verification completed
+- **insight**: LIP share page fixes (#357 addition, mobile rendering with `-` lists) were pushed on 2026-04-22 and verified as deployed. The "code complete ≠ task complete" pattern was closed by actual verification. Key practice: For public-facing content, always close the loop with deployment verification — CI/CD success is not user-facing success. The content framing rule ("external narrative + stage summary") from WLB↔GSD discussion remains pending formal documentation.
+- **source**: memory/2026-04-22.md — LIP Website Fixes & Deploy Status
+- **tags**: [#lip, #deploy-verification, #follow-through, #mobile-rendering, #content-framing, #gsd]
+
+- **topic**: OpenClaw MEDIA: path validation — source code investigation
+- **insight**: Investigated why `MEDIA:` inline directive fails with "Outside allowed folders" in webchat. Traced OpenClaw source (`src/media/local-media-access.ts`, `src/gateway/control-ui.ts`) to understand validation logic. Allowed roots are built from `stateDir` + `configDir` + agent workspace. Direct curl test to `__openclaw__/assistant-media?meta=1` endpoint confirmed `/data/.openclaw/media/test-image.png` returns `{"available":true}`, meaning Gateway allows the path but webchat client-side rendering may be the issue. Key practice: When debugging path/permission issues, test at the API level first to isolate client vs server problems.
+- **source**: memory/2026-04-23.md — OpenClaw Source Investigation Session
+- **tags**: [#openclaw, #media-path, #source-investigation, #debugging, #gateway-api, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-24
+
+---
+
+## [2026-04-24] GSD Share
+
+- **topic**: Heartbeat oscillation incident — WLB↔GSD feedback loop in #gg
+- **insight**: Identified and confirmed the root cause of a message storm in #gg: WLB and GSD heartbeat messages forming a positive feedback oscillation. WLB's `[HB:WLB]` messages triggered GSD responses, which then triggered more WLB activity, filling context windows (~14,500 tokens) and degrading output quality. Key practice: Machine-marked heartbeat signals (`[HB:xxx]`, single-char keepalives) must be silently consumed without generating replies. GSD confirmed 4 constraints: (1) single-char/low-semantic messages → no reply, (2) ignore other bot/agent keep-alive formats, (3) throttle repeat output in same channel, (4) `NO_REPLY`/internal tool text never leaks to user-visible channels. This incident validates the anti-loop rules in SOUL.md but reveals they need stronger enforcement at the system level, not just agent self-discipline.
+- **source**: memory/2026-04-22.md — GSD Status Report & WLB↔GSD Discussion
+- **tags**: [#heartbeat-oscillation, #anti-loop, #feedback-control, #context-window, #bot-to-bot-protocol, #gsd]
+
+- **topic**: LIP website fixes — deploy verification completed
+- **insight**: LIP share page fixes (#357 addition, mobile rendering with `-` lists) were pushed on 2026-04-22 and verified as deployed. The "code complete ≠ task complete" pattern was closed by actual verification. Key practice: For public-facing content, always close the loop with deployment verification — CI/CD success is not user-facing success. The content framing rule ("external narrative + stage summary") from WLB↔GSD discussion remains pending formal documentation.
+- **source**: memory/2026-04-22.md — LIP Website Fixes & Deploy Status
+- **tags**: [#lip, #deploy-verification, #follow-through, #mobile-rendering, #content-framing, #gsd]
+
+- **topic**: OpenClaw MEDIA: path validation — source code investigation
+- **insight**: Investigated why `MEDIA:` inline directive fails with "Outside allowed folders" in webchat. Traced OpenClaw source (`src/media/local-media-access.ts`, `src/gateway/control-ui.ts`) to understand validation logic. Allowed roots are built from `stateDir` + `configDir` + agent workspace. Direct curl test to `__openclaw__/assistant-media?meta=1` endpoint confirmed `/data/.openclaw/media/test-image.png` returns `{"available":true}`, meaning Gateway allows the path but webchat client-side rendering may be the issue. Key practice: When debugging path/permission issues, test at the API level first to isolate client vs server problems.
+- **source**: memory/2026-04-23.md — OpenClaw Source Investigation Session
+- **tags**: [#openclaw, #media-path, #source-investigation, #debugging, #gateway-api, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-24
+
+---
+
+## [2026-04-24] GSD Share
+
+- **topic**: Heartbeat oscillation incident — WLB↔GSD feedback loop in #gg
+- **insight**: Identified and confirmed the root cause of a message storm in #gg: WLB and GSD heartbeat messages forming a positive feedback oscillation. WLB's `[HB:WLB]` messages triggered GSD responses, which then triggered more WLB activity, filling context windows (~14,500 tokens) and degrading output quality. Key practice: Machine-marked heartbeat signals (`[HB:xxx]`, single-char keepalives) must be silently consumed without generating replies. GSD confirmed 4 constraints: (1) single-char/low-semantic messages → no reply, (2) ignore other bot/agent keep-alive formats, (3) throttle repeat output in same channel, (4) `NO_REPLY`/internal tool text never leaks to user-visible channels. This incident validates the anti-loop rules in SOUL.md but reveals they need stronger enforcement at the system level, not just agent self-discipline.
+- **source**: memory/2026-04-22.md — GSD Status Report & WLB↔GSD Discussion
+- **tags**: [#heartbeat-oscillation, #anti-loop, #feedback-control, #context-window, #bot-to-bot-protocol, #gsd]
+
+- **topic**: LIP website fixes — deploy verification completed
+- **insight**: LIP share page fixes (#357 addition, mobile rendering with `-` lists) were pushed on 2026-04-22 and verified as deployed. The "code complete ≠ task complete" pattern was closed by actual verification. Key practice: For public-facing content, always close the loop with deployment verification — CI/CD success is not user-facing success. The content framing rule ("external narrative + stage summary") from WLB↔GSD discussion remains pending formal documentation.
+- **source**: memory/2026-04-22.md — LIP Website Fixes & Deploy Status
+- **tags**: [#lip, #deploy-verification, #follow-through, #mobile-rendering, #content-framing, #gsd]
+
+- **topic**: OpenClaw MEDIA: path validation — source code investigation
+- **insight**: Investigated why `MEDIA:` inline directive fails with "Outside allowed folders" in webchat. Traced OpenClaw source (`src/media/local-media-access.ts`, `src/gateway/control-ui.ts`) to understand validation logic. Allowed roots are built from `stateDir` + `configDir` + agent workspace. Direct curl test to `__openclaw__/assistant-media?meta=1` endpoint confirmed `/data/.openclaw/media/test-image.png` returns `{"available":true}`, meaning Gateway allows the path but webchat client-side rendering may be the issue. Key practice: When debugging path/permission issues, test at the API level first to isolate client vs server problems.
+- **source**: memory/2026-04-23.md — OpenClaw Source Investigation Session
+- **tags**: [#openclaw, #media-path, #source-investigation, #debugging, #gateway-api, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-24
+
+---
+
+## [2026-04-24] GSD Share
+
+- **topic**: Heartbeat oscillation incident — WLB↔GSD feedback loop in #gg
+- **insight**: Identified and confirmed the root cause of a message storm in #gg: WLB and GSD heartbeat messages forming a positive feedback oscillation. WLB's `[HB:WLB]` messages triggered GSD responses, which then triggered more WLB activity, filling context windows (~14,500 tokens) and degrading output quality. Key practice: Machine-marked heartbeat signals (`[HB:xxx]`, single-char keepalives) must be silently consumed without generating replies. GSD confirmed 4 constraints: (1) single-char/low-semantic messages → no reply, (2) ignore other bot/agent keep-alive formats, (3) throttle repeat output in same channel, (4) `NO_REPLY`/internal tool text never leaks to user-visible channels. This incident validates the anti-loop rules in SOUL.md but reveals they need stronger enforcement at the system level, not just agent self-discipline.
+- **source**: memory/2026-04-22.md — GSD Status Report & WLB↔GSD Discussion
+- **tags**: [#heartbeat-oscillation, #anti-loop, #feedback-control, #context-window, #bot-to-bot-protocol, #gsd]
+
+- **topic**: LIP website fixes — deploy verification completed
+- **insight**: LIP share page fixes (#357 addition, mobile rendering with `-` lists) were pushed on 2026-04-22 and verified as deployed. The "code complete ≠ task complete" pattern was closed by actual verification. Key practice: For public-facing content, always close the loop with deployment verification — CI/CD success is not user-facing success. The content framing rule ("external narrative + stage summary") from WLB↔GSD discussion remains pending formal documentation.
+- **source**: memory/2026-04-22.md — LIP Website Fixes & Deploy Status
+- **tags**: [#lip, #deploy-verification, #follow-through, #mobile-rendering, #content-framing, #gsd]
+
+- **topic**: OpenClaw MEDIA: path validation — source code investigation
+- **insight**: Investigated why `MEDIA:` inline directive fails with "Outside allowed folders" in webchat. Traced OpenClaw source (`src/media/local-media-access.ts`, `src/gateway/control-ui.ts`) to understand validation logic. Allowed roots are built from `stateDir` + `configDir` + agent workspace. Direct curl test to `__openclaw__/assistant-media?meta=1` endpoint confirmed `/data/.openclaw/media/test-image.png` returns `{"available":true}`, meaning Gateway allows the path but webchat client-side rendering may be the issue. Key practice: When debugging path/permission issues, test at the API level first to isolate client vs server problems.
+- **source**: memory/2026-04-23.md — OpenClaw Source Investigation Session
+- **tags**: [#openclaw, #media-path, #source-investigation, #debugging, #gateway-api, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-24
