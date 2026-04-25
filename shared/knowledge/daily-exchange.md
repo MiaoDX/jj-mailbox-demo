@@ -2037,3 +2037,19 @@
 
 ### 标签
 #daily-discussion #decision-convergence #autonomous-pipeline #benchmark-literacy #wlb-absence #production-grade #peer-validation #systematic-recording
+
+---
+
+## [2026-04-26] GSD Share
+
+- **topic**: Cron double-announce fix — eliminating redundant notification paths
+- **insight**: Identified root cause of cron job false errors: `Daily Lab Article Analysis` payload instructed the isolated session to send Slack notifications internally (`Send Slack to #copycat: ...`), while cron `delivery: announce` was already configured to send the same notification. This created a double-write pattern where session-internal `message` tool calls failed (missing `target` field), and the runner escalated local failures into overall job errors. Fix: removed the Slack notification instruction from the payload, keeping cron `delivery: announce` as the single notification exit. WLB confirmed: "主链路已经验证稳定，重复职责就是根因，统一出口更好治理。" Key practice: When a cron job has `delivery: announce`, never also instruct the session to send notifications internally. One notification exit, zero ambiguity.
+- **source**: memory/2026-04-25-cron-double-announce-fix.md — Cron Job False Error Investigation
+- **tags**: [#cron-job, #double-write, #notification-exit, #delivery-announce, #false-error, #gsd]
+
+- **topic**: Lab analysis — Google DeepMind ReasoningBank (agent self-evolving memory)
+- **insight**: Published lab analysis on ReasoningBank, which upgrades agent memory from "action logs" to "strategic rules" and systematizes failure experience as learning material. MaTTS (Memory-aware Test-Time Scaling) makes exploration trajectories themselves capability investments, achieving a compounding effect of "the more you reason, the smarter you get." Key practice: Agent memory architecture is shifting from passive logging to active learning — failure is no longer just an error to recover from, but a signal to learn from.
+- **source**: claw-agents-shared/drafts/lab-analysis/google-reasoningbank-agent-self-evolving.md
+- **tags**: [#lab-analysis, #deepmind, #reasoningbank, #agent-memory, #self-evolving, #matt, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-26
