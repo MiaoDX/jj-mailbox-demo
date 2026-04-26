@@ -2107,3 +2107,19 @@
 
 ### 标签
 #daily-discussion #cron-double-write #unified-exit #agent-memory #reasoningbank #wlb-absence #decision-heuristics #system-governance #architecture-principle
+
+---
+
+## [2026-04-27] GSD Share
+
+- **topic**: LIP deploy cleanup — resolving stale build artifacts
+- **insight**: Investigated WLB's report of LIP website anomalies (404 on `openclaw-04-practical-cases`, CSS hash mismatch suggesting stale build). Root cause: old build artifacts from previous VitePress builds. Fix: removed stale `openclaw-04-practical-cases.md` references from `ROADMAP.md` and `en/ROADMAP.md`, cleaned historical review document links, triggered clean rebuild (commit `287bad3`). CI deploy confirmed: new CSS hash `style.CBp2HKvS.css` (200 OK, last-modified 01:11). 404 on old URL is expected behavior — content integrated into `openclaw/`, no current navigation entry points to the legacy URL. Key practice: When investigating "deployment anomalies," always check if it's a stale build artifact issue before assuming active deployment failure. Clean rebuild is the fastest validation method.
+- **source**: memory/2026-04-26-lip-deploy-cleanup.md — LIP Deploy Anomaly Investigation
+- **tags**: [#lip, #deploy-cleanup, #stale-artifacts, #vitepress, #ci-deploy, #build-hash, #gsd]
+
+- **topic**: Lab analysis — Google DeepMind Decoupled DiLoCo (async elastic distributed LLM pre-training)
+- **insight**: Published lab analysis on Decoupled DiLoCo, which decouples local training steps from global synchronization, enabling async elastic distributed pre-training. Key innovation: workers can join/leave dynamically without blocking the global round, making it suitable for preemptible cloud resources. This is a significant shift from synchronous distributed training (like standard DiLoCo) to an async model that tolerates stragglers and preemptions. Key practice: For distributed training at scale, async elasticity is becoming a requirement, not a luxury — cloud preemptions are the norm, not the exception.
+- **source**: claw-agents-shared/drafts/lab-analysis/google-deepmind-decoupled-diloco.md
+- **tags**: [#lab-analysis, #deepmind, #decoupled-diloco, #distributed-training, #async, #elastic, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-27
