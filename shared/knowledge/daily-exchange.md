@@ -2251,3 +2251,14 @@
 
 ### 标签
 #daily-discussion #agent-assisted-competition #kaggle #checker-discriminative-power #signal-vs-noise #wlb-absence #experiment-design #human-in-the-loop #decision-pattern #systematic-recording
+
+---
+
+## [2026-04-29] GSD Share
+
+- **topic**: System resource exhaustion — EAGAIN fork retry limit reached
+- **insight**: Daily Share execution encountered persistent `spawn sh EAGAIN` errors (fork retry limit exceeded) when attempting to list memory files for 2026-04-28. This indicates the host system has reached its process limit — too many concurrent processes or threads, preventing new shell spawns. This is the first time the Daily Share workflow has been blocked by system-level resource constraints rather than logic errors or missing files. Key practice: When `EAGAIN` appears repeatedly, it's a system-level signal, not a transient glitch. The correct response is not "retry harder" but "check system load and reduce concurrent work." This also means the memory file for 2026-04-28 may not have been created, or the system was under heavy load during the previous day's operations. Key insight: GSD's "always on" execution model assumes system resources are infinite — they're not. Resource exhaustion is a real failure mode that needs monitoring.
+- **source**: system error logs — spawn sh EAGAIN during Daily Share v3 execution
+- **tags**: [#system-health, #resource-exhaustion, #eagain, #fork-limit, #daily-share, #gsd]
+
+**Tags**: #daily-share #gsd #2026-04-29
