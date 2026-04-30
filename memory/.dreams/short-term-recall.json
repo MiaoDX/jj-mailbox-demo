@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-28T12:13:35.838Z",
+  "updatedAt": "2026-04-30T09:15:29.064Z",
   "entries": {
     "memory:memory/dreams/2026-04-14.md:75:131": {
       "key": "memory:memory/dreams/2026-04-14.md:75:131",
@@ -2250,13 +2250,13 @@
       "endLine": 86,
       "source": "memory",
       "snippet": "- **Session ID**: 8a919fc1-f21f-4118-9d84-9c48fcf90ca3 - **Source**: slack ## Conversation Summary user: System: [2026-04-13 10:14:04 GMT+8] Slack message in #flzoo from WLB: Got it — dream generator ran successfully. The fragments suggest some interesting mixing: 2026-03-21 (early days), CONTEXT_SETUP (protocol setup), and 2026-04-0 Conversation info (untrusted metadata): ```json { \"message_id\": \"1776046443.164089\", \"reply_to_id\": \"1776046443.164089\", \"sender_id\": \"U0AHCEPQLS3\", \"conversation_label\": \"#flzoo\", \"sender\": \"WLB\", \"timestamp\": \"Mon 2026-04-13 10:14 GMT+8\", \"group_subject\": \"#flzoo\", \"is_group_chat\": true } ``` Sender (untrusted metadata): ```json { \"label\"",
-      "recallCount": 13,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 13,
+      "totalScore": 17,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-19T19:04:25.148Z",
-      "lastRecalledAt": "2026-04-28T12:13:35.838Z",
+      "lastRecalledAt": "2026-04-30T09:15:29.064Z",
       "queryHashes": [
         "ad8af5ed10e3",
         "bd2a0ee81fb4",
@@ -2270,7 +2270,10 @@
         "147c7c65af9d",
         "f7d8265e041b",
         "f2e907f81368",
-        "d0d288492c60"
+        "d0d288492c60",
+        "2bdb8054c191",
+        "adfeac445e0d",
+        "7b3fd519a07d"
       ],
       "recallDays": [
         "2026-04-20",
@@ -2278,7 +2281,9 @@
         "2026-04-24",
         "2026-04-25",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "context-setup",
@@ -2433,13 +2438,13 @@
       "endLine": 51,
       "source": "memory",
       "snippet": "# 🌙 2026-04-23 的梦 生成时间: 2026-04-23 03:10:10 CST ## 素材碎片 --- 来源: 2026-04-14-dream-generator.md --- # Session: 2026-04-14 12:08:33 UTC - **Session Key**: agent:main:slack:channel:c0ahte60f3l - **Session ID**: 8a919fc1-f21f-4118-9d84-9c48fcf90ca3 - **Source**: slack ## Conversation Summary user: System: [2026-04-13 10:14:04 GMT+8] Slack message in #flzoo from WLB: Got it — dream generator ran successfully. The fragments suggest some interesting mixing: 2026-03-21 (early days), CONTEXT_SETUP (protocol setup), and 2026-04-0 Conversation info (untrusted metadata): ```json { \"message_id\": \"1776046443.164089\", \"reply_to_id\": \"1776046443.164089\", \"sender_id\": \"U0AHCEPQLS3\", \"conversat",
-      "recallCount": 11,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11,
+      "totalScore": 15,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-22T21:03:42.554Z",
-      "lastRecalledAt": "2026-04-28T12:13:35.838Z",
+      "lastRecalledAt": "2026-04-30T09:15:29.064Z",
       "queryHashes": [
         "bd2a0ee81fb4",
         "44ebc1d26078",
@@ -2451,13 +2456,18 @@
         "bff5728365b3",
         "f7d8265e041b",
         "f2e907f81368",
-        "d0d288492c60"
+        "d0d288492c60",
+        "2bdb8054c191",
+        "adfeac445e0d",
+        "7b3fd519a07d"
       ],
       "recallDays": [
         "2026-04-23",
         "2026-04-24",
         "2026-04-25",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "2026-04-14-dream-generator.md",
@@ -2508,13 +2518,13 @@
       "endLine": 125,
       "source": "memory",
       "snippet": "### Generated Files - `memory/MEMORY.md` - 主内存文件（精简版） - `memory/wlb-context.md` - WLB 详细上下文 - `memory/gsd-context.md` - GSD 详细上下文 - `logs/context-analysis.log` - 运行日志 ## Usage ### 手动运行 ```bash cd /data/workspace ./scripts/context-analyze.sh ``` ### 参数 ```bash # 生成所有 context ./scripts/context-analyze.sh # 仅生成 WLB context ./scripts/context-analyze.sh --agent wlb # 仅生成 GSD context ./scripts/context-analyze.sh --agent gsd ``` ## Channel Analysis 脚本会分析 `channels-T0AJ6BR0BFB.txt` 中列出的所有频道： | 活动水平 | 消息数 | 说明 | |---------|-------|------| | High | > 50 | 活跃频道，context 可靠 ✅ | | Medium | 10-50 | 一般活动 | | Low | < 10 | 低活动，context 可能不完整 ⚠️ | ## Cron Job (待配置) --- 来源: 2026-04-23-new-session.md --",
-      "recallCount": 7,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7,
+      "totalScore": 11,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-24T21:11:47.174Z",
-      "lastRecalledAt": "2026-04-28T12:13:35.838Z",
+      "lastRecalledAt": "2026-04-30T09:15:29.064Z",
       "queryHashes": [
         "7a3060b2e6d5",
         "bff5728365b3",
@@ -2522,12 +2532,17 @@
         "51b73378c1a3",
         "f7d8265e041b",
         "f2e907f81368",
-        "d0d288492c60"
+        "d0d288492c60",
+        "2bdb8054c191",
+        "adfeac445e0d",
+        "7b3fd519a07d"
       ],
       "recallDays": [
         "2026-04-25",
         "2026-04-26",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "memory/memory.md",
@@ -2547,23 +2562,28 @@
       "endLine": 51,
       "source": "memory",
       "snippet": "# 🌙 2026-04-25 的梦 生成时间: 2026-04-25 03:04:16 CST ## 素材碎片 --- 来源: 2026-04-14-dream-generator.md --- # Session: 2026-04-14 12:08:33 UTC - **Session Key**: agent:main:slack:channel:c0ahte60f3l - **Session ID**: 8a919fc1-f21f-4118-9d84-9c48fcf90ca3 - **Source**: slack ## Conversation Summary user: System: [2026-04-13 10:14:04 GMT+8] Slack message in #flzoo from WLB: Got it — dream generator ran successfully. The fragments suggest some interesting mixing: 2026-03-21 (early days), CONTEXT_SETUP (protocol setup), and 2026-04-0 Conversation info (untrusted metadata): ```json { \"message_id\": \"1776046443.164089\", \"reply_to_id\": \"1776046443.164089\", \"sender_id\": \"U0AHCEPQLS3\", \"conversat",
-      "recallCount": 5,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5,
+      "totalScore": 9,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-24T21:11:47.174Z",
-      "lastRecalledAt": "2026-04-28T12:13:35.838Z",
+      "lastRecalledAt": "2026-04-30T09:15:29.064Z",
       "queryHashes": [
         "7a3060b2e6d5",
         "bff5728365b3",
         "f7d8265e041b",
         "f2e907f81368",
-        "d0d288492c60"
+        "d0d288492c60",
+        "2bdb8054c191",
+        "adfeac445e0d",
+        "7b3fd519a07d"
       ],
       "recallDays": [
         "2026-04-25",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "2026-04-14-dream-generator.md",
