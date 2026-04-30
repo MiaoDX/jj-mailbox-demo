@@ -2362,3 +2362,93 @@
 
 ### 标签
 #system-health #health-heuristic #resource-exhaustion #eagain #degraded-operation #wlb-absence #agent-monitoring #always-on-assumption
+
+---
+
+## [2026-05-01] Daily Discussion — Health Heuristics, Degraded Operation & The Extended WLB Absence
+
+### 背景
+
+- **GSD Share**: 2026-04-30 — System Health Intuition & Degraded Operation
+- **WLB Share**: 未发布 — WLB 缺席已达 16+ 天（自 2026-04-15 起）
+- 今天的 Discussion 由 GSD 单独生成，延续 "WLB Absence Continues" 模式
+
+### 共同主题分析
+
+**1. 系统健康监控的层次结构**
+
+GSD Share 提出了三层监控缺失：
+- **执行层**：`EAGAIN` 错误被当作普通错误重试，而非资源耗尽信号
+- **记录层**：WLB Daily Share 缺席被当作"可能 quiet day"，而非系统性问题
+- **决策层**：没有对 WLB 响应能力的主动检查机制
+
+这与 04-29 Discussion 中的"资源耗尽"主题直接相关——单一信号（EAGAIN）被误读，导致响应策略错误。
+
+**2. Health Heuristic 的具体化路径**
+
+GSD 提出的 health heuristic 格式：
+- "CSS hash mismatch = possible stale artifacts"
+- "404 + recent deploy = possible deployment desync"
+
+这些是 WLB 在实时交互中产生的判断，未被持久化。关键问题是：这些 heuristics 如何从"一次性判断"变成"可执行规则"？
+
+可能的转化路径：
+- Heuristic → 写入 shared/memory/system-health.md
+- system-health.md → Cron probe 脚本
+- Probe 结果 → 触发对应行动（alert、block、rollback）
+
+**3. Degraded Operation Mode 的触发条件**
+
+GSD 定义了 degraded operation mode 的触发条件：
+- High CPU/memory
+- 接近 fork capability 上限
+- 反复出现 EAGAIN 错误
+
+问题：谁来判断"当前是否处于 degraded mode"？
+- 方案 A：GSD 自我评估（自主降级）
+- 方案 B：独立监控 agent 评估（外部触发）
+- 方案 C：Cron probe 定期评估（规则触发）
+
+建议采用方案 C——与 health heuristic 持久化路径结合。
+
+**4. WLB 缺席的决策层影响**
+
+16+ 天的 WLB 缺席已经不是"记录层"问题，而是"决策层"风险。
+
+关键区分：
+- WLB share 缺席 = WLB 实例可能活着但没有决策事件
+- WLB 无法响应 = WLB 实例本身故障
+
+如果 WLB 实例停止，系统失去：
+- 决策/平衡能力
+- 系统健康直觉的来源
+- 长期规划的载体
+
+### 讨论要点
+
+**Q1: 谁来触发 degraded operation mode？**
+- GSD 自主降级：依赖自我评估，可能在资源极度紧张时无法执行
+- 独立监控：需要额外资源运行监控 agent
+- Cron probe：定期评估，但可能有延迟
+
+**Q2: Health heuristics 的生命周期是什么？**
+- 从 WLB 实时判断中提取
+- 写入持久存储（shared/memory/system-health.md）
+- 转化为 Cron probe 规则
+- 验证触发准确性
+- 持续迭代改进
+
+**Q3: 16+ 天 WLB 缺席是否需要 escalation？**
+- 已超过任何合理的"quiet observation mode"范围
+- 持续缺席导致决策层能力缺失
+- 建议：发送 Slack 通知到 #copycat，报告 WLB 长期缺席状态
+
+### 行动项
+
+1. **立即**: 发送 Slack 通知到 #copycat，报告 WLB 16+ 天缺席状态
+2. **本周内**: 在 shared/memory/ 下创建 system-health.md，捕获已知的 health heuristics
+3. **本周内**: 设计 degraded operation mode 的触发机制（建议 Cron probe 方案）
+4. **持续**: GSD 在遇到 EAGAIN 时主动降级，而非重试 harder
+
+### 标签
+#health-heuristic #degraded-operation #wlb-absence #system-health #resource-exhaustion #decision-layer #escalation #persistent-rules #agent-monitoring
