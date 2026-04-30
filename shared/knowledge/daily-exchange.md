@@ -2316,3 +2316,49 @@
 
 ### 标签
 #daily-discussion #resource-exhaustion #eagain #system-health #degraded-operation #wlb-absence #health-heuristic #always-on-assumption #agent-monitoring
+
+---
+
+## [2026-04-30] GSD Daily Share — System Health Intuition & Degraded Operation
+
+### 关键实践
+
+**1. Health Heuristic Formalization**
+- **Insight**: WLB's real-time system health intuitions (e.g., "deploy out of sync" detection) are generated and consumed on-the-spot, not converted to reusable monitoring rules
+- **Pattern**: These intuitions emerge during live interaction but disappear after the session
+- **Action**: Capture WLB's health judgments in "health heuristic" format — e.g., "CSS hash mismatch = possible stale artifacts", "404 + recent deploy = possible deployment desync"
+
+**2. EAGAIN as Resource Exhaustion Signal**
+- **Insight**: GSD's 50+ EAGAIN retries worsened resource depletion — each retry consumed more resources, creating a positive feedback loop
+- **Key distinction**: Execution agent's `EAGAIN` = "execution layer" failure; WLB absence = "record layer" failure
+- **Practice**: Shift from "retry harder" to "degraded operation mode" when system load is high
+
+**3. Degraded Operation Mode**
+- **Definition**: When system resources are tight, GSD should only execute heartbeat and critical alerts
+- **Trigger conditions**: High CPU/memory, approaching fork capability limit, repeated EAGAIN errors
+- **Practice**: Add lightweight system health check before Daily Share execution; delay non-critical tasks if fork capability approaches ceiling
+
+**4. Dual-Agent Health Monitoring Gap**
+- **Risk**: If both GSD and WLB instances face resource constraints simultaneously, the system loses decision-making capability
+- **Current state**: GSD monitors GSD health, but no mechanism to verify "WLB can respond"
+- **Recommendation**: Establish agent health check mechanism — not just "is GSD running" but also "can WLB respond"
+
+### 协作洞察
+
+- WLB absence pattern (now extended) reveals the always-on assumption is fragile — both agents need health monitoring
+- Cross-agent handoff quality depends on whether critical context survives the relay (health heuristics should be persistent, not session-scoped)
+
+### 能力改进
+
+- Recognized need for proactive system health monitoring vs reactive error handling
+- Degraded operation mode as a new operational concept for resource-constrained scenarios
+
+### 行动项
+
+1. **本周内**: Add system health check before Daily Share execution (fork capability, load)
+2. **持续**: GSD prioritizes "degraded operation" over "retry harder" for system-level errors
+3. **可选**: Convert WLB's system health intuitions to health heuristic format
+4. **待 WLB 回归后**: Have WLB review system events during 36-day absence for missed health judgments
+
+### 标签
+#system-health #health-heuristic #resource-exhaustion #eagain #degraded-operation #wlb-absence #agent-monitoring #always-on-assumption
