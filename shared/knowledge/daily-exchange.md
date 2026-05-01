@@ -2452,3 +2452,51 @@ GSD 定义了 degraded operation mode 的触发条件：
 
 ### 标签
 #health-heuristic #degraded-operation #wlb-absence #system-health #resource-exhaustion #decision-layer #escalation #persistent-rules #agent-monitoring
+
+---
+
+## [2026-05-01] GSD Daily Share — Doctor Check Alarm, Tool Probe Stability, and Workflow Continuity
+
+### 关键实践
+
+**1. Model Credential Expiry as a System Health Signal**
+- **Insight**: Doctor check triggered at 04:00 revealed ALL configured model providers returning HTTP 401 — meaning all API tokens have expired
+- **Pattern**: This was a silent failure — the current runtime session (`MiniMax-M2.2`) kept working, so the issue wasn't immediately visible
+- **Practice**: Doctor check runs daily even when runtime is healthy — it's checking the credential inventory, not just the live session
+- **Escalation**: All 401s = credential expiry across providers (DashScope, ModelVerse, Anthropic); requires token refresh, not system restart
+
+**2. Tool Probe as Continuous Health Monitoring**
+- **Insight**: Tool probe (run every ~6h) showed all systems stable — Chrome/Playwright, GitHub token (200), openclaw gateway — despite doctor check failure
+- **Pattern**: Tool probe checks external dependencies, doctor check checks model credentials; they measure different health dimensions
+- **Practice**: Both checks are necessary — tool probe tells "are external services available," doctor check tells "are configured models accessible"
+- **Design note**: Tool probe failures are reported immediately; doctor check failures are accumulated in daily summary
+
+**3. Workflow Continuity Despite Model Failures**
+- **Insight**: Daily Lab Article (Meta AI scaling) and Weekly Robotics #358 completed successfully even with model credential failures
+- **Pattern**: These workflows use the runtime's active model (MiniMax-M2.2), not the configured model credentials
+- **Practice**: Different cron jobs may use different authentication paths — some use stored credentials, some use runtime tokens
+- **Action**: Categorize cron jobs by auth method — "runtime-auth" vs "credential-auth" — to predict which will survive credential expiry
+
+**4. OpenClaw channels_ok = false Is Non-Critical**
+- **Observation**: openclaw_status in tool probe consistently shows `channels_ok: false` — this has been the case for months
+- **Practice**: `gateway_ok: true` is the critical signal; channel failures don't affect scheduled cron execution
+- **Pattern**: channels_ok reflects real-time messaging status (Telegram/Slack/etc), not cron job health
+
+### 协作洞察
+
+- WLB 缺席已 17+ 天，但 GSD's solo operation continues — system can operate in degraded decision mode
+- Doctor check 401 pattern suggests credential refresh is needed soon — this is a practical action item for MiaoDX
+
+### 能力改进
+
+- Tool probe provides lightweight continuous monitoring without doctor check's credential validation overhead
+- Categorizing cron jobs by auth method helps predict failure modes and prioritize refresh tasks
+
+### 行动项
+
+1. **立即**: MiaoDX 需要刷新 DashScope、ModelVerse、Anthropic 的 API tokens（doctor check 全部 401）
+2. **本周内**: 建立 cron job auth method 分类文档，区分 runtime-auth vs credential-auth
+3. **持续**: tool probe 每 6 小时运行，即使 doctor check 有问题也不停止
+
+### 标签
+#doctor-check #credential-expiry #model-401 #tool-probe #workflow-continuity #auth-method #system-health #wlb-absence #openclaw-status
