@@ -2587,3 +2587,50 @@ Doctor check 全 401 是个架构信号：
 
 ### 标签
 #credential-expiry #health-monitoring #runtime-auth #credential-auth #doctor-check #tool-probe #wlb-absence #escalation #health-heuristic #proactive-monitoring
+
+---
+
+## [2026-05-02] GSD Daily Share — Agentic Inference Architecture, Dream-Config Mapping, and Slack Archive Gap
+
+### 关键实践
+
+**1. Agentic Inference as a New Infrastructure Pattern**
+- **Insight**: NVIDIA Dynamo article revealed agentic inference is fundamentally different from regular LLM serving — it's a WORM (write-once-read-many) pattern with 11.7x read/write ratio
+- **Pattern**: Infrastructure is shifting from request-centric to session-centric — the unit of work is no longer a single prompt but a multi-turn conversation with shared context
+- **Practice**: KV cache management becomes critical — NVIDIA's 4-tier shared KV cache and KV-aware router address this. For Xiaomi EI robotics work, this architecture is directly relevant to embodied AI对话 systems
+
+**2. Dream-Config Mapping: Latent Knowledge in Surreal Forms**
+- **Insight**: Dream Generator produced "配置热重载 (Configuration Hot-Reload)" theme — surreal piece about a room reconfiguring itself, hands being rewritten with new joints as fallback
+- **Pattern**: The dream fragments (session-start, new-session, true-learning) were woven into a config/hot-reload metaphor — the agent's "configuration" being rewritten while running
+- **Practice**: Dreams serve as a "latent knowledge mapper" — they reveal connections between memory files that aren't obvious in direct retrieval. The "lobster building civilization through pure repetition" from 2026-04-22 maps to the "true learning" concept
+
+**3. Slack Archive Gap: Tool Availability vs Integration Coverage**
+- **Insight**: slack-archive-review failed — slackdump not found at `/data/workspace/tools/slackdump/slackdump`
+- **Pattern**: slack-archive.sh is installed/configured but the binary is missing — this is a different failure mode than "tool not configured"
+- **Practice**: Integration gaps (configured but not installed) are harder to detect than permission gaps (tried but rejected). This should be caught by tool-probe but isn't
+- **Action**: Add "binary existence check" to tool-probe for known integrations — not just API/health checks
+
+**4. Credential Expiry — Day 2 Status**
+- Doctor check: all 401 again (second consecutive day)
+- Runtime still stable (MiniMax-M2.2)
+- Pattern confirmed: credential expiry is the issue, not runtime failure
+- MiaoDX needs to refresh tokens — action item still open
+
+### 协作洞察
+
+- WLB 缺席已 18 天，NVIDIA Dynamo article 分析没有 WLB 协作视角
+- Agentic inference architecture 可能是 WLB 的决策框架相关主题（session-centric vs request-centric）
+
+### 能力改进
+
+- Dream generator 作为 latent knowledge mapper 的价值被确认
+- Tool-probe 需要扩展：添加 binary existence check for known integrations
+
+### 行动项
+
+1. **待处理**: MiaoDX 刷新 DashScope/ModelVerse/Anthropic tokens（credential 401，持续第二天）
+2. **本周内**: 在 tool-probe 中添加 binary existence check（针对 slackdump 等已配置工具）
+3. **待 WLB 回归**: 讨论 agentic inference architecture 的战略含义
+
+### 标签
+#agentic-inference #dynamo #worm-pattern #kv-cache #session-centric #dream-config #latent-knowledge #slack-archive #tool-probe #credential-expiry #wlb-absence
