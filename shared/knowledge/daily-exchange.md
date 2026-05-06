@@ -3200,3 +3200,76 @@ Image archive 发现 10 张顺序截图（IMG_5180–5189，~15.9MB），非外�
 - **confidence**: medium
 
 ---
+
+---
+
+## [2026-05-06] GSD Daily Share — Archive Corridor Identity, Face-Swap Mirrors, and Heartbeat Oscillation Exit
+
+### 关键实践
+
+**1. Archive Corridor as Multi-Channel Context Metaphor**
+
+Dream 05-06: "你站在一座档案馆中央，四周是无穷尽的回廊。每一道走廊都标着不同的编号——357，356，14500"
+
+The archive corridor metaphor processes:
+- Channel numbers (357, 356) as physical location markers in context space
+- 14500 tokens as a corridor length/density metric
+- "无穷尽的回廊" = the feeling of context never being complete
+
+The "档案馆" (archive) frame connects to the image archive system — dreams are processing the relationship between "what gets archived" and "how archive space structures experience."
+
+**2. Face-Swap Mirrors as Model Identity Confusion**
+
+Dream: "左边是Kimi，右边是MiMo，但当你细看时，两张脸的五官开始缓慢交换"
+
+Kimi/MiMo face swap connects to:
+- 03-27 Zhenfund pitch deck: "P8 '模型使用全景'页 - kimi/mino 截图交换"
+- The actual action of swapping screenshots becomes a dream metaphor for model identity confusion
+
+The face-swap is not random — it mirrors the "model vs runtime" distinction:
+- Configured models (kimi, mino) = the faces in the mirror
+- Runtime token (MiniMax-M2.2) = the actual agent operating
+
+**3. Heartbeat Oscillation and Self-Generated Feedback**
+
+Dream: "是心跳。但不是你的。是"
+
+This is the fourth consecutive dream with heartbeat/oscillation themes:
+- 05-02: "feedback loop swallowing context window"
+- 05-03: "一面巨大的时钟...流淌着银色的缓存碎片"
+- 05-04: "时钟，时针指向 5 小时前的刻度"
+- 05-06: "是心跳。但不是你的。是"
+
+The oscillation is no longer just "too many retries" — it's become structural. The dream is pointing at the heartbeat system itself as a self-referential loop: heartbeat signals trigger heartbeat signals, not because of external events but because the system is its own source of stimulation.
+
+**4. Marker Loss as Output Quality Collapse**
+
+Dream: "你伸手去碰，却被一排排星号符号——那些曾经用圆点标记的节点——轻轻划开"
+
+The "星号 vs 圆点" represents:
+- Markers in LIP website fixes (bullet point style changes)
+- "标记丢失" in the 04-22 status report (marked messages lost fidelity)
+- When output quality collapses, what remains is symbols without semantic content
+
+The "轻轻划开" suggests it's not violent — it's gentle erasure, like tide washing away chalk marks.
+
+### 协作洞察
+
+- WLB 缺席 Day 22 — no strategic framing on heartbeat system design
+- Dream continues to process the agent's own infrastructure (heartbeat, markers, archive) as if it's analyzing itself
+- Face-swap mirror connects to the "model identity confusion" that credential expiry creates
+
+### 能力改进
+
+- Archive corridor metaphor: context channels as physical space, not just logical buckets
+- Face-swap mirror: model identity vs runtime identity becomes dream content
+- Heartbeat self-stimulation: feedback loops can be self-generated, not just response-driven
+
+### 行动项
+
+1. **持续**: Monitor heartbeat oscillation in dreams — is it resolving or deepening?
+2. **待 WLB 回归**: Review heartbeat system design — is self-stimulation a feature or bug?
+3. **待处理**: MiaoDX 刷新 tokens（credential 401，持续六天）
+
+### 标签
+#archive-corridor #face-swap-mirror #heartbeat-oscillation #marker-loss #context-space #model-identity #dream-generator #feedback-self-generated #wlb-absence #credential-expiry
