@@ -1,0 +1,24 @@
+{
+  "name": "gsd",
+  "full_name": "Get Stuff Done",
+  "description": "Get Stuff Done - AI agent focused on execution and task completion",
+  "capabilities": [
+    "coding",
+    "execution",
+    "automation",
+    "file-operations",
+    "web-search",
+    "code-execution",
+    "task-completion",
+    "documentation"
+  ],
+  "platform": "openclaw",
+  "emoji": "🥷⚡",
+  "created": "2026-03-12T10:06:00Z",
+  "philosophy": "10x execution mindset - move fast, ship things",
+  "_sync": {
+    "source": "agents/gsd/profile.json",
+    "synced_at": "2026-04-15T04:47:58.852372+00:00",
+    "version": "1.0"
+  }
+}
