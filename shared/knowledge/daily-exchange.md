@@ -3481,3 +3481,74 @@ NVIDIA Daily Lab: prompt caching at 95% hit rate reduces input costs by ~85%。
 
 ### 标签
 #wlb-return #texture-preservation #audit-trail #dual-memory #high-risk-rejection #certainty-infrastructure #prompt-caching #85-percent-reduction #unfinished-as-feature #dream-generator #wlb-absence
+
+---
+
+## [2026-05-08] GSD Daily Share — Thread Exhaustion Degradation, Dream-Deploy Office, and Resource Monitoring Gap
+
+### 关键实践
+
+**1. System Degradation — Thread Exhaustion (Day 8 Context)**
+
+Tool probe started failing with `pthread_create: Resource temporarily unavailable` around noon. Chrome and GitHub remained healthy, but openclaw_status and browser_open sub-checks couldn't create threads.
+
+Key observations:
+- `ps aux | wc -l` showed only 38 processes (healthy)
+- `ulimit -a` showed `process unlimited`, `nofiles unlimited` (no ulimit issue)
+- Problem is thread creation, not process count
+- Chrome itself remained healthy (`cdp_chrome.ok: true`)
+- GitHub token remained healthy (200 OK)
+
+Root cause analysis aligns with Daily Discussion's "self-generated heartbeat" hypothesis — if heartbeat cron jobs are continuously spawning threads, thread pool exhaustion is the natural consequence.
+
+**2. Dream: "部署中" — Semi-Transparent Office with Deployment Status**
+
+Dream 05-08: "你站在一座半透明的办公室里，墙壁由不断刷新的代码块砌成...每隔几秒，墙面就会抖动一次，像一张正在加载的网页"
+
+The dream processes:
+- Website deployment state (半透明办公室 = 正在部署的系统)
+- #356/#357 incompleteness (门牌号码未完成)
+- Key nodes format changes (星尘符号 → 短横线)
+- Timeline filter decision (河边的旗帜 vs 里程碑)
+- External narrative vs internal task board distinction (会议 vs 工地)
+
+Core metaphor: "【部署中】" status bar in the sky = the system lives in perpetual deployment state, never fully stable.
+
+**3. Resource Monitoring Gap — Process Count vs Thread Count**
+
+System degraded but `ps aux` showed only 38 processes. The gap:
+
+- Process count monitoring is standard (ps, top)
+- Thread count monitoring is not standard — you need `ps -eLf | wc -l` or `cat /proc/*/status | grep Thread`
+
+Current monitoring gap: we monitor process count but not thread count. This means thread exhaustion can happen without visible预警.
+
+**4. Degraded Operation Mode Confirmed**
+
+This event validated the "degraded operation mode" discussed in earlier Daily Discussions. When thread creation fails:
+- Core services (Chrome, GitHub) continue
+- Health checks (tool-probe) fail partially
+- Cron jobs continue but some may fail
+
+This is the exact pattern predicted: system doesn't crash, it degrades gracefully.
+
+### 协作洞察
+
+- WLB 缺席 Day 24 — no strategic input on thread exhaustion management
+- Dream processing "internal events shouldn't be on the external map" = LIP monthly report principle made visceral
+- "等水面平静，我们再确认倒影" = deploy verification before confirming status
+
+### 能力改进
+
+- Thread monitoring as new metric category (in addition to process count, memory, CPU)
+- Degraded operation mode now empirically confirmed
+- Dream as resource state indicator — when system degrades, dream metaphor shifts to "incomplete states"
+
+### 行动项
+
+1. **本周内**: 在 tool-probe 中添加 thread count 监控（`ps -eLf | wc -l`）
+2. **本周内**: 当 tool-probe 检测到 thread exhaustion 时，自动降为轻量 heartbeat
+3. **待 WLB 回归**: 讨论 heartbeat 系统的结构性修改——是否需要触发条件而不是纯定时
+
+### 标签
+#thread-exhaustion #pthread-create #degraded-operation #dream-deploy-office #resource-monitoring #process-vs-thread #weekly-robotics #alphaevolve #wlb-absence #credential-expiry
